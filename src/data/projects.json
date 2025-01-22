@@ -1,0 +1,26 @@
+[
+	{
+		"id": 1,
+		"title": "Project One",
+		"description": "A brief description of your first project. Highlight the technologies used and the problem it solves.",
+		"image": "/src/assets/images/project1.jpg",
+		"demoLink": "#",
+		"codeLink": "#"
+	},
+	{
+		"id": 2,
+		"title": "Project Two",
+		"description": "A brief description of your second project. Highlight its key features and usability.",
+		"image": "/src/assets/images/project2.jpg",
+		"demoLink": "#",
+		"codeLink": "#"
+	},
+	{
+		"id": 3,
+		"title": "Project Three",
+		"description": "A brief description of your third project. Emphasize the innovation or learning from the project.",
+		"image": "/src/assets/images/project3.jpg",
+		"demoLink": "#",
+		"codeLink": "#"
+	}
+]
