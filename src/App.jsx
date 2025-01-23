@@ -11,12 +11,12 @@ import Footer from "./components/Footer";
 const App = () => {
 	return (
 		<Router>
-			<div className="flex flex-col min-h-screen">
+			<div>
 				{/* Header */}
 				<Header />
 
 				{/* Main Content */}
-				<main className="flex-grow">
+				<main>
 					<Routes>
 						<Route path="/" element={<Home />} />
 						<Route path="/about" element={<About />} />
