@@ -1,4 +1,5 @@
 import React from "react";
+import details from "../data/details.json";
 
 const About = () => {
 	return (
@@ -13,7 +14,7 @@ const About = () => {
 					{/* Text Section */}
 					<div>
 						<p>
-							Hi, I'm [Your Name], a passionate web developer specializing in
+							Hi, I'm {details.personal.name}, a passionate web developer specializing in
 							the MERN stack. I love building responsive, user-friendly websites
 							and applications that solve real-world problems. With a strong
 							focus on clean code and scalable architecture, I strive to create

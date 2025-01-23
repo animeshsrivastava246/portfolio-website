@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import details from "../data/details.json";
 
 const Home = () => {
 	return (
@@ -8,11 +9,10 @@ const Home = () => {
 				{/* Left Content */}
 				<div>
 					<h1>
-						Hi, I'm <span>[Your Name]</span>
+						Hi, I'm <span>{details.personal.name}</span>
 					</h1>
 					<p>
-						I’m a passionate web developer specializing in the MERN stack. I
-						create clean, responsive, and user-friendly web applications.
+						{details.personal.bio}
 					</p>
 					<div>
 						<Link to="/projects">View My Projects</Link>
