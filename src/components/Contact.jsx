@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { db } from "../utils/firebase";
-import { collection, addDoc } from "firebase/firestore";
+import { collection, addDoc, Timestamp } from "firebase/firestore";
 
 const Contact = () => {
 	const [formData, setFormData] = useState({
@@ -25,7 +25,10 @@ const Contact = () => {
 
 		try {
 			// Add form data to Firestore
-			await addDoc(collection(db, "contacts"), formData);
+			await addDoc(collection(db, "contacts"), {
+				...formData,
+				timestamp: Timestamp.now(), // Add the current timestamp
+			});
 			setSuccessMessage("Message sent successfully!");
 			setFormData({ name: "", email: "", message: "" });
 		} catch (error) {
