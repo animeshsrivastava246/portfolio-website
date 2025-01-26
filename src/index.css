@@ -1,1 +1,7 @@
+/* Tailwind CSS */
 @import "tailwindcss";
+
+/* Custom CSS */
+@import "./styles/variables.css";
+@import "./styles/utilities.css";
+@import "./styles/global.css";
