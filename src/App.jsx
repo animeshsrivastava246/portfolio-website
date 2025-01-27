@@ -11,12 +11,12 @@ import Footer from "./components/Footer";
 const App = () => {
 	return (
 		<Router>
-			<div>
+			<div className="app-container">
 				{/* Header */}
 				<Header />
 
 				{/* Main Content */}
-				<main>
+				<main className="app-main">
 					<Routes>
 						<Route path="/" element={<Home />} />
 						<Route path="/about" element={<About />} />

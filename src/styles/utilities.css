@@ -20,12 +20,12 @@
 	font-style: italic;
 }
 
-
 /* Footer */
 .footer {
 	background-color: #1a202c; /* Tailwind's gray-900 */
 	color: #ffffff; /* White text */
-	padding: 1.5rem;
+	text-align: center;
+	padding: 1rem;
 }
 
 .footer-container {

@@ -2,3 +2,16 @@ body {
 	font-family: var(--font-primary);
 	line-height: 1.6;
 }
+
+/* Ensures the app container spans the entire viewport height */
+.app-container {
+	display: flex;
+	flex-direction: column;
+	min-height: 100vh; /* Full viewport height */
+}
+
+/* Main content should expand to fill available space */
+.app-main {
+	flex: 1; /* Takes up all the remaining space */
+	padding: 1rem; /* Optional: Adds some padding for layout */
+}
