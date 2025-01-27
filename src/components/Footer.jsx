@@ -3,16 +3,24 @@ import { Link } from "react-router-dom";
 
 const Footer = () => {
 	return (
-		<footer>
-			<div>
-				<p>
+		<footer className="footer">
+			<div className="footer-container">
+				<p className="footer-text">
 					&copy; {new Date().getFullYear()} My Portfolio. All rights reserved.
 				</p>
-				<nav>
-					<Link to="/">Home</Link>
-					<Link to="/about">About</Link>
-					<Link to="/projects">Projects</Link>
-					<Link to="/contact">Contact</Link>
+				<nav className="footer-nav">
+					<Link to="/" className="footer-link">
+						Home
+					</Link>
+					<Link to="/about" className="footer-link">
+						About
+					</Link>
+					<Link to="/projects" className="footer-link">
+						Projects
+					</Link>
+					<Link to="/contact" className="footer-link">
+						Contact
+					</Link>
 				</nav>
 			</div>
 		</footer>
