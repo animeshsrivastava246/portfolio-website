@@ -24,10 +24,9 @@ const Contact = () => {
 		setErrorMessage("");
 
 		try {
-			// Add form data to Firestore
 			await addDoc(collection(db, "contacts"), {
 				...formData,
-				timestamp: Timestamp.now(), // Add the current timestamp
+				timestamp: Timestamp.now(),
 			});
 			setSuccessMessage("Message sent successfully!");
 			setFormData({ name: "", email: "", message: "" });
@@ -40,12 +39,18 @@ const Contact = () => {
 	};
 
 	return (
-		<section id="contact">
-			<div>
-				<h2>Contact Me</h2>
-				<form onSubmit={handleSubmit}>
+		<section id="contact" className="py-16 bg-gray-100">
+			<div className="max-w-2xl mx-auto bg-white p-8 rounded-xl shadow-lg">
+				<h2 className="text-3xl font-bold text-center text-gray-800 mb-6">
+					Contact Me
+				</h2>
+
+				<form onSubmit={handleSubmit} className="space-y-6">
+					{/* Name Input */}
 					<div>
-						<label htmlFor="name">Name</label>
+						<label htmlFor="name" className="block text-gray-700 font-medium">
+							Name
+						</label>
 						<input
 							type="text"
 							id="name"
@@ -53,10 +58,15 @@ const Contact = () => {
 							value={formData.name}
 							onChange={handleChange}
 							required
+							className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-indigo-500"
 						/>
 					</div>
+
+					{/* Email Input */}
 					<div>
-						<label htmlFor="email">Email</label>
+						<label htmlFor="email" className="block text-gray-700 font-medium">
+							Email
+						</label>
 						<input
 							type="email"
 							id="email"
@@ -64,10 +74,18 @@ const Contact = () => {
 							value={formData.email}
 							onChange={handleChange}
 							required
+							className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-indigo-500"
 						/>
 					</div>
+
+					{/* Message Input */}
 					<div>
-						<label htmlFor="message">Message</label>
+						<label
+							htmlFor="message"
+							className="block text-gray-700 font-medium"
+						>
+							Message
+						</label>
 						<textarea
 							id="message"
 							name="message"
@@ -75,11 +93,24 @@ const Contact = () => {
 							onChange={handleChange}
 							rows="5"
 							required
+							className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-indigo-500"
 						></textarea>
 					</div>
-					{successMessage && <p>{successMessage}</p>}
-					{errorMessage && <p>{errorMessage}</p>}
-					<button type="submit" disabled={isSubmitting}>
+
+					{/* Success & Error Messages */}
+					{successMessage && (
+						<p className="text-green-600 text-sm">{successMessage}</p>
+					)}
+					{errorMessage && (
+						<p className="text-red-600 text-sm">{errorMessage}</p>
+					)}
+
+					{/* Submit Button */}
+					<button
+						type="submit"
+						disabled={isSubmitting}
+						className="w-full py-3 bg-indigo-600 text-white font-medium rounded-lg hover:bg-indigo-700 disabled:opacity-50 transition"
+					>
 						{isSubmitting ? "Sending..." : "Send Message"}
 					</button>
 				</form>
