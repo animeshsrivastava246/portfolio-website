@@ -1,7 +1,7 @@
 import React from "react";
 import details from "../data/details.json";
 
-const About = () => {
+const About: React.FC = () => {
 	return (
 		<section id="about" className="py-16 bg-gray-100">
 			<div className="container mx-auto px-6">

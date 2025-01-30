@@ -1,13 +1,21 @@
 import React, { useEffect, useState } from "react";
 
-const Projects = () => {
-	const [projects, setProjects] = useState([]);
+interface Project {
+	id: number;
+	title: string;
+	description: string;
+	image: string;
+	demoLink: string;
+	codeLink: string;
+}
+
+const Projects: React.FC = () => {
+	const [projects, setProjects] = useState<Project[]>([]);
 
 	useEffect(() => {
-		// Fetch project details from the JSON file
 		fetch("/src/data/projects.json")
 			.then((response) => response.json())
-			.then((data) => setProjects(data))
+			.then((data: Project[]) => setProjects(data))
 			.catch((error) => console.error("Error fetching projects:", error));
 	}, []);
 

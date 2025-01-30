@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-const Header = () => {
+const Header: React.FC = () => {
 	return (
 		<header className="bg-gray-800 text-white shadow-md sticky top-0 z-50">
 			<div className="container mx-auto flex justify-between items-center py-4 px-6">

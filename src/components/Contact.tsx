@@ -1,23 +1,31 @@
-import React, { useState } from "react";
+import React, { useState, ChangeEvent, FormEvent } from "react";
 import { db } from "../utils/firebase";
 import { collection, addDoc, Timestamp } from "firebase/firestore";
 
-const Contact = () => {
-	const [formData, setFormData] = useState({
+interface FormData {
+	name: string;
+	email: string;
+	message: string;
+}
+
+const Contact: React.FC = () => {
+	const [formData, setFormData] = useState<FormData>({
 		name: "",
 		email: "",
 		message: "",
 	});
-	const [isSubmitting, setIsSubmitting] = useState(false);
-	const [successMessage, setSuccessMessage] = useState("");
-	const [errorMessage, setErrorMessage] = useState("");
+	const [isSubmitting, setIsSubmitting] = useState<boolean>(false);
+	const [successMessage, setSuccessMessage] = useState<string>("");
+	const [errorMessage, setErrorMessage] = useState<string>("");
 
-	const handleChange = (e) => {
+	const handleChange = (
+		e: ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
+	) => {
 		const { name, value } = e.target;
-		setFormData({ ...formData, [name]: value });
+		setFormData((prev) => ({ ...prev, [name]: value }));
 	};
 
-	const handleSubmit = async (e) => {
+	const handleSubmit = async (e: FormEvent) => {
 		e.preventDefault();
 		setIsSubmitting(true);
 		setSuccessMessage("");
@@ -46,7 +54,6 @@ const Contact = () => {
 				</h2>
 
 				<form onSubmit={handleSubmit} className="space-y-6">
-					{/* Name Input */}
 					<div>
 						<label htmlFor="name" className="block text-gray-700 font-medium">
 							Name
@@ -62,7 +69,6 @@ const Contact = () => {
 						/>
 					</div>
 
-					{/* Email Input */}
 					<div>
 						<label htmlFor="email" className="block text-gray-700 font-medium">
 							Email
@@ -78,7 +84,6 @@ const Contact = () => {
 						/>
 					</div>
 
-					{/* Message Input */}
 					<div>
 						<label
 							htmlFor="message"
@@ -91,13 +96,12 @@ const Contact = () => {
 							name="message"
 							value={formData.message}
 							onChange={handleChange}
-							rows="5"
+							rows={5}
 							required
 							className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-indigo-500"
 						></textarea>
 					</div>
 
-					{/* Success & Error Messages */}
 					{successMessage && (
 						<p className="text-green-600 text-sm">{successMessage}</p>
 					)}
@@ -105,7 +109,6 @@ const Contact = () => {
 						<p className="text-red-600 text-sm">{errorMessage}</p>
 					)}
 
-					{/* Submit Button */}
 					<button
 						type="submit"
 						disabled={isSubmitting}
