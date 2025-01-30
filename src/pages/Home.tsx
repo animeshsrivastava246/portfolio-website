@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import details from "../data/details.json";
 
-const Home = () => {
+const Home: React.FC = () => {
 	return (
 		<section
 			id="home"

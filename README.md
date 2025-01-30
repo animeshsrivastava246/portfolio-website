@@ -103,26 +103,26 @@ portfolio-website/
 │   │   ├── icons/         # Icons folder
 │   │   └── images/        # Images folder
 │   ├── components/        # Reusable React components
-│   │   ├── Header.jsx     # Header component
-│   │   ├── Footer.jsx     # Footer component
-│   │   ├── About.jsx      # About section component
-│   │   ├── Projects.jsx   # Projects section component
-│   │   └── Contact.jsx    # Contact section component
+│   │   ├── Header.tsx     # Header component
+│   │   ├── Footer.tsx     # Footer component
+│   │   ├── About.tsx      # About section component
+│   │   ├── Projects.tsx   # Projects section component
+│   │   └── Contact.tsx    # Contact section component
 │   ├── data/              # Data files for modularity
 │   │   ├── details.json   # Personal Details for portfolio
 │   │   └── projects.json  # Project descriptions
 │   ├── pages/             # Page-level components
-│   │   ├── Home.jsx       # Main landing page
-│   │   └── NotFound.jsx   # 404 error page
+│   │   ├── Home.tsx       # Main landing page
+│   │   └── NotFound.tsx   # 404 error page
 │   ├── styles/            # Global and component-specific styles
 │   │   ├── global.css     # Global CSS styles
 │   │   ├── utilities.css  # Utilities CSS styles
 │   │   └── variables.css  # CSS variables for themes or constants
 │   ├── utils/             # Utility functions or helpers
 │   │   └── firebase.js    # Firebase config file
-│   ├── App.jsx            # Main App component
+│   ├── App.tsx            # Main App component
 │   ├── index.css          # Default styles
-│   └── main.jsx           # Entry point
+│   └── main.tsx           # Entry point
 ├── .env                   # Environment Variables
 ├── .env.temp              # Dummy Environment Variables
 ├── .gitignore             # Git ignored files
