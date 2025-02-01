@@ -1,6 +1,7 @@
-import React, { useState, ChangeEvent, FormEvent } from "react";
+import React, { useState, ChangeEvent, FormEvent, useRef } from "react";
 import { db } from "../utils/firebase";
 import { collection, addDoc, Timestamp } from "firebase/firestore";
+import Captcha from "../components/Captcha";
 
 interface FormData {
 	name: string;
@@ -17,6 +18,8 @@ const Contact: React.FC = () => {
 	const [isSubmitting, setIsSubmitting] = useState<boolean>(false);
 	const [successMessage, setSuccessMessage] = useState<string>("");
 	const [errorMessage, setErrorMessage] = useState<string>("");
+	const [captchaToken, setCaptchaToken] = useState<string | null>(null);
+	const captchaRef = useRef<{ reset: () => void }>(null);
 
 	const handleChange = (
 		e: ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
@@ -27,6 +30,12 @@ const Contact: React.FC = () => {
 
 	const handleSubmit = async (e: FormEvent) => {
 		e.preventDefault();
+
+		if (!captchaToken) {
+			setErrorMessage("Please complete the CAPTCHA verification.");
+			return;
+		}
+
 		setIsSubmitting(true);
 		setSuccessMessage("");
 		setErrorMessage("");
@@ -38,6 +47,7 @@ const Contact: React.FC = () => {
 			});
 			setSuccessMessage("Message sent successfully!");
 			setFormData({ name: "", email: "", message: "" });
+			captchaRef.current?.reset(); // Reset CAPTCHA after successful submission
 		} catch (error) {
 			setErrorMessage("Failed to send message. Please try again.");
 			console.error(error);
@@ -102,6 +112,9 @@ const Contact: React.FC = () => {
 						></textarea>
 					</div>
 
+					{/* Modular Captcha Component */}
+					<Captcha ref={captchaRef} onVerify={setCaptchaToken} />
+
 					{successMessage && (
 						<p className="text-green-600 text-sm">{successMessage}</p>
 					)}
@@ -111,7 +124,7 @@ const Contact: React.FC = () => {
 
 					<button
 						type="submit"
-						disabled={isSubmitting}
+						disabled={isSubmitting || !captchaToken}
 						className="w-full py-3 bg-indigo-600 text-white font-medium rounded-lg hover:bg-indigo-700 disabled:opacity-50 transition"
 					>
 						{isSubmitting ? "Sending..." : "Send Message"}
