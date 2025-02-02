@@ -1,16 +1,16 @@
 import React from "react";
-import { StrictMode } from "react";
 import { createRoot } from "react-dom/client";
-import "./index.css";
+import { HelmetProvider } from "react-helmet-async";
 import App from "./App";
+import "./index.css";
 
-const rootElement = document.getElementById("root") as HTMLElement;
+const rootElement = document.getElementById("root");
 
 if (rootElement) {
 	createRoot(rootElement).render(
-		<StrictMode>
+		<HelmetProvider>
 			<App />
-		</StrictMode>
+		</HelmetProvider>
 	);
 } else {
 	console.error("Root element not found");

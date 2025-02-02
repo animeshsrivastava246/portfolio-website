@@ -1,7 +1,8 @@
 {
 	"personal": {
-		"name": "John Doe",
+		"name": "Shivam",
 		"qualification": "Your Qualification",
+		"profession": "Software developer",
 		"bio": "I’m a passionate web developer specializing in the MERN stack. I create clean, responsive, and user-friendly web applications.",
 		"email": "your.email@example.com",
 		"phone": "Your Phone Number",
