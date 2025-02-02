@@ -4,7 +4,8 @@
 		"qualification": "Your Qualification",
 		"bio": "I’m a passionate web developer specializing in the MERN stack. I create clean, responsive, and user-friendly web applications.",
 		"email": "your.email@example.com",
-		"phone": "Your Phone Number"
+		"phone": "Your Phone Number",
+		"image": "/src/assets/images/hero-image.jpg"
 	},
 	"socialMedia": {
 		"linkedin": "https://www.linkedin.com/in/your-profile",
