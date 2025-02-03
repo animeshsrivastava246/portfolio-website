@@ -1,5 +1,5 @@
 import React from "react";
-import details from "../data/details.json";
+import details from "../../data/details.json";
 
 const About: React.FC = () => {
 	return (

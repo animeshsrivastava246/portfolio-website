@@ -95,43 +95,50 @@ npm run build
 
 ```
 portfolio-website/
-├── node_modules/          # Installed dependencies
-├── public/                # Static assets like favicon
-├── src/                   # Source code
-│   ├── assets/            # Images, fonts, icons, etc.
-│   │   ├── fonts/         # Fonts folder
-│   │   ├── icons/         # Icons folder
-│   │   └── images/        # Images folder
-│   ├── components/        # Reusable React components
-│   │   ├── Header.tsx     # Header component
-│   │   ├── Footer.tsx     # Footer component
-│   │   ├── About.tsx      # About section component
-│   │   ├── Projects.tsx   # Projects section component
-│   │   └── Contact.tsx    # Contact section component
-│   ├── data/              # Data files for modularity
-│   │   ├── details.json   # Personal Details for portfolio
-│   │   └── projects.json  # Project descriptions
-│   ├── pages/             # Page-level components
-│   │   ├── Home.tsx       # Main landing page
-│   │   └── NotFound.tsx   # 404 error page
-│   ├── styles/            # Global and component-specific styles
-│   │   ├── global.css     # Global CSS styles
-│   │   ├── utilities.css  # Utilities CSS styles
-│   │   └── variables.css  # CSS variables for themes or constants
-│   ├── utils/             # Utility functions or helpers
-│   │   └── firebase.js    # Firebase config file
-│   ├── App.tsx            # Main App component
-│   ├── index.css          # Default styles
-│   └── main.tsx           # Entry point
-├── .env                   # Environment Variables
-├── .env.temp              # Dummy Environment Variables
-├── .gitignore             # Git ignored files
-├── eslint.config.js       # ESLint configuration
-├── index.html             # HTML template
-├── package-lock.json      # Project dependencies plus detailed meta deta
-├── package.json           # Project dependencies
-├── README.md              # Readme File
-└── vite.config.js         # Vite configuration
+├── node_modules/                  # Installed dependencies
+├── public/                        # Static assets like favicon
+├── src/                           # Source code
+│   ├── assets/                    # Images, fonts, icons, etc.
+│   │   ├── fonts/                 # Fonts folder
+│   │   ├── icons/                 # Icons folder
+│   │   └── images/                # Images folder
+│   ├── components/                # All components folder
+│   │   ├── common/                # Reusable UI elements
+│   │   │   ├── CTAButtons.tsx     # Call-to-action buttons
+│   │   │   └── Captcha.tsx        # Captcha component
+│   │   ├── layout/                # Layout components
+│   │   │   ├── Header.tsx         # Navigation bar
+│   │   │   └── Footer.tsx         # Footer section
+│   │   ├── sections/              # Page sections
+│   │   │   ├── Hero.tsx           # Hero section for homepage
+│   │   │   ├── About.tsx          # About section
+│   │   │   ├── Projects.tsx       # Projects section
+│   │   │   ├── Skills.tsx         # Skills section
+│   │   └── └──Contact.tsx         # Contact form section
+│   ├── data/                      # Data files for modularity
+│   │   ├── details.json           # Personal Details for portfolio
+│   │   └── projects.json          # Project descriptions
+│   ├── pages/                     # Page-level components
+│   │   ├── Home.tsx               # Main landing page
+│   │   └── NotFound.tsx           # 404 error page
+│   ├── styles/                    # Global and component-specific styles
+│   │   ├── global.css             # Global CSS styles
+│   │   ├── utilities.css          # Utilities CSS styles
+│   │   └── variables.css          # CSS variables for themes or constants
+│   ├── utils/                     # Utility functions or helpers
+│   │   └── firebase.js            # Firebase config file
+│   ├── App.tsx                    # Main App component
+│   ├── index.css                  # Default styles
+│   └── main.tsx                   # Entry point
+├── .env                           # Environment Variables
+├── .env.temp                      # Dummy Environment Variables
+├── .gitignore                     # Git ignored files
+├── eslint.config.js               # ESLint configuration
+├── index.html                     # HTML template
+├── package-lock.json              # Project dependencies plus detailed meta deta
+├── package.json                   # Project dependencies
+├── README.md                      # Readme File
+└── vite.config.js                 # Vite configuration
 ```
 
 ---

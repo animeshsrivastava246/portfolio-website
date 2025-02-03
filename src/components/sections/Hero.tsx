@@ -1,6 +1,6 @@
 import React from "react";
-import details from "../data/details.json";
-import CTAButtons from "./CTAButtons";
+import details from "../../data/details.json";
+import CTAButtons from "../common/CTAButtons";
 
 const Hero: React.FC = () => {
 	return (

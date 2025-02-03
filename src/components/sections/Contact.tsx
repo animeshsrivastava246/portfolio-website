@@ -1,7 +1,7 @@
 import React, { useState, ChangeEvent, FormEvent, useRef } from "react";
-import { db } from "../utils/firebase";
+import { db } from "../../utils/firebase";
 import { collection, addDoc, Timestamp } from "firebase/firestore";
-import Captcha from "../components/Captcha";
+import Captcha from "../common/Captcha";
 
 interface FormData {
 	name: string;
