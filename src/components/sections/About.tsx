@@ -14,7 +14,7 @@ const About: React.FC = () => {
 					<div className="w-64 h-64">
 						<img
 							src="/src/assets/images/profile.jpg"
-							alt="About me"
+							alt={details.personal.name}
 							className="w-full h-full object-cover rounded-xl shadow-lg"
 						/>
 					</div>

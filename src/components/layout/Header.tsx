@@ -10,7 +10,7 @@ const Header: React.FC = () => {
 					to="/"
 					className="text-2xl font-bold hover:text-blue-400 transition duration-200"
 				>
-					My Portfolio
+					<img src="/src/assets/icons/logo.png" alt="Logo" />
 				</Link>
 
 				{/* Navigation Menu */}
