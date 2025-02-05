@@ -1,4 +1,5 @@
 /* Fonts */
+
 @font-face {
 	font-family: "Libre Baskerville";
 	src: url("/src/assets/fonts/LibreBaskerville-Regular.ttf") format("truetype");
@@ -21,9 +22,10 @@
 }
 
 /* Footer */
+
 .footer {
-	background-color: #1a202c; /* Tailwind's gray-900 */
-	color: #ffffff; /* White text */
+	background-color: #1a202c;
+	color: #ffffff;
 	text-align: center;
 	padding: 1rem;
 }
@@ -37,7 +39,7 @@
 }
 
 .footer-text {
-	font-size: 0.875rem; /* Tailwind's text-sm */
+	font-size: 0.875rem;
 }
 
 .footer-nav {
@@ -46,12 +48,12 @@
 }
 
 .footer-link {
-	color: #a0aec0; /* Tailwind's gray-400 */
+	color: #a0aec0;
 	text-decoration: none;
-	font-size: 0.875rem; /* Tailwind's text-sm */
+	font-size: 0.875rem;
 	transition: color 0.3s ease;
 }
 
 .footer-link:hover {
-	color: #ffffff; /* Hover effect to white */
+	color: #ffffff;
 }
