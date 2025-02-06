@@ -3,19 +3,20 @@ import { Link } from "react-router-dom";
 
 const Header: React.FC = () => {
 	return (
-		<header className="bg-gray-800 text-white shadow-md sticky top-0 z-50">
-			<div className="container mx-auto flex justify-between items-center py-4 px-6">
+		<header className="fixed top-2 left-1/2 transform -translate-x-1/2 w-full max-w-2xl bg-gray-500/50 backdrop-blur-md shadow-lg shadow-blue-500/50 rounded-full z-50">
+			<div className="flex justify-between items-center py-2 px-4">
 				{/* Logo Section */}
-				<Link
-					to="/"
-					className="text-2xl font-bold hover:text-blue-400 transition duration-200"
-				>
-					<img src="/src/assets/icons/logo.png" alt="Logo" />
+				<Link to="/" className="flex items-center">
+					<img
+						src="/src/assets/icons/logo.webp"
+						alt="Logo"
+						className="w-8 h-8"
+					/>
 				</Link>
 
 				{/* Navigation Menu */}
 				<nav>
-					<ul className="flex space-x-6 text-lg">
+					<ul className="flex space-x-5 text-lg font-bold text-white">
 						<li>
 							<Link
 								to="/about"
