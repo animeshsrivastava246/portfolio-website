@@ -1,6 +1,28 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
+interface NavItem {
+	label: string;
+	path: string;
+}
+
+const NAV_LINKS: NavItem[] = [
+	{ label: "About", path: "/about" },
+	{ label: "Projects", path: "/projects" },
+	{ label: "Contact", path: "/contact" },
+];
+
+const NavLink: React.FC<{ item: NavItem }> = ({ item }) => (
+	<li>
+		<Link
+			to={item.path}
+			className="hover:text-blue-400 transition duration-200"
+		>
+			{item.label}
+		</Link>
+	</li>
+);
+
 const Header: React.FC = () => {
 	return (
 		<header className="fixed top-2 left-1/2 transform -translate-x-1/2 w-full max-w-2xl bg-gray-500/50 backdrop-blur-md shadow-lg shadow-blue-500/50 rounded-full z-50">
@@ -17,30 +39,9 @@ const Header: React.FC = () => {
 				{/* Navigation Menu */}
 				<nav>
 					<ul className="flex space-x-5 text-lg font-bold text-white">
-						<li>
-							<Link
-								to="/about"
-								className="hover:text-blue-400 transition duration-200"
-							>
-								About
-							</Link>
-						</li>
-						<li>
-							<Link
-								to="/projects"
-								className="hover:text-blue-400 transition duration-200"
-							>
-								Projects
-							</Link>
-						</li>
-						<li>
-							<Link
-								to="/contact"
-								className="hover:text-blue-400 transition duration-200"
-							>
-								Contact
-							</Link>
-						</li>
+						{NAV_LINKS.map((item) => (
+							<NavLink key={item.path} item={item} />
+						))}
 					</ul>
 				</nav>
 			</div>
