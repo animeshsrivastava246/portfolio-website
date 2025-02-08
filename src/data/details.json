@@ -9,9 +9,18 @@
 		"image": "/src/assets/images/hero-image.jpg"
 	},
 	"socialMedia": {
-		"linkedin": "https://www.linkedin.com/in/your-profile",
-		"github": "https://github.com/your-profile",
-		"twitter": "https://twitter.com/your-profile"
+		"linkedin": {
+			"url": "https://www.linkedin.com/in/your-profile",
+			"icon": "/src/assets/icons/linkedin.svg"
+		},
+		"github": {
+			"url": "https://github.com/your-profile",
+			"icon": "/src/assets/icons/github.svg"
+		},
+		"x": {
+			"url": "https://x.com/your-profile",
+			"icon": "/src/assets/icons/x.svg"
+		}
 	},
 	"skills": [
 		{
