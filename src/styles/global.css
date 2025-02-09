@@ -15,3 +15,24 @@ body {
 	flex: 1; /* Takes up all the remaining space */
 	padding: 1rem; /* Optional: Adds some padding for layout */
 }
+
+/* Hero Section */
+#home {
+	position: relative;
+	background: url("../assets/images/hero-bg.png") center center no-repeat;
+	background-size: cover;
+	height: 100vh; /* Adjust as needed */
+  }
+  
+  #home::before {
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background: inherit;
+	filter: blur(50px); /* Apply blur to the background */
+	z-index: -1; /* Ensure it's behind the content */
+  }
+  

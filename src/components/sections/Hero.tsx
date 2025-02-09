@@ -1,12 +1,13 @@
 import React from "react";
 import details from "../../data/details.json";
 import CTAButtons from "../common/CTAButtons";
+import "../../styles/global.css";
 
 const Hero: React.FC = () => {
 	return (
 		<section
 			id="home"
-			className="min-h-screen flex items-center justify-center bg-gray-100 px-6 py-12"
+			className="min-h-screen flex items-center justify-center px-6 py-12"
 		>
 			<div className="container mx-auto flex flex-col md:flex-row items-center gap-8">
 				{/* Left Content */}
