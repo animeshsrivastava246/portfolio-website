@@ -3,6 +3,14 @@ body {
 	line-height: 1.6;
 }
 
+:root {
+	--meth-color: #ff0e10;
+	--etha-color: #f4e7ee;
+	--prop-color: #865eff;
+	--buta-color: #fc7a1e;
+	--pent-color: #5a397f;
+}
+
 /* Ensures the app container spans the entire viewport height */
 .app-container {
 	display: flex;
@@ -22,9 +30,9 @@ body {
 	background: url("../assets/images/hero-bg.png") center center no-repeat;
 	background-size: cover;
 	height: 100vh; /* Adjust as needed */
-  }
-  
-  #home::before {
+}
+
+#home::before {
 	content: "";
 	position: absolute;
 	top: 0;
@@ -34,5 +42,4 @@ body {
 	background: inherit;
 	filter: blur(50px); /* Apply blur to the background */
 	z-index: -1; /* Ensure it's behind the content */
-  }
-  
+}
