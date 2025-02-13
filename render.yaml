@@ -1,0 +1,9 @@
+services:
+  - type: web
+    name: portfolio-website
+    runtime: node
+    buildCommand: npm run build
+    startCommand: npm run preview
+    envVars:
+      - key: NODE_VERSION
+        value: 18
