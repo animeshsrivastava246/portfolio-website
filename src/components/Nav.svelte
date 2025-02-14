@@ -1,51 +1,77 @@
 <script lang="ts">
-	import { onMount } from "svelte";
+	let isOpen = false;
 
-	let sections = ["Hero", "About", "Work", "Projects", "Connect"];
-	let activeSection = "Hero";
-
-	// Smooth scroll on click
 	const scrollToSection = (id: string) => {
-		document.getElementById(id)?.scrollIntoView({ behavior: "smooth" });
-		activeSection = id;
+		const section = document.getElementById(id);
+		if (section) {
+			section.scrollIntoView({ behavior: "smooth" });
+			isOpen = false; // Close mobile menu on click
+		}
 	};
-
-	onMount(() => {
-		const observer = new IntersectionObserver(
-			(entries) => {
-				entries.forEach((entry) => {
-					if (entry.isIntersecting) {
-						activeSection = entry.target.id;
-					}
-				});
-			},
-			{ threshold: 0.6 } // Detect when 60% of section is visible
-		);
-
-		sections.forEach((section) => {
-			let el = document.getElementById(section);
-			if (el) observer.observe(el);
-		});
-	});
 </script>
 
 <nav
-	class="fixed top-4 left-1/2 transform -translate-x-1/2 z-50 bg-white/10 backdrop-blur-md px-6 py-3 rounded-full shadow-lg flex gap-6 items-center"
+	class="fixed top-0 left-0 w-full bg-black bg-opacity-80 backdrop-blur-md shadow-md z-50"
 >
-	{#each sections as section}
+	<div class="max-w-6xl mx-auto px-6 flex justify-between items-center h-16">
+		<a href="#" class="text-xl font-bold text-white">&lt; DevPortfolio /&gt;</a>
+
+		<!-- Desktop Nav -->
+		<div class="hidden md:flex space-x-6">
+			<a
+				on:click={() => scrollToSection("Hero")}
+				class="cursor-pointer text-white hover:text-gray-400">Home</a
+			>
+			<a
+				on:click={() => scrollToSection("About")}
+				class="cursor-pointer text-white hover:text-gray-400">About</a
+			>
+			<a
+				on:click={() => scrollToSection("WorkExperience")}
+				class="cursor-pointer text-white hover:text-gray-400">Experience</a
+			>
+			<a
+				on:click={() => scrollToSection("Projects")}
+				class="cursor-pointer text-white hover:text-gray-400">Projects</a
+			>
+			<a
+				on:click={() => scrollToSection("Contact")}
+				class="cursor-pointer text-white hover:text-gray-400">Contact</a
+			>
+		</div>
+
+		<!-- Mobile Menu Button -->
 		<button
-			on:click={() => scrollToSection(section)}
-			class="text-sm font-medium px-3 py-1 rounded-full transition-all duration-300"
-			class:text-primary={activeSection === section}
+			class="md:hidden text-white focus:outline-none"
+			on:click={() => (isOpen = !isOpen)}
 		>
-			{section}
+			☰
 		</button>
-	{/each}
-	<a
-		href="/resume.pdf"
-		target="_blank"
-		class="px-4 py-2 bg-primary text-white rounded-full text-sm font-semibold"
-	>
-		Resume
-	</a>
+	</div>
+
+	<!-- Mobile Menu -->
+	{#if isOpen}
+		<div
+			class="md:hidden bg-black bg-opacity-90 text-white py-4 px-6 space-y-4"
+		>
+			<a on:click={() => scrollToSection("Hero")} class="block cursor-pointer"
+				>Home</a
+			>
+			<a on:click={() => scrollToSection("About")} class="block cursor-pointer"
+				>About</a
+			>
+			<a
+				on:click={() => scrollToSection("WorkExperience")}
+				class="block cursor-pointer">Experience</a
+			>
+			<a
+				on:click={() => scrollToSection("Projects")}
+				class="block cursor-pointer">Projects</a
+			>
+			<a
+				on:click={() => scrollToSection("Contact")}
+				class="block cursor-pointer">Contact</a
+			>
+		</div>
+	{/if}
 </nav>

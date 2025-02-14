@@ -1,11 +1,28 @@
 ---
-import Welcome from '../components/Welcome.astro';
-import Layout from '../layouts/Layout.astro';
-
-// Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
-// Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
+import Nav from "../components/Nav.svelte";
+import Footer from "../components/Footer.svelte";
+import Hero from "../sections/Hero.svelte";
+import TechStack from "../sections/TechStack.svelte";
+import About from "../sections/About.svelte";
+import WorkExperience from "../sections/WorkExperience.svelte";
+import Projects from "../sections/Projects.svelte";
+import Contact from "../sections/Contact.svelte";
+import "../styles/global.css";
 ---
 
-<Layout>
-	<Welcome />
-</Layout>
+<html lang="en">
+	<head>
+		<title>My Portfolio</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	</head>
+	<body class="bg-gray-900 text-white">
+		<Nav />
+		<Hero />
+		<TechStack />
+		<About />
+		<WorkExperience />
+		<Projects />
+		<Contact />
+		<Footer />
+	</body>
+</html>
