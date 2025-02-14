@@ -12,17 +12,17 @@ import Contact from "../sections/Contact.svelte";
 
 <html lang="en">
 	<head>
-		<title>Developer Portfolio</title>
+		<title>My Developer Portfolio</title>
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 	</head>
 	<body class="bg-gray-900 text-white">
 		<Nav client:load />
 		<Hero client:load />
-		<TechStack client:load />
-		<About client:load />
-		<WorkExperience client:load />
-		<Projects client:load />
-		<Contact client:load />
+		<TechStack client:visible />
+		<About client:visible />
+		<WorkExperience client:idle />
+		<Projects client:idle />
+		<Contact client:idle />
 		<Footer client:load />
 	</body>
 </html>
