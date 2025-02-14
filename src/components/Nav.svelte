@@ -19,7 +19,7 @@
 		<!-- Desktop Nav -->
 		<div class="hidden md:flex space-x-6">
 			<a
-				on:click={() => scrollToSection("Hero")}
+				on:click={() => scrollToSection("Hero")} 
 				class="cursor-pointer text-white hover:text-gray-400">Home</a
 			>
 			<a
@@ -46,6 +46,7 @@
 			on:click={() => (isOpen = !isOpen)}
 		>
 			☰
+			<!-- import svg -->
 		</button>
 	</div>
 
