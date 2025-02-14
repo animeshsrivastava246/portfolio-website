@@ -41,7 +41,8 @@
 		<div class="flex flex-col justify-between items-center">
 			<img
 				src="/assets/avatars/hero.jpg"
-				alt="Profile"
+				alt="Avatar Hero"
+				loading="lazy"
 				class="w-60 h-60 rounded-full border-4 border-primary shadow-lg"
 			/>
 			<code class="text-4xl md:text-6xl text-white">John Doe</code>
