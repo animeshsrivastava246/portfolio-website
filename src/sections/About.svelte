@@ -30,7 +30,7 @@
 		user-friendly experiences.
 	</p>
 
-	<div class="mt-8 flex flex-wrap justify-center gap-6">
+	<!-- <div class="mt-8 flex flex-wrap justify-center gap-6">
 		{#each skills as skill, i}
 			<div
 				bind:this={cardsRef[i]}
@@ -40,5 +40,5 @@
 				<h3 class="text-lg mt-2">{skill.title}</h3>
 			</div>
 		{/each}
-	</div>
+	</div> -->
 </section>

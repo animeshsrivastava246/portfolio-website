@@ -14,7 +14,7 @@
 
 <section id="TechStack" class="py-20 text-center">
 	<h2 class="text-3xl font-bold text-accent">&lt; Languages /&gt;</h2>
-	<div class="flex flex-wrap justify-center gap-6 mt-6">
+	<!-- <div class="flex flex-wrap justify-center gap-6 mt-6">
 		{#each languages as lang}
 			<div
 				class="bg-white/10 backdrop-blur-md px-6 py-4 rounded-lg flex items-center gap-3 shadow-md"
@@ -35,5 +35,5 @@
 				<span class="text-lg">{stack.name}</span>
 			</div>
 		{/each}
-	</div>
+	</div> -->
 </section>

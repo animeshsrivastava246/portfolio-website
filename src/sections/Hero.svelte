@@ -1,11 +1,22 @@
 <script lang="ts">
 	import { onMount } from "svelte";
-	import { fadeIn } from "../animations/gsap";
+	import {
+		fadeIn,
+		slideInLeft,
+		slideInRight,
+		slideInUp,
+	} from "../animations/gsap";
 
 	let heroRef: HTMLElement;
+	let leftRef: HTMLElement;
+	let rightRef: HTMLElement;
+	let btRef: HTMLElement;
 
 	onMount(() => {
 		fadeIn(heroRef);
+		slideInLeft(rightRef);
+		slideInRight(leftRef);
+		slideInUp(btRef);
 	});
 
 	function scrollToElement(id: string) {
@@ -33,7 +44,7 @@
 		class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center max-w-6xl w-3/4 mx-auto"
 	>
 		<!-- Left Side: Image & Name -->
-		<div class="flex flex-col items-center space-y-4">
+		<div bind:this={leftRef} class="flex flex-col items-center space-y-4">
 			<img
 				src="/assets/avatars/hero.jpg"
 				alt="Avatar Hero"
@@ -46,6 +57,7 @@
 
 		<!-- Right Side: Text -->
 		<blockquote
+			bind:this={rightRef}
 			class="text-4xl md:text-6xl font-bold text-white text-left leading-tight"
 		>
 			Lorem ipsum, dolor sit amet consectetur adipisicing elit.
@@ -53,12 +65,15 @@
 	</div>
 
 	<!-- Scroll Button (Fixed at Bottom) -->
-	<button
-		on:click={() => scrollToElement("WorkExperience")}
-		class="absolute cursor-pointer bottom-10 left-1/2 transform -translate-x-1/2 bg-accent p-3 text-lg
-	  border-2 border-amber-50 font-semibold rounded-full hover:bg-white hover:border-amber-50
-	  hover:text-black hover:scale-95 transition duration-300 ease-in-out"
-	>
-		View Projects &#x21E9;
-	</button>
+	<div class="flex justify-center items-end w-full h-full absolute bottom-10">
+		<button
+			bind:this={btRef}
+			on:click={() => scrollToElement("WorkExperience")}
+			class="cursor-pointer bg-accent p-3 text-lg
+			border-2 border-amber-50 font-semibold rounded-full hover:bg-white hover:border-amber-50
+			hover:text-black hover:scale-95 transition duration-300 ease-in-out"
+		>
+			View Projects
+		</button>
+	</div>
 </section>
