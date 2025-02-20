@@ -3,4 +3,5 @@ import tailwindcss from "@tailwindcss/vite";
 
 export default {
 	preprocess: [vitePreprocess(), tailwindcss()],
+	extensions: [".svelte"],
 };
