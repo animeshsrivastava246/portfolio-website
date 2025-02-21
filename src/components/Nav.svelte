@@ -1,6 +1,6 @@
 <script lang="ts">
 	import { onMount } from "svelte";
-	import { slideInUp } from "../animations/gsap";
+	import { fly } from "svelte/transition";
 
 	const menuItems = [
 		{ name: "About", id: "About" },
@@ -16,21 +16,18 @@
 		}
 	};
 
-	// Apply slide-in animation when the component mounts
-	let navRef: HTMLElement;
+	let visible = false;
 
 	onMount(() => {
-		if (navRef) {
-			slideInUp(navRef); // Apply animation to the nav element
-		}
+		visible = true;
 	});
 </script>
-
+{#if visible}
 <nav
-	bind:this={navRef}
+	in:fly={{ y: 100, duration: 2000 }}
 	class="fixed top-4 left-1/2 w-full max-w-3xl
 	bg-white/10 backdrop-blur-lg shadow-lg border-2 border-white/30
-	rounded-[2em] z-50 transition-all duration-300"
+	rounded-[2em] z-100 transition-all duration-300"
 	style="transform: translateX(-50%);" 
 >
 	<div class="mx-auto px-3 flex justify-between items-center h-16">
@@ -68,3 +65,4 @@
 		</a>
 	</div>
 </nav>
+{/if}

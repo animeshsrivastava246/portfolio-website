@@ -1,22 +1,18 @@
 <script lang="ts">
 	import { onMount } from "svelte";
-	import {
-		fadeIn,
-		slideInLeft,
-		slideInRight,
-		slideInUp,
-	} from "../animations/gsap";
+	import { fadeIn, slideInLeft, slideInRight } from "../animations/gsap";
+	import { fade, fly } from "svelte/transition";
 
 	let heroRef: HTMLElement;
 	let leftRef: HTMLElement;
 	let rightRef: HTMLElement;
-	let btRef: HTMLElement;
+	let visible = false;
 
 	onMount(() => {
-		fadeIn(heroRef);
-		slideInLeft(rightRef);
-		slideInRight(leftRef);
-		slideInUp(btRef);
+		fadeIn(heroRef); // Only use GSAP here, not in transition
+		slideInLeft(rightRef); // GSAP slide animation
+		slideInRight(leftRef); // GSAP slide animation
+		visible = true;
 	});
 
 	function scrollToElement(id: string) {
@@ -65,15 +61,16 @@
 	</div>
 
 	<!-- Scroll Button (Fixed at Bottom) -->
-	<div class="flex justify-center items-end w-full h-full absolute bottom-10">
-		<button
-			bind:this={btRef}
-			on:click={() => scrollToElement("WorkExperience")}
-			class="cursor-pointer bg-accent p-3 text-lg
-			border-2 border-amber-50 font-semibold rounded-full hover:bg-white hover:border-amber-50
-			hover:text-black hover:scale-95 transition duration-300 ease-in-out"
-		>
-			View Projects
-		</button>
-	</div>
+	{#if visible}
+		<div class="flex justify-center items-end w-full h-full absolute bottom-10" in:fly={{ y: 200, duration: 2000 }}>
+			<button
+				onclick={() => scrollToElement("WorkExperience")}
+				class="cursor-pointer bg-accent p-3 text-lg
+		  border-2 border-amber-50 font-semibold rounded-full hover:bg-white hover:border-amber-50
+		  hover:text-black hover:scale-95 transition duration-300 ease-in-out"
+			>
+				View Projects
+			</button>
+		</div>
+	{/if}
 </section>
