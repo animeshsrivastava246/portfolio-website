@@ -1,1 +1,4 @@
 @import "tailwindcss";
+
+@import url("./variables.css");
+@import url("./components.css");
