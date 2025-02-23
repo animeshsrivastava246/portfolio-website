@@ -11,10 +11,10 @@
 	});
 
 	let skills = [
-		{ title: "Problem Solving", icon: "/icons/problem-solving.svg" },
-		{ title: "Frontend Development", icon: "/icons/frontend.svg" },
-		{ title: "Backend Development", icon: "/icons/backend.svg" },
-		{ title: "System Design", icon: "/icons/system-design.svg" },
+		{ title: "Problem Solving", icon: "/assets/logos/svg/JavaScript.svg" },
+		{ title: "Frontend Development", icon: "/assets/logos/svg/TypeScript.svg" },
+		{ title: "Backend Development", icon: "/assets/logos/svg/Java.svg" },
+		{ title: "System Design", icon: "/assets/logos/svg/MongoDB.svg" },
 	];
 </script>
 
@@ -30,7 +30,7 @@
 		user-friendly experiences.
 	</p>
 
-	<!-- <div class="mt-8 flex flex-wrap justify-center gap-6">
+	<div class="mt-8 flex flex-wrap justify-center gap-6">
 		{#each skills as skill, i}
 			<div
 				bind:this={cardsRef[i]}
@@ -40,5 +40,5 @@
 				<h3 class="text-lg mt-2">{skill.title}</h3>
 			</div>
 		{/each}
-	</div> -->
+	</div>
 </section>
