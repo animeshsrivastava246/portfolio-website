@@ -21,7 +21,7 @@
 <section
 	id="About"
 	bind:this={aboutRef}
-	class="py-20 text-center bg-orange-500 text-white"
+	class="py-20 text-center bg-pent text-white"
 >
 	<h2 class="text-3xl font-bold">&lt; About /&gt;</h2>
 	<p class="mt-4 text-lg max-w-2xl mx-auto">

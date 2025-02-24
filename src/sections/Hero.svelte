@@ -60,7 +60,7 @@
 		<div class="flex justify-center items-end w-full h-full absolute bottom-10" in:fly={{ y: 200, duration: 500, delay: 1000 }}>
 			<button
 				onclick={() => scrollToElement("WorkExperience")}
-				class="cursor-pointer bg-accent p-3 text-lg border-2 border-amber-50 font-semibold rounded-full hover:bg-white hover:border-amber-50 hover:text-black hover:scale-95 transition duration-300 ease-in-out"
+				class="btn"
 			>
 				View Projects
 			</button>

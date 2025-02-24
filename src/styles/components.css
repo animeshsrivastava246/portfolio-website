@@ -1,0 +1,8 @@
+/* Reusable Button Component */
+.btn {
+	@apply text-xl cursor-pointer px-5 py-2 border-2 border-white/50 text-white font-semibold rounded-full transition-all duration-300 ease-in-out;
+}
+
+.btn:hover {
+	@apply bg-white text-black scale-95;
+}

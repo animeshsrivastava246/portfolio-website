@@ -137,8 +137,7 @@
 			<a
 				href="/resume.pdf"
 				target="_blank"
-				class="text-xl px-5 py-2 border-2 border-white/50 text-white font-semibold
-				rounded-full hover:bg-white hover:text-black hover:scale-95 transition-all duration-300"
+				class="btn"
 			>
 				Resume
 			</a>
