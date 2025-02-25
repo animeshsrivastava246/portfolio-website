@@ -1,6 +1,7 @@
 <script lang="ts">
 	import { onMount } from "svelte";
 	import { fly, fade } from "svelte/transition";
+	import ThemeToggle from "./ThemeToggle.svelte";
 
 	const menuItems = [
 		{ name: "About", id: "About" },
@@ -40,6 +41,7 @@
 					class="w-10 h-10 rounded-full"
 				/>
 			</button>
+			<ThemeToggle />
 
 			<!-- Desktop Navigation -->
 			<ul class="hidden md:flex space-x-6 mx-auto">

@@ -1,8 +1,18 @@
 /* Reusable Button Component */
 .btn {
-	@apply text-xl cursor-pointer px-5 py-2 border-2 border-white/50 text-white font-semibold rounded-full transition-all duration-300 ease-in-out;
+	font-size: 1.25rem; /* Equivalent to text-xl */
+	cursor: pointer;
+	padding: 0.5rem 1.25rem; /* Equivalent to px-5 py-2 */
+	border: 2px solid var(--text-color); /* Uses theme text color */
+	color: var(--text-color);
+	font-weight: 600;
+	border-radius: 9999px; /* Fully rounded */
+	transition: all 0.3s ease-in-out;
 }
 
+/* Hover Effect */
 .btn:hover {
-	@apply bg-white text-black scale-95;
+	background-color: var(--text-color);
+	color: var(--background-color);
+	transform: scale(0.95);
 }

@@ -51,7 +51,7 @@
 			</div>
 
 			<!-- Right Side: Text -->
-			<blockquote in:fly={{ x: 200, duration: 500, delay: 500 }} class="text-4xl md:text-6xl font-bold text-white text-left leading-tight">
+			<blockquote in:fly={{ x: 200, duration: 500, delay: 500 }} class="text-4xl md:text-6xl font-bold text-theme text-left leading-tight">
 				Lorem ipsum, dolor sit amet consectetur adipisicing elit.
 			</blockquote>
 		</div>

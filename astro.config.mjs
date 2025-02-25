@@ -8,5 +8,5 @@ export default defineConfig({
 	vite: {
 		plugins: [tailwindcss()],
 	},
-	integrations: [svelte({extensions: [".svelte"]})],
+	integrations: [svelte({ extensions: [".svelte"] })],
 });
