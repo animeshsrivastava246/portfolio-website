@@ -34,7 +34,7 @@
 <section
 	id="WorkExperience"
 	bind:this={timelineRef}
-	class="py-20 text-center bg-purple-700 text-white"
+	class="section bg-primary"
 >
 	<h2 class="text-3xl font-bold">&lt; Work Experience /&gt;</h2>
 

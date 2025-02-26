@@ -18,11 +18,7 @@
 	];
 </script>
 
-<section
-	id="About"
-	bind:this={aboutRef}
-	class="py-20 text-center bg-pent text-white"
->
+<section id="About" bind:this={aboutRef} class="section bg-primary">
 	<h2 class="text-3xl font-bold">&lt; About /&gt;</h2>
 	<p class="mt-4 text-lg max-w-2xl mx-auto">
 		I'm a software engineer passionate about building high-quality, scalable,

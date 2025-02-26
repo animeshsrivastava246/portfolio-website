@@ -2,7 +2,7 @@
 	// import logos from "/assets/logos/svg";
 </script>
 
-<section id="TechStack" class="my-20 py-20">
+<section id="TechStack" class="section bg-primary">
 	<h2 class="text-7xl font-bold text-center my-10">&lt; Languages /&gt;</h2>
 	<div class="overflow-hidden">
 		<div class="flex animate-scroll">

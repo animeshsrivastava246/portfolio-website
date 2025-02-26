@@ -29,7 +29,7 @@
 	}
 </script>
 
-<section id="Hero" class="section">
+<section id="Hero" class="section bg-secondary">
 	{#if visible}
 		<!-- Content -->
 		<div

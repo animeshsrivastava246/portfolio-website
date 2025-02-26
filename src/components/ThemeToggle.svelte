@@ -19,6 +19,6 @@
     on:click={toggleTheme} 
     class="btn"
   >
-    {isDarkMode ? "Light Mode" : "Dark Mode"}
+    {isDarkMode ? "Night" : "Day"}
   </button>
   

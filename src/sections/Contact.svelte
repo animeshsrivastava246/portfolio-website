@@ -38,7 +38,7 @@
 <section
 	id="Contact"
 	bind:this={contactRef}
-	class="py-20 text-center bg-orange-600 text-white"
+	class="section bg-orange-600"
 >
 	<h2 class="text-3xl font-bold">&lt; Contact /&gt;</h2>
 	<p class="mt-4 text-lg max-w-2xl mx-auto">

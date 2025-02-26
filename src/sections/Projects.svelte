@@ -34,7 +34,7 @@
 	});
 </script>
 
-<section id="Projects" class="py-20 text-center bg-purple-800 text-white">
+<section id="Projects" class="section bg-secondary">
 	<h2 class="text-3xl font-bold">&lt; Projects /&gt;</h2>
 	<p class="mt-4 text-lg max-w-2xl mx-auto">
 		Here are some of my latest projects showcasing my skills and experience.
