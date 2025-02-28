@@ -32,7 +32,7 @@
 		bg-white/10 backdrop-blur-2xl shadow-lg border-2 border-white/30
 		rounded-[2em] z-100"
 	>
-		<div class="mx-auto px-3 flex justify-between items-center h-16">
+		<div class="mx-auto px-3 flex gap-3 justify-between items-center h-16">
 			<!-- Logo -->
 			<button onclick={() => scrollToSection("Hero")} class="cursor-pointer">
 				<img
@@ -43,20 +43,8 @@
 			</button>
 			<ThemeToggle />
 
-			<!-- Desktop Navigation -->
-			<ul class="hidden md:flex space-x-6 mx-auto">
-				{#each menuItems as item}
-					<li>
-						<button
-							onclick={() => scrollToSection(item.id)}
-							class="text-xl hover:text-black rounded-full cursor-pointer
-							transition-all duration-300"
-						>
-							{item.name}
-						</button>
-					</li>
-				{/each}
-			</ul>
+			<!-- Resume Button -->
+			<a href="/resume.pdf" target="_blank" class="btn"> Resume </a>
 
 			<!-- Mobile Hamburger Button -->
 			<button
@@ -135,14 +123,20 @@
 				{/if}
 			</button>
 
-			<!-- Resume Button -->
-			<a
-				href="/resume.pdf"
-				target="_blank"
-				class="btn"
-			>
-				Resume
-			</a>
+			<!-- Desktop Navigation -->
+			<ul class="hidden md:flex space-x-6 mx-4">
+				{#each menuItems as item}
+					<li>
+						<button
+							onclick={() => scrollToSection(item.id)}
+							class="text-xl hover:text-black rounded-full cursor-pointer
+							transition-all duration-300"
+						>
+							{item.name}
+						</button>
+					</li>
+				{/each}
+			</ul>
 		</div>
 	</nav>
 {/if}
