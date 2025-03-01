@@ -122,7 +122,7 @@
 			</button>
 
 			<!-- Desktop Navigation -->
-			<ul class="hidden md:flex space-x-6 mx-4">
+			<ul class="hidden md:flex space-x-6 mx-4 text-theme">
 				{#each menuItems as item}
 					<li>
 						<button

@@ -17,15 +17,15 @@ import Cursor from "../components/Cursor.svelte";
 		<title>My Developer Portfolio</title>
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 	</head>
-	<body class="bg-gray-900 text-white">
-		<Cursor client:idle/>
+	<body>
+		<Cursor client:load/>
 		<Nav client:load />
 		<Hero client:load />
 		<About client:visible />
-		<WorkExperience client:idle />
-		<Projects client:idle />
+		<WorkExperience client:visible />
+		<Projects client:visible />
 		<Contact client:idle />
-		<TechStack client:visible />
+		<TechStack client:idle />
 		<Footer client:load />
 		<ThemeToggle client:idle />
 	</body>

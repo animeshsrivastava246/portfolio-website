@@ -1,4 +1,6 @@
-<footer class="relative flex flex-col items-center justify-center text-center p-6 my-8 bg-black">
+<footer
+	class="relative flex flex-col items-center justify-center text-center p-6 my-8 bg-primary"
+>
 	<p>&copy; {new Date().getFullYear()} DevPortfolio. All rights reserved.</p>
 	<div class="flex justify-center mt-2 space-x-4">
 		<a
