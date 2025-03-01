@@ -3,7 +3,7 @@
 </script>
 
 <section id="TechStack" class="section bg-primary">
-	<h2 class="text-7xl font-bold text-center my-10">&lt; Languages /&gt;</h2>
+	<h2 class="text-3xl font-bold text-center my-10">&lt; Languages /&gt;</h2>
 	<div class="overflow-hidden">
 		<div class="flex animate-scroll">
 			<!-- {#each logos as logo}

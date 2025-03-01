@@ -1,7 +1,6 @@
 <script lang="ts">
 	import { onMount } from "svelte";
 	import { fly, fade } from "svelte/transition";
-	import ThemeToggle from "./ThemeToggle.svelte";
 
 	const menuItems = [
 		{ name: "About", id: "About" },
@@ -32,7 +31,7 @@
 		bg-white/10 backdrop-blur-2xl shadow-lg border-2 border-white/30
 		rounded-[2em] z-100"
 	>
-		<div class="mx-auto px-3 flex gap-3 justify-between items-center h-16">
+		<div class="mx-auto px-3 flex justify-between items-center h-16">
 			<!-- Logo -->
 			<button onclick={() => scrollToSection("Hero")} class="cursor-pointer">
 				<img
@@ -41,7 +40,6 @@
 					class="w-10 h-10 rounded-full"
 				/>
 			</button>
-			<ThemeToggle />
 
 			<!-- Resume Button -->
 			<a href="/resume.pdf" target="_blank" class="btn"> Resume </a>

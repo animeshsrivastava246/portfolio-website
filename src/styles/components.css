@@ -19,4 +19,50 @@
 
 .section {
 	@apply relative min-h-screen flex flex-col items-center justify-center text-center p-6 my-8;
+	scroll-snap-type: y mandatory;
+}
+
+/* Default cursor hidden */
+* {
+	cursor: none;
+}
+
+/* Custom Cursor */
+.cursor,
+.cursor-trail {
+	position: fixed;
+	border-radius: 50%;
+	pointer-events: none;
+	transform: translate(-50%, -50%);
+	z-index: 9999;
+}
+
+/* Main cursor */
+.cursor {
+	width: 12px;
+	height: 12px;
+	background-color: var(--text-color);
+	transition: width 0.2s ease, height 0.2s ease, background-color 0.3s ease;
+}
+
+/* Cursor trail */
+.cursor-trail {
+	width: 20px;
+	height: 20px;
+	border: 2px solid var(--text-color);
+	opacity: 0.5;
+}
+
+/* Hover effects */
+.cursor.hover {
+	width: 32px;
+	height: 32px;
+	background-color: var(--accent-color);
+	opacity: 0.7;
+}
+
+.cursor-trail.hover {
+	width: 48px;
+	height: 48px;
+	opacity: 0.3;
 }
