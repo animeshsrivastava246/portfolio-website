@@ -141,9 +141,6 @@
 
 <!-- Mobile Menu -->
 {#if isMobileMenuOpen}
-	<!-- fixed top-4 left-1/2 w-full max-w-3xl transform -translate-x-[50%]
-	bg-white/10 backdrop-blur-lg shadow-lg border-2 border-white/30
-	rounded-[2em] z-100 -->
 	<nav
 		class="md:hidden fixed top-22 left-1/2 w-full transform -translate-x-[50%]
 			bg-white/10 backdrop-blur-2xl shadow-lg border-2 border-white/30
@@ -159,7 +156,7 @@
 							scrollToSection(item.id);
 							isMobileMenuOpen = false; // close menu after click
 						}}
-						class="text-xl text-white hover:text-black rounded-full cursor-pointer
+						class="text-xl text-theme hover:text-black rounded-full cursor-pointer
 							transition-all duration-500"
 					>
 						{item.name}
