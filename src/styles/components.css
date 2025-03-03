@@ -66,3 +66,9 @@
 	height: 48px;
 	opacity: 0.3;
 }
+
+
+/* Text */
+h2 {
+	font-size: 2.5rem;
+}
