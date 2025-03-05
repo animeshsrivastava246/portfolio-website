@@ -22,6 +22,8 @@
 }
 
 /* Text */
-h2 {
+.section h2 {
+	text-decoration: underline;
+	text-underline-offset: 0.5rem;
 	font-size: 2.5rem;
 }
