@@ -10,11 +10,12 @@ import Projects from "../sections/Projects.svelte";
 import Contact from "../sections/Contact.svelte";
 import ThemeToggle from "../components/ThemeToggle.svelte";
 import Cursor from "../components/Cursor.svelte";
+import data from "../data/data.json";
 ---
 
 <html lang="en">
 	<head>
-		<title>My Developer Portfolio</title>
+		<title>{data.info.name}</title>
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 	</head>
 	<body>

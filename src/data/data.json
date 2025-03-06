@@ -1,0 +1,12 @@
+{
+	"projects": {
+		"title": "Portfolio Website",
+		"description": "A portfolio website built with Astro and Svelte."
+	},
+	"info": {
+		"name": "John Doe",
+		"github": "https://github.com/johndoe",
+		"linkedin": "https://www.linkedin.com/in/johndoe",
+		"email": "https://mail.google.com/"
+	}
+}
