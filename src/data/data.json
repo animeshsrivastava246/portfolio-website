@@ -8,5 +8,15 @@
 		"github": "https://github.com/johndoe",
 		"linkedin": "https://www.linkedin.com/in/johndoe",
 		"email": "https://mail.google.com/"
+	},
+	"skills": {
+		"Frontend Development": "/assets/logos/svg/TypeScript.svg" ,
+		"Backend Development": "/assets/logos/svg/Java.svg" ,
+		"System Design": "/assets/logos/svg/MongoDB.svg" ,
+		"Database Management": "/assets/logos/svg/MySQL.svg" ,
+		"Version Control": "/assets/logos/svg/Git.svg" ,
+		"Cloud Computing": "/assets/logos/svg/AWS.svg" ,
+		"Machine Learning": "/assets/logos/svg/Python.svg" ,
+		"UI/UX Design": "/assets/logos/svg/Figma.svg" 
 	}
 }

@@ -1,6 +1,7 @@
 <script lang="ts">
 	import { onMount } from "svelte";
 	import { fadeIn } from "../animations/gsap";
+	import data from "../data/data.json";
 
 	let aboutRef: HTMLElement;
 	let cardsRef: HTMLElement[] = [];
@@ -10,31 +11,57 @@
 		cardsRef.forEach((el) => fadeIn(el));
 	});
 
-	let skills = [
-		{ title: "Problem Solving", icon: "/assets/logos/svg/JavaScript.svg" },
-		{ title: "Frontend Development", icon: "/assets/logos/svg/TypeScript.svg" },
-		{ title: "Backend Development", icon: "/assets/logos/svg/Java.svg" },
-		{ title: "System Design", icon: "/assets/logos/svg/MongoDB.svg" },
-	];
+	let skills = Object.entries(data.skills).map(([title, icon]) => ({
+		title,
+		icon,
+	}));
 </script>
 
-<section id="About" bind:this={aboutRef} class="section bg-primary">
-	<h2 class="text-3xl font-bold">&lt; About /&gt;</h2>
-	<p class="mt-4 text-lg max-w-2xl mx-auto">
-		I'm a software engineer passionate about building high-quality, scalable,
-		and efficient applications. I enjoy solving complex problems and crafting
-		user-friendly experiences.
-	</p>
+<section
+	id="About"
+	bind:this={aboutRef}
+	class="section bg-theme text-theme py-20 px-6 md:px-12"
+>
+	<div class="max-w-6xl mx-auto flex flex-col md:flex-row items-start gap-12">
+		<!-- Left Side: About Text -->
+		<div class="md:w-1/2">
+			<h2 class="text-5xl font-bold text-primary tracking-wide leading-tight">
+				&lt; About Me /&gt;
+			</h2>
+			<p class="mt-6 text-lg text-secondary leading-relaxed">
+				I'm a software engineer passionate about crafting high-quality,
+				scalable, and efficient applications. I thrive on solving complex
+				problems and designing user-centric interfaces that blend functionality
+				with aesthetics.
+			</p>
+			<p class="mt-4 text-lg text-secondary leading-relaxed">
+				With expertise in full-stack development, I enjoy creating seamless
+				digital experiences using modern web technologies and interactive
+				animations.
+			</p>
+		</div>
 
-	<div class="mt-8 flex flex-wrap justify-center gap-6">
-		{#each skills as skill, i}
-			<div
-				bind:this={cardsRef[i]}
-				class="bg-purple-600 px-6 py-4 rounded-lg shadow-md w-44"
-			>
-				<img src={skill.icon} alt={skill.title} class="w-10 h-10 mx-auto" />
-				<h3 class="text-lg mt-2">{skill.title}</h3>
-			</div>
-		{/each}
+		<!-- Right Side: Skills Grid -->
+		<div class="grid grid-cols-2 sm:grid-cols-3 gap-6 md:w-1/2">
+			{#each skills as skill, i}
+				<div
+					bind:this={cardsRef[i]}
+					class="relative bg-primary p-4 rounded-2xl shadow-lg flex flex-col items-center gap-3
+					transition-all duration-300 hover:scale-105 hover:shadow-2xl transform hover:-translate-y-2"
+				>
+					<div
+						class="relative w-16 h-16 flex items-center justify-center rounded-xl bg-white bg-opacity-10 shadow-md"
+					>
+						<img src={skill.icon} alt={skill.title} class="w-10 h-10" />
+					</div>
+					<h3
+						class="text-lg font-semibold text-white text-center tracking-wide"
+					>
+						{skill.title}
+					</h3>
+					<div class="absolute inset-0 bg-white opacity-5 rounded-2xl"></div>
+				</div>
+			{/each}
+		</div>
 	</div>
 </section>
