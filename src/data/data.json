@@ -10,13 +10,27 @@
 		"email": "https://mail.google.com/"
 	},
 	"skills": {
-		"Frontend Development": "/assets/logos/svg/TypeScript.svg" ,
-		"Backend Development": "/assets/logos/svg/Java.svg" ,
-		"System Design": "/assets/logos/svg/MongoDB.svg" ,
-		"Database Management": "/assets/logos/svg/MySQL.svg" ,
-		"Version Control": "/assets/logos/svg/Git.svg" ,
-		"Cloud Computing": "/assets/logos/svg/AWS.svg" ,
-		"Machine Learning": "/assets/logos/svg/Python.svg" ,
-		"UI/UX Design": "/assets/logos/svg/Figma.svg" 
-	}
+		"Frontend Development": "/assets/logos/svg/TypeScript.svg",
+		"Backend Development": "/assets/logos/svg/Java.svg",
+		"System Design": "/assets/logos/svg/MongoDB.svg",
+		"Database Management": "/assets/logos/svg/MySQL.svg",
+		"Version Control": "/assets/logos/svg/Git.svg",
+		"Cloud Computing": "/assets/logos/svg/AWS.svg",
+		"Machine Learning": "/assets/logos/svg/Python.svg",
+		"UI/UX Design": "/assets/logos/svg/Figma.svg"
+	},
+	"experience": [
+		{
+			"title": "Software Engineer",
+			"company": "Company A",
+			"duration": "Jan 2023 - Present",
+			"description": "Developed scalable web applications using modern frameworks."
+		},
+		{
+			"title": "Frontend Developer",
+			"company": "Company B",
+			"duration": "Aug 2021 - Dec 2022",
+			"description": "Built responsive UI components and improved performance."
+		}
+	]
 }

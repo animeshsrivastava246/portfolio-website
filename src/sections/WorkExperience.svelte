@@ -2,25 +2,17 @@
 	import { onMount } from "svelte";
 	import { fadeIn } from "../animations/gsap";
 	import { applyTilt } from "../utils/tilt";
+	import data from "../data/data.json";
 
 	let timelineRef: HTMLElement;
 	let itemsRef: HTMLElement[] = [];
 
-	let experiences = [
-		{
-			title: "Software Engineer",
-			company: "Company A",
-			duration: "Jan 2023 - Present",
-			description:
-				"Developed scalable web applications using modern frameworks.",
-		},
-		{
-			title: "Frontend Developer",
-			company: "Company B",
-			duration: "Aug 2021 - Dec 2022",
-			description: "Built responsive UI components and improved performance.",
-		},
-	];
+	let experiences = data.experience.map((item) => ({
+		title: item.title,
+		company: item.company,
+		duration: item.duration,
+		description: item.description,
+	}));
 
 	onMount(() => {
 		fadeIn(timelineRef);
@@ -31,11 +23,7 @@
 	});
 </script>
 
-<section
-	id="WorkExperience"
-	bind:this={timelineRef}
-	class="section bg-primary"
->
+<section id="WorkExperience" bind:this={timelineRef} class="section bg-primary">
 	<h2 class="text-3xl font-bold">&lt; Work Experience /&gt;</h2>
 
 	<div class="relative mt-10 max-w-3xl mx-auto">
