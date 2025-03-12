@@ -31,6 +31,18 @@
 			"company": "Company B",
 			"duration": "Aug 2021 - Dec 2022",
 			"description": "Built responsive UI components and improved performance."
+		},
+		{
+			"title": "Software Engineer",
+			"company": "Company C",
+			"duration": "Jan 2023 - Present",
+			"description": "Developed scalable web applications using modern frameworks."
+		},
+		{
+			"title": "Frontend Developer",
+			"company": "Company D",
+			"duration": "Aug 2021 - Dec 2022",
+			"description": "Built responsive UI components and improved performance."
 		}
 	]
 }

@@ -7,13 +7,6 @@
 	let timelineRef: HTMLElement;
 	let itemsRef: HTMLElement[] = [];
 
-	let experiences = data.experience.map((item) => ({
-		title: item.title,
-		company: item.company,
-		duration: item.duration,
-		description: item.description,
-	}));
-
 	onMount(() => {
 		fadeIn(timelineRef);
 		itemsRef.forEach((el) => {
@@ -23,33 +16,29 @@
 	});
 </script>
 
-<section id="WorkExperience" bind:this={timelineRef} class="section bg-primary">
-	<h2 class="text-3xl font-bold">&lt; Work Experience /&gt;</h2>
+<section id="WorkExperience" bind:this={timelineRef} class="bg-theme py-20 px-6 md:px-12">
+	<div class="max-w-5xl mx-auto">
+		<!-- Section Title -->
+		<h2 class="text-5xl font-bold text-accent tracking-wide text-left leading-tight">
+			&lt; Work Experience /&gt;
+		</h2>
 
-	<div class="relative mt-10 max-w-3xl mx-auto">
-		<div
-			class="absolute left-1/2 transform -translate-x-1/2 w-1 bg-white h-full"
-		></div>
+		<!-- Timeline -->
+		<div class="relative mt-12 border-l-4 border-accent border-opacity-50 pl-8 space-y-10">
+			{#each data.experience as exp, i}
+				<div bind:this={itemsRef[i]} class="relative group">
+					<!-- Glowing Dot -->
+					<div class="absolute -left-6 w-5 h-5 bg-accent border-4 border-background rounded-full transition-transform duration-300 group-hover:scale-125"></div>
 
-		{#each experiences as exp, i}
-			<div
-				bind:this={itemsRef[i]}
-				class="relative flex items-center mb-10"
-				class:justify-start={i % 2 === 0}
-				class:justify-end={i % 2 !== 0}
-			>
-				<div
-					class="bg-white text-black p-6 rounded-lg shadow-lg w-64 transition-transform duration-300 hover:shadow-xl"
-				>
-					<h3 class="text-xl font-bold">{exp.title}</h3>
-					<p class="text-sm text-gray-600">{exp.company}</p>
-					<p class="text-sm font-medium mt-1">{exp.duration}</p>
-					<p class="text-sm mt-2">{exp.description}</p>
+					<!-- Experience Card -->
+					<div class="bg-primary bg-opacity-10 backdrop-blur-md p-6 rounded-xl shadow-md border border-accent border-opacity-40 transition-all duration-300 group-hover:scale-[1.02]">
+						<h3 class="text-2xl font-semibold text-secondary">{exp.title}</h3>
+						<p class="text-md text-accent font-medium">{exp.company}</p>
+						<p class="text-sm text-gray-400 mt-1">{exp.duration}</p>
+						<p class="text-md text-theme mt-3 leading-relaxed">{exp.description}</p>
+					</div>
 				</div>
-				<div
-					class="w-4 h-4 bg-red-500 rounded-full absolute left-1/2 transform -translate-x-1/2"
-				></div>
-			</div>
-		{/each}
+			{/each}
+		</div>
 	</div>
 </section>
