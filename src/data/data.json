@@ -1,8 +1,4 @@
 {
-	"projects": {
-		"title": "Portfolio Website",
-		"description": "A portfolio website built with Astro and Svelte."
-	},
 	"info": {
 		"name": "John Doe",
 		"github": "https://github.com/johndoe",
@@ -43,6 +39,26 @@
 			"company": "Company D",
 			"duration": "Aug 2021 - Dec 2022",
 			"description": "Built responsive UI components and improved performance."
+		}
+	],
+	"projects": [
+		{
+			"title": "Portfolio Website",
+			"description": "Built with Astro, Svelte, Tailwind, and GSAP animations.",
+			"github": "https://github.com/yourrepo",
+			"live": "https://yourportfolio.com"
+		},
+		{
+			"title": "E-commerce App",
+			"description": "Full-stack application with Firebase backend.",
+			"github": "https://github.com/yourecommerce",
+			"live": "https://ecommerce.com"
+		},
+		{
+			"title": "AI Chatbot",
+			"description": "Built with OpenAI API for intelligent conversations.",
+			"github": "https://github.com/yourchatbot",
+			"live": "https://chatbot.com"
 		}
 	]
 }
