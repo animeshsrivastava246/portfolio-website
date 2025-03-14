@@ -10,12 +10,33 @@
 	white-space: nowrap;
 }
 
-/* Hover Effect */
-.btn:hover {
-	background-color: var(--text-color);
-	color: var(--background-color);
-	transform: scale(0.95);
+/* Button Styles */
+.btn {
+	background: linear-gradient(to right, var(--primary-color), var(--secondary-color));
+	box-shadow: 0px 0px 12px rgba(255, 255, 255, 0.2);
+	position: relative;
+	overflow: hidden;
 }
+
+/* Button Hover */
+.btn:hover {
+	background: var(--text-color);
+	color: var(--background-color);
+	transform: scale(1.05);
+	box-shadow: 0px 0px 20px var(--accent-color);
+}
+
+/* Glowing Border Animation */
+@keyframes neon-glow {
+	0% { box-shadow: 0 0 10px var(--accent-color); }
+	50% { box-shadow: 0 0 20px var(--accent-color); }
+	100% { box-shadow: 0 0 10px var(--accent-color); }
+}
+
+.animate-glow {
+	animation: neon-glow 2s infinite alternate;
+}
+
 
 .section {
 	@apply relative min-h-screen flex flex-col items-center justify-center text-center p-6 my-8;
