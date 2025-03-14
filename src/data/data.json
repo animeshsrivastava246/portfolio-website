@@ -60,5 +60,30 @@
 			"github": "https://github.com/yourchatbot",
 			"live": "https://chatbot.com"
 		}
+	],
+	"socialLinks": [
+		{
+			"name": "GitHub",
+			"url": "https://github.com/yourgithub",
+			"icon": "/assets/logos/svg/GitHub.svg"
+		},
+		{
+			"name": "LinkedIn",
+			"url": "https://linkedin.com/in/yourprofile",
+			"icon": "/assets/logos/svg/LinkedIn.svg"
+		},
+		{
+			"name": "Gmail",
+			"url": "mailto:your.email@example.com",
+			"icon": "/assets/logos/svg/Gmail.svg"
+		}
+	],
+	"sections": [
+		{ "name": "Home", "id": "Hero" },
+		{ "name": "About", "id": "About" },
+		{ "name": "Skills", "id": "TechStack" },
+		{ "name": "Experience", "id": "WorkExperience" },
+		{ "name": "Projects", "id": "Projects" },
+		{ "name": "Contact", "id": "Contact" }
 	]
 }
