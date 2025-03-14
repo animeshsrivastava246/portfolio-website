@@ -7,6 +7,7 @@
 	font-weight: 600;
 	border-radius: 9999px; /* Fully rounded */
 	transition: all 0.3s ease-in-out;
+	white-space: nowrap;
 }
 
 /* Hover Effect */

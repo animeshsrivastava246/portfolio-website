@@ -1,12 +1,12 @@
 import VanillaTilt from "vanilla-tilt";
 
-export const applyTilt = (element: HTMLElement) => {
-    if (element) {
-        VanillaTilt.init(element, {
-            max: 15,      // Max tilt rotation
-            speed: 300,   // Transition speed
-            glare: true,  // Adds reflection glare
-            "max-glare": 0.5, // Glare intensity
-        });
-    }
-};
+export function applyTilt(el: HTMLElement) {
+	if (el) {
+		VanillaTilt.init(el, {
+			max: 15,
+			speed: 400,
+			glare: true,
+			"max-glare": 0.2,
+		});
+	}
+}

@@ -2,76 +2,88 @@
 	import { onMount } from "svelte";
 	import { applyTilt } from "../utils/tilt";
 	import { fly } from "svelte/transition";
-	import data from "../data/data.json";
-	import { fadeIn } from "../animations/gsap";
+	import rawData from "../data/data.json";
 
+	type Project = {
+		title: string;
+		description: string;
+		github: string;
+		live: string;
+	};
+
+	let isVisible = false;
 	let projectRefs: HTMLElement[] = [];
+	let projects: Project[] = [];
 
-	onMount(() => {
-		projectRefs.forEach((el) => {
-			// fadeIn(el);
-			fly(el, { y: 500, duration: 500, delay: 1500 });
-			applyTilt(el);
-		});
-	});
+	const fetchProjects = async () => {
+		await new Promise((res) => setTimeout(res, 100));
+		projects = rawData.projects as Project[];
+	};
+
+	const initObserver = () => {
+		const section = document.getElementById("Projects");
+		if (!section) return;
+
+		const observer = new IntersectionObserver((entries) => {
+			if (entries[0].isIntersecting && !isVisible) {
+				observer.disconnect();
+				showProjects();
+			}
+		}, { threshold: 0.3 });
+
+		observer.observe(section);
+	};
+
+	const showProjects = async () => {
+		isVisible = true;
+		await fetchProjects();
+
+		setTimeout(() => {
+			projectRefs.forEach((el) => el && applyTilt(el));
+		}, 600);
+	};
+
+	onMount(initObserver);
 </script>
 
-<section
-	id="Projects"
-	class="section bg-theme py-20 px-6 md:px-12"
->
-		<div class="max-w-6xl mx-auto">
-			<!-- Section Title -->
-			<h2
-				class="text-5xl font-bold text-accent tracking-wide text-left leading-tight"
-			>
-				&lt; Projects /&gt;
-			</h2>
-			<p class="mt-4 text-lg text-secondary max-w-2xl">
-				Explore my latest projects that showcase my skills in building
-				efficient, scalable, and visually stunning applications.
-			</p>
+<section id="Projects" class="section bg-theme py-20 px-6 md:px-12">
+	<div class="max-w-6xl mx-auto text-center">
+		<h2 class="text-5xl font-extrabold text-[var(--accent-color)] tracking-wide mb-4">
+			&lt; Projects /&gt;
+		</h2>
+		<p class="text-lg text-[var(--text-color)] max-w-2xl mx-auto">
+			A curated collection of projects showcasing my expertise in design, development, and interactivity.
+		</p>
 
-			<!-- Project Grid -->
-			<div class="mt-12 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10">
-				{#each data.projects as project, i}
+		{#if isVisible}
+			<div in:fly={{ x: -500, duration: 500 }} class="mt-12 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+				{#each projects as project, i}
 					<div
 						bind:this={projectRefs[i]}
-						
-						class="relative bg-primary bg-opacity-10 backdrop-blur-md p-6 rounded-2xl shadow-lg border border-accent border-opacity-40
-						hover:shadow-accent group"
+						class="relative backdrop-blur-md p-6 rounded-2xl shadow-lg border border-[var(--accent-color)]/40
+						hover:shadow-2xl hover:scale-[1.05] hover:brightness-125 transition-transform duration-300"
+						style="background: linear-gradient(to bottom right, var(--primary-color), var(--secondary-color))"
 					>
-						<!-- Project Title -->
-						<h3 class="text-2xl font-semibold text-secondary">
-							{project.title}
-						</h3>
+						<div class="absolute inset-0 bg-black/10 rounded-2xl pointer-events-none"></div>
 
-						<!-- Description -->
-						<p class="mt-3 text-md text-theme leading-relaxed">
-							{project.description}
-						</p>
+						<div class="relative z-10 text-left">
+							<h3 class="text-2xl font-semibold text-[var(--accent-color)]">{project.title}</h3>
+							<p class="mt-3 text-md text-[var(--text-color)] leading-relaxed">{project.description}</p>
 
-						<!-- Buttons -->
-						<div class="mt-6 flex gap-4">
-							<a
-								href={project.github}
-								target="_blank"
-								class="flex-1 text-center px-4 py-2 rounded-lg font-medium border border-secondary text-secondary
-						transition-all duration-300 hover:bg-secondary hover:text-black"
-							>
-								GitHub
-							</a>
-							<a
-								href={project.live}
-								target="_blank"
-								class="flex-1 text-center px-4 py-2 rounded-lg font-medium border border-accent text-accent
-					transition-all duration-300 hover:bg-accent hover:text-black"
-							>
-								Live Demo
-							</a>
+							<div class="mt-6 flex gap-4">
+								<button onclick={() => window.open(project.github, '_blank')}
+									class="btn scale-90">
+									GitHub
+								</button>
+								<button onclick={() => window.open(project.live, '_blank')}
+									class="btn scale-90">
+									Live Demo
+								</button>
+							</div>
 						</div>
 					</div>
 				{/each}
 			</div>
-		</div>
+		{/if}
+	</div>
 </section>
