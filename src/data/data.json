@@ -85,5 +85,1707 @@
 		{ "name": "Experience", "id": "WorkExperience" },
 		{ "name": "Projects", "id": "Projects" },
 		{ "name": "Contact", "id": "Contact" }
+	],
+	"skillsList": [
+		{
+			"name": ".NET-core.svg",
+			"path": "assets\\logos\\svg\\.NET-core.svg"
+		},
+		{
+			"name": ".NET.svg",
+			"path": "assets\\logos\\svg\\.NET.svg"
+		},
+		{
+			"name": "AArch64.svg",
+			"path": "assets\\logos\\svg\\AArch64.svg"
+		},
+		{
+			"name": "Adobe-Commerce-(Magneto).svg",
+			"path": "assets\\logos\\svg\\Adobe-Commerce-(Magneto).svg"
+		},
+		{
+			"name": "Adobe-Illustrator.svg",
+			"path": "assets\\logos\\svg\\Adobe-Illustrator.svg"
+		},
+		{
+			"name": "Adobe-Photoshop.svg",
+			"path": "assets\\logos\\svg\\Adobe-Photoshop.svg"
+		},
+		{
+			"name": "Adobe-Premiere-Pro.svg",
+			"path": "assets\\logos\\svg\\Adobe-Premiere-Pro.svg"
+		},
+		{
+			"name": "Adobe-XD.svg",
+			"path": "assets\\logos\\svg\\Adobe-XD.svg"
+		},
+		{
+			"name": "AdonisJS.svg",
+			"path": "assets\\logos\\svg\\AdonisJS.svg"
+		},
+		{
+			"name": "After-Effects.svg",
+			"path": "assets\\logos\\svg\\After-Effects.svg"
+		},
+		{
+			"name": "Akka.svg",
+			"path": "assets\\logos\\svg\\Akka.svg"
+		},
+		{
+			"name": "Algolia.svg",
+			"path": "assets\\logos\\svg\\Algolia.svg"
+		},
+		{
+			"name": "Alpine.js.svg",
+			"path": "assets\\logos\\svg\\Alpine.js.svg"
+		},
+		{
+			"name": "Anaconda.svg",
+			"path": "assets\\logos\\svg\\Anaconda.svg"
+		},
+		{
+			"name": "Android-Studio.svg",
+			"path": "assets\\logos\\svg\\Android-Studio.svg"
+		},
+		{
+			"name": "Android.svg",
+			"path": "assets\\logos\\svg\\Android.svg"
+		},
+		{
+			"name": "Angular.svg",
+			"path": "assets\\logos\\svg\\Angular.svg"
+		},
+		{
+			"name": "AngularJS.svg",
+			"path": "assets\\logos\\svg\\AngularJS.svg"
+		},
+		{
+			"name": "Ansible.svg",
+			"path": "assets\\logos\\svg\\Ansible.svg"
+		},
+		{
+			"name": "Ant-Design.svg",
+			"path": "assets\\logos\\svg\\Ant-Design.svg"
+		},
+		{
+			"name": "Apache-Airflow.svg",
+			"path": "assets\\logos\\svg\\Apache-Airflow.svg"
+		},
+		{
+			"name": "Apache-Cassandra.svg",
+			"path": "assets\\logos\\svg\\Apache-Cassandra.svg"
+		},
+		{
+			"name": "Apache-Groovy.svg",
+			"path": "assets\\logos\\svg\\Apache-Groovy.svg"
+		},
+		{
+			"name": "Apache-Hadoop.svg",
+			"path": "assets\\logos\\svg\\Apache-Hadoop.svg"
+		},
+		{
+			"name": "Apache-Kafka.svg",
+			"path": "assets\\logos\\svg\\Apache-Kafka.svg"
+		},
+		{
+			"name": "Apache-Maven.svg",
+			"path": "assets\\logos\\svg\\Apache-Maven.svg"
+		},
+		{
+			"name": "Apache-Spark.svg",
+			"path": "assets\\logos\\svg\\Apache-Spark.svg"
+		},
+		{
+			"name": "Apache-Subversion.svg",
+			"path": "assets\\logos\\svg\\Apache-Subversion.svg"
+		},
+		{
+			"name": "Apache-Tomcat.svg",
+			"path": "assets\\logos\\svg\\Apache-Tomcat.svg"
+		},
+		{
+			"name": "Apache.svg",
+			"path": "assets\\logos\\svg\\Apache.svg"
+		},
+		{
+			"name": "APL.svg",
+			"path": "assets\\logos\\svg\\APL.svg"
+		},
+		{
+			"name": "Appcelerator.svg",
+			"path": "assets\\logos\\svg\\Appcelerator.svg"
+		},
+		{
+			"name": "Apple-Safari.svg",
+			"path": "assets\\logos\\svg\\Apple-Safari.svg"
+		},
+		{
+			"name": "Apple.svg",
+			"path": "assets\\logos\\svg\\Apple.svg"
+		},
+		{
+			"name": "Appwrite.svg",
+			"path": "assets\\logos\\svg\\Appwrite.svg"
+		},
+		{
+			"name": "Arch-Linux.svg",
+			"path": "assets\\logos\\svg\\Arch-Linux.svg"
+		},
+		{
+			"name": "Arduino.svg",
+			"path": "assets\\logos\\svg\\Arduino.svg"
+		},
+		{
+			"name": "Argo-CD.svg",
+			"path": "assets\\logos\\svg\\Argo-CD.svg"
+		},
+		{
+			"name": "Astro.svg",
+			"path": "assets\\logos\\svg\\Astro.svg"
+		},
+		{
+			"name": "Atom.svg",
+			"path": "assets\\logos\\svg\\Atom.svg"
+		},
+		{
+			"name": "Autodesk-Maya.svg",
+			"path": "assets\\logos\\svg\\Autodesk-Maya.svg"
+		},
+		{
+			"name": "Autodesk-ShotGrid.svg",
+			"path": "assets\\logos\\svg\\Autodesk-ShotGrid.svg"
+		},
+		{
+			"name": "Awk.svg",
+			"path": "assets\\logos\\svg\\Awk.svg"
+		},
+		{
+			"name": "AWS.svg",
+			"path": "assets\\logos\\svg\\AWS.svg"
+		},
+		{
+			"name": "Azios.svg",
+			"path": "assets\\logos\\svg\\Azios.svg"
+		},
+		{
+			"name": "Azure-Devops.svg",
+			"path": "assets\\logos\\svg\\Azure-Devops.svg"
+		},
+		{
+			"name": "Azure-SQL-Database.svg",
+			"path": "assets\\logos\\svg\\Azure-SQL-Database.svg"
+		},
+		{
+			"name": "Azure.svg",
+			"path": "assets\\logos\\svg\\Azure.svg"
+		},
+		{
+			"name": "Babel.svg",
+			"path": "assets\\logos\\svg\\Babel.svg"
+		},
+		{
+			"name": "Backbone.js.svg",
+			"path": "assets\\logos\\svg\\Backbone.js.svg"
+		},
+		{
+			"name": "Ballerina.svg",
+			"path": "assets\\logos\\svg\\Ballerina.svg"
+		},
+		{
+			"name": "Bamboo.svg",
+			"path": "assets\\logos\\svg\\Bamboo.svg"
+		},
+		{
+			"name": "Bash.svg",
+			"path": "assets\\logos\\svg\\Bash.svg"
+		},
+		{
+			"name": "Behance.svg",
+			"path": "assets\\logos\\svg\\Behance.svg"
+		},
+		{
+			"name": "BitBucket.svg",
+			"path": "assets\\logos\\svg\\BitBucket.svg"
+		},
+		{
+			"name": "Blender.svg",
+			"path": "assets\\logos\\svg\\Blender.svg"
+		},
+		{
+			"name": "Bootstrap.svg",
+			"path": "assets\\logos\\svg\\Bootstrap.svg"
+		},
+		{
+			"name": "Bower.svg",
+			"path": "assets\\logos\\svg\\Bower.svg"
+		},
+		{
+			"name": "BrowserStack.svg",
+			"path": "assets\\logos\\svg\\BrowserStack.svg"
+		},
+		{
+			"name": "Bulma.svg",
+			"path": "assets\\logos\\svg\\Bulma.svg"
+		},
+		{
+			"name": "Bun.svg",
+			"path": "assets\\logos\\svg\\Bun.svg"
+		},
+		{
+			"name": "C++-(CPlusPlus).svg",
+			"path": "assets\\logos\\svg\\C++-(CPlusPlus).svg"
+		},
+		{
+			"name": "C.svg",
+			"path": "assets\\logos\\svg\\C.svg"
+		},
+		{
+			"name": "Cairo-Graphics.svg",
+			"path": "assets\\logos\\svg\\Cairo-Graphics.svg"
+		},
+		{
+			"name": "CakePHP.svg",
+			"path": "assets\\logos\\svg\\CakePHP.svg"
+		},
+		{
+			"name": "Canva.svg",
+			"path": "assets\\logos\\svg\\Canva.svg"
+		},
+		{
+			"name": "Capacitor.svg",
+			"path": "assets\\logos\\svg\\Capacitor.svg"
+		},
+		{
+			"name": "CentOS.svg",
+			"path": "assets\\logos\\svg\\CentOS.svg"
+		},
+		{
+			"name": "Chrome.svg",
+			"path": "assets\\logos\\svg\\Chrome.svg"
+		},
+		{
+			"name": "CircleCI.svg",
+			"path": "assets\\logos\\svg\\CircleCI.svg"
+		},
+		{
+			"name": "Clarity.svg",
+			"path": "assets\\logos\\svg\\Clarity.svg"
+		},
+		{
+			"name": "CLion.svg",
+			"path": "assets\\logos\\svg\\CLion.svg"
+		},
+		{
+			"name": "Clojure.svg",
+			"path": "assets\\logos\\svg\\Clojure.svg"
+		},
+		{
+			"name": "ClojureScript.svg",
+			"path": "assets\\logos\\svg\\ClojureScript.svg"
+		},
+		{
+			"name": "Cloudflare-Workers.svg",
+			"path": "assets\\logos\\svg\\Cloudflare-Workers.svg"
+		},
+		{
+			"name": "Cloudflare.svg",
+			"path": "assets\\logos\\svg\\Cloudflare.svg"
+		},
+		{
+			"name": "CMake.svg",
+			"path": "assets\\logos\\svg\\CMake.svg"
+		},
+		{
+			"name": "Codeac.svg",
+			"path": "assets\\logos\\svg\\Codeac.svg"
+		},
+		{
+			"name": "Codecov.svg",
+			"path": "assets\\logos\\svg\\Codecov.svg"
+		},
+		{
+			"name": "CodeIgniter.svg",
+			"path": "assets\\logos\\svg\\CodeIgniter.svg"
+		},
+		{
+			"name": "CodePen.svg",
+			"path": "assets\\logos\\svg\\CodePen.svg"
+		},
+		{
+			"name": "CoffeeScript.svg",
+			"path": "assets\\logos\\svg\\CoffeeScript.svg"
+		},
+		{
+			"name": "Composer.svg",
+			"path": "assets\\logos\\svg\\Composer.svg"
+		},
+		{
+			"name": "Confluence.svg",
+			"path": "assets\\logos\\svg\\Confluence.svg"
+		},
+		{
+			"name": "Consul.svg",
+			"path": "assets\\logos\\svg\\Consul.svg"
+		},
+		{
+			"name": "Contao.svg",
+			"path": "assets\\logos\\svg\\Contao.svg"
+		},
+		{
+			"name": "Core-js.svg",
+			"path": "assets\\logos\\svg\\Core-js.svg"
+		},
+		{
+			"name": "Cosmos-BD.svg",
+			"path": "assets\\logos\\svg\\Cosmos-BD.svg"
+		},
+		{
+			"name": "CouchDB.svg",
+			"path": "assets\\logos\\svg\\CouchDB.svg"
+		},
+		{
+			"name": "Crystal.svg",
+			"path": "assets\\logos\\svg\\Crystal.svg"
+		},
+		{
+			"name": "CSharp.svg",
+			"path": "assets\\logos\\svg\\CSharp.svg"
+		},
+		{
+			"name": "CSS3.svg",
+			"path": "assets\\logos\\svg\\CSS3.svg"
+		},
+		{
+			"name": "Cucumber.svg",
+			"path": "assets\\logos\\svg\\Cucumber.svg"
+		},
+		{
+			"name": "Cypress.svg",
+			"path": "assets\\logos\\svg\\Cypress.svg"
+		},
+		{
+			"name": "D3.js.svg",
+			"path": "assets\\logos\\svg\\D3.js.svg"
+		},
+		{
+			"name": "Dart.svg",
+			"path": "assets\\logos\\svg\\Dart.svg"
+		},
+		{
+			"name": "DataGrip.svg",
+			"path": "assets\\logos\\svg\\DataGrip.svg"
+		},
+		{
+			"name": "DataSpell.svg",
+			"path": "assets\\logos\\svg\\DataSpell.svg"
+		},
+		{
+			"name": "DBeaver.svg",
+			"path": "assets\\logos\\svg\\DBeaver.svg"
+		},
+		{
+			"name": "Debian.svg",
+			"path": "assets\\logos\\svg\\Debian.svg"
+		},
+		{
+			"name": "Deno.svg",
+			"path": "assets\\logos\\svg\\Deno.svg"
+		},
+		{
+			"name": "Devicon.svg",
+			"path": "assets\\logos\\svg\\Devicon.svg"
+		},
+		{
+			"name": "Digital-Ocean.svg",
+			"path": "assets\\logos\\svg\\Digital-Ocean.svg"
+		},
+		{
+			"name": "Discord.js.svg",
+			"path": "assets\\logos\\svg\\Discord.js.svg"
+		},
+		{
+			"name": "Django-REST.svg",
+			"path": "assets\\logos\\svg\\Django-REST.svg"
+		},
+		{
+			"name": "Django.svg",
+			"path": "assets\\logos\\svg\\Django.svg"
+		},
+		{
+			"name": "Docker.svg",
+			"path": "assets\\logos\\svg\\Docker.svg"
+		},
+		{
+			"name": "Doctrine.svg",
+			"path": "assets\\logos\\svg\\Doctrine.svg"
+		},
+		{
+			"name": "Dropwizard.svg",
+			"path": "assets\\logos\\svg\\Dropwizard.svg"
+		},
+		{
+			"name": "Drupal.svg",
+			"path": "assets\\logos\\svg\\Drupal.svg"
+		},
+		{
+			"name": "Eclipse-Ceylon.svg",
+			"path": "assets\\logos\\svg\\Eclipse-Ceylon.svg"
+		},
+		{
+			"name": "Eclipse-IDE.svg",
+			"path": "assets\\logos\\svg\\Eclipse-IDE.svg"
+		},
+		{
+			"name": "Eclipse-Vert.x.svg",
+			"path": "assets\\logos\\svg\\Eclipse-Vert.x.svg"
+		},
+		{
+			"name": "Elastic-Beats.svg",
+			"path": "assets\\logos\\svg\\Elastic-Beats.svg"
+		},
+		{
+			"name": "Elastic-Search.svg",
+			"path": "assets\\logos\\svg\\Elastic-Search.svg"
+		},
+		{
+			"name": "Electron.svg",
+			"path": "assets\\logos\\svg\\Electron.svg"
+		},
+		{
+			"name": "Eleventy-(11ty).svg",
+			"path": "assets\\logos\\svg\\Eleventy-(11ty).svg"
+		},
+		{
+			"name": "Elixir.svg",
+			"path": "assets\\logos\\svg\\Elixir.svg"
+		},
+		{
+			"name": "Elm.svg",
+			"path": "assets\\logos\\svg\\Elm.svg"
+		},
+		{
+			"name": "Embedded-C.svg",
+			"path": "assets\\logos\\svg\\Embedded-C.svg"
+		},
+		{
+			"name": "Ember.js.svg",
+			"path": "assets\\logos\\svg\\Ember.js.svg"
+		},
+		{
+			"name": "Envoy.svg",
+			"path": "assets\\logos\\svg\\Envoy.svg"
+		},
+		{
+			"name": "Erlang.svg",
+			"path": "assets\\logos\\svg\\Erlang.svg"
+		},
+		{
+			"name": "ESLint.svg",
+			"path": "assets\\logos\\svg\\ESLint.svg"
+		},
+		{
+			"name": "Express.svg",
+			"path": "assets\\logos\\svg\\Express.svg"
+		},
+		{
+			"name": "Facebook.svg",
+			"path": "assets\\logos\\svg\\Facebook.svg"
+		},
+		{
+			"name": "FastAPI.svg",
+			"path": "assets\\logos\\svg\\FastAPI.svg"
+		},
+		{
+			"name": "Fastify.svg",
+			"path": "assets\\logos\\svg\\Fastify.svg"
+		},
+		{
+			"name": "Fauna.svg",
+			"path": "assets\\logos\\svg\\Fauna.svg"
+		},
+		{
+			"name": "Feathers.svg",
+			"path": "assets\\logos\\svg\\Feathers.svg"
+		},
+		{
+			"name": "Fedora.svg",
+			"path": "assets\\logos\\svg\\Fedora.svg"
+		},
+		{
+			"name": "Figma.svg",
+			"path": "assets\\logos\\svg\\Figma.svg"
+		},
+		{
+			"name": "FileZilla.svg",
+			"path": "assets\\logos\\svg\\FileZilla.svg"
+		},
+		{
+			"name": "Firebase.svg",
+			"path": "assets\\logos\\svg\\Firebase.svg"
+		},
+		{
+			"name": "Firefox.svg",
+			"path": "assets\\logos\\svg\\Firefox.svg"
+		},
+		{
+			"name": "Flask.svg",
+			"path": "assets\\logos\\svg\\Flask.svg"
+		},
+		{
+			"name": "Flutter.svg",
+			"path": "assets\\logos\\svg\\Flutter.svg"
+		},
+		{
+			"name": "Fortran.svg",
+			"path": "assets\\logos\\svg\\Fortran.svg"
+		},
+		{
+			"name": "Foundation.svg",
+			"path": "assets\\logos\\svg\\Foundation.svg"
+		},
+		{
+			"name": "FSharp.svg",
+			"path": "assets\\logos\\svg\\FSharp.svg"
+		},
+		{
+			"name": "Gatling.svg",
+			"path": "assets\\logos\\svg\\Gatling.svg"
+		},
+		{
+			"name": "Gatsby.svg",
+			"path": "assets\\logos\\svg\\Gatsby.svg"
+		},
+		{
+			"name": "Gazebo.svg",
+			"path": "assets\\logos\\svg\\Gazebo.svg"
+		},
+		{
+			"name": "GCC.svg",
+			"path": "assets\\logos\\svg\\GCC.svg"
+		},
+		{
+			"name": "Gentoo.svg",
+			"path": "assets\\logos\\svg\\Gentoo.svg"
+		},
+		{
+			"name": "Ghost.svg",
+			"path": "assets\\logos\\svg\\Ghost.svg"
+		},
+		{
+			"name": "GIMP.svg",
+			"path": "assets\\logos\\svg\\GIMP.svg"
+		},
+		{
+			"name": "Git.svg",
+			"path": "assets\\logos\\svg\\Git.svg"
+		},
+		{
+			"name": "GitBook.svg",
+			"path": "assets\\logos\\svg\\GitBook.svg"
+		},
+		{
+			"name": "GitHub-Actions.svg",
+			"path": "assets\\logos\\svg\\GitHub-Actions.svg"
+		},
+		{
+			"name": "GitHub-Codespaces.svg",
+			"path": "assets\\logos\\svg\\GitHub-Codespaces.svg"
+		},
+		{
+			"name": "GitHub.svg",
+			"path": "assets\\logos\\svg\\GitHub.svg"
+		},
+		{
+			"name": "GitLab.svg",
+			"path": "assets\\logos\\svg\\GitLab.svg"
+		},
+		{
+			"name": "Gitpod.svg",
+			"path": "assets\\logos\\svg\\Gitpod.svg"
+		},
+		{
+			"name": "Gitter.svg",
+			"path": "assets\\logos\\svg\\Gitter.svg"
+		},
+		{
+			"name": "Gmail.svg",
+			"path": "assets\\logos\\svg\\Gmail.svg"
+		},
+		{
+			"name": "GNU-Emacs.svg",
+			"path": "assets\\logos\\svg\\GNU-Emacs.svg"
+		},
+		{
+			"name": "Go.svg",
+			"path": "assets\\logos\\svg\\Go.svg"
+		},
+		{
+			"name": "Godot-Engine.svg",
+			"path": "assets\\logos\\svg\\Godot-Engine.svg"
+		},
+		{
+			"name": "GoLand.svg",
+			"path": "assets\\logos\\svg\\GoLand.svg"
+		},
+		{
+			"name": "Google-Cloud.svg",
+			"path": "assets\\logos\\svg\\Google-Cloud.svg"
+		},
+		{
+			"name": "Google.svg",
+			"path": "assets\\logos\\svg\\Google.svg"
+		},
+		{
+			"name": "Gradle.svg",
+			"path": "assets\\logos\\svg\\Gradle.svg"
+		},
+		{
+			"name": "Grafana.svg",
+			"path": "assets\\logos\\svg\\Grafana.svg"
+		},
+		{
+			"name": "Grails.svg",
+			"path": "assets\\logos\\svg\\Grails.svg"
+		},
+		{
+			"name": "GraphQL.svg",
+			"path": "assets\\logos\\svg\\GraphQL.svg"
+		},
+		{
+			"name": "Grunt.js.svg",
+			"path": "assets\\logos\\svg\\Grunt.js.svg"
+		},
+		{
+			"name": "Gulp.js.svg",
+			"path": "assets\\logos\\svg\\Gulp.js.svg"
+		},
+		{
+			"name": "Handlebars.svg",
+			"path": "assets\\logos\\svg\\Handlebars.svg"
+		},
+		{
+			"name": "Hardhat.svg",
+			"path": "assets\\logos\\svg\\Hardhat.svg"
+		},
+		{
+			"name": "Harvester.svg",
+			"path": "assets\\logos\\svg\\Harvester.svg"
+		},
+		{
+			"name": "HashiCorp-Terraform.svg",
+			"path": "assets\\logos\\svg\\HashiCorp-Terraform.svg"
+		},
+		{
+			"name": "HashiCorp-Vagrant.svg",
+			"path": "assets\\logos\\svg\\HashiCorp-Vagrant.svg"
+		},
+		{
+			"name": "HashiCorp-Vault.svg",
+			"path": "assets\\logos\\svg\\HashiCorp-Vault.svg"
+		},
+		{
+			"name": "Haskell.svg",
+			"path": "assets\\logos\\svg\\Haskell.svg"
+		},
+		{
+			"name": "Haxe.svg",
+			"path": "assets\\logos\\svg\\Haxe.svg"
+		},
+		{
+			"name": "Helm.svg",
+			"path": "assets\\logos\\svg\\Helm.svg"
+		},
+		{
+			"name": "Heroku.svg",
+			"path": "assets\\logos\\svg\\Heroku.svg"
+		},
+		{
+			"name": "Hibernate.svg",
+			"path": "assets\\logos\\svg\\Hibernate.svg"
+		},
+		{
+			"name": "Homebrew.svg",
+			"path": "assets\\logos\\svg\\Homebrew.svg"
+		},
+		{
+			"name": "HTML5.svg",
+			"path": "assets\\logos\\svg\\HTML5.svg"
+		},
+		{
+			"name": "Hugo.svg",
+			"path": "assets\\logos\\svg\\Hugo.svg"
+		},
+		{
+			"name": "IBM-SPSS-Statistics.svg",
+			"path": "assets\\logos\\svg\\IBM-SPSS-Statistics.svg"
+		},
+		{
+			"name": "IFTTT.svg",
+			"path": "assets\\logos\\svg\\IFTTT.svg"
+		},
+		{
+			"name": "InfluxDB.svg",
+			"path": "assets\\logos\\svg\\InfluxDB.svg"
+		},
+		{
+			"name": "Inkscape-.svg",
+			"path": "assets\\logos\\svg\\Inkscape-.svg"
+		},
+		{
+			"name": "Insomnia.svg",
+			"path": "assets\\logos\\svg\\Insomnia.svg"
+		},
+		{
+			"name": "IntelliJ-IDEA.svg",
+			"path": "assets\\logos\\svg\\IntelliJ-IDEA.svg"
+		},
+		{
+			"name": "Internet-Explorer-10-(ie10).svg",
+			"path": "assets\\logos\\svg\\Internet-Explorer-10-(ie10).svg"
+		},
+		{
+			"name": "Ionic.svg",
+			"path": "assets\\logos\\svg\\Ionic.svg"
+		},
+		{
+			"name": "Jaeger-Tracing.svg",
+			"path": "assets\\logos\\svg\\Jaeger-Tracing.svg"
+		},
+		{
+			"name": "Jamstack.svg",
+			"path": "assets\\logos\\svg\\Jamstack.svg"
+		},
+		{
+			"name": "Jasmine.svg",
+			"path": "assets\\logos\\svg\\Jasmine.svg"
+		},
+		{
+			"name": "Java.svg",
+			"path": "assets\\logos\\svg\\Java.svg"
+		},
+		{
+			"name": "JavaScript.svg",
+			"path": "assets\\logos\\svg\\JavaScript.svg"
+		},
+		{
+			"name": "Jeet.svg",
+			"path": "assets\\logos\\svg\\Jeet.svg"
+		},
+		{
+			"name": "Jekyll.svg",
+			"path": "assets\\logos\\svg\\Jekyll.svg"
+		},
+		{
+			"name": "Jenkins.svg",
+			"path": "assets\\logos\\svg\\Jenkins.svg"
+		},
+		{
+			"name": "Jest.svg",
+			"path": "assets\\logos\\svg\\Jest.svg"
+		},
+		{
+			"name": "JetBrains.svg",
+			"path": "assets\\logos\\svg\\JetBrains.svg"
+		},
+		{
+			"name": "Jira-Align.svg",
+			"path": "assets\\logos\\svg\\Jira-Align.svg"
+		},
+		{
+			"name": "Jira.svg",
+			"path": "assets\\logos\\svg\\Jira.svg"
+		},
+		{
+			"name": "jQuery.svg",
+			"path": "assets\\logos\\svg\\jQuery.svg"
+		},
+		{
+			"name": "JSON.svg",
+			"path": "assets\\logos\\svg\\JSON.svg"
+		},
+		{
+			"name": "Jule.svg",
+			"path": "assets\\logos\\svg\\Jule.svg"
+		},
+		{
+			"name": "Julia.svg",
+			"path": "assets\\logos\\svg\\Julia.svg"
+		},
+		{
+			"name": "JUnit.svg",
+			"path": "assets\\logos\\svg\\JUnit.svg"
+		},
+		{
+			"name": "Jupyter.svg",
+			"path": "assets\\logos\\svg\\Jupyter.svg"
+		},
+		{
+			"name": "K3OS.svg",
+			"path": "assets\\logos\\svg\\K3OS.svg"
+		},
+		{
+			"name": "K3s.svg",
+			"path": "assets\\logos\\svg\\K3s.svg"
+		},
+		{
+			"name": "Kaggle.svg",
+			"path": "assets\\logos\\svg\\Kaggle.svg"
+		},
+		{
+			"name": "Karate-Labs.svg",
+			"path": "assets\\logos\\svg\\Karate-Labs.svg"
+		},
+		{
+			"name": "Karma.svg",
+			"path": "assets\\logos\\svg\\Karma.svg"
+		},
+		{
+			"name": "Keras.svg",
+			"path": "assets\\logos\\svg\\Keras.svg"
+		},
+		{
+			"name": "Kibana.svg",
+			"path": "assets\\logos\\svg\\Kibana.svg"
+		},
+		{
+			"name": "Knex.js.svg",
+			"path": "assets\\logos\\svg\\Knex.js.svg"
+		},
+		{
+			"name": "Knockout.svg",
+			"path": "assets\\logos\\svg\\Knockout.svg"
+		},
+		{
+			"name": "Kotlin.svg",
+			"path": "assets\\logos\\svg\\Kotlin.svg"
+		},
+		{
+			"name": "Krakenjs.svg",
+			"path": "assets\\logos\\svg\\Krakenjs.svg"
+		},
+		{
+			"name": "Ktor.svg",
+			"path": "assets\\logos\\svg\\Ktor.svg"
+		},
+		{
+			"name": "Kubernetes.svg",
+			"path": "assets\\logos\\svg\\Kubernetes.svg"
+		},
+		{
+			"name": "LabVIEW.svg",
+			"path": "assets\\logos\\svg\\LabVIEW.svg"
+		},
+		{
+			"name": "Laravel.svg",
+			"path": "assets\\logos\\svg\\Laravel.svg"
+		},
+		{
+			"name": "LaTeX.svg",
+			"path": "assets\\logos\\svg\\LaTeX.svg"
+		},
+		{
+			"name": "Less.js.svg",
+			"path": "assets\\logos\\svg\\Less.js.svg"
+		},
+		{
+			"name": "LinkedIn.svg",
+			"path": "assets\\logos\\svg\\LinkedIn.svg"
+		},
+		{
+			"name": "Linux.svg",
+			"path": "assets\\logos\\svg\\Linux.svg"
+		},
+		{
+			"name": "Liquibase.svg",
+			"path": "assets\\logos\\svg\\Liquibase.svg"
+		},
+		{
+			"name": "Livewire.svg",
+			"path": "assets\\logos\\svg\\Livewire.svg"
+		},
+		{
+			"name": "LLVM.svg",
+			"path": "assets\\logos\\svg\\LLVM.svg"
+		},
+		{
+			"name": "Logstash.svg",
+			"path": "assets\\logos\\svg\\Logstash.svg"
+		},
+		{
+			"name": "Lua.svg",
+			"path": "assets\\logos\\svg\\Lua.svg"
+		},
+		{
+			"name": "Lumen.svg",
+			"path": "assets\\logos\\svg\\Lumen.svg"
+		},
+		{
+			"name": "Markdown.svg",
+			"path": "assets\\logos\\svg\\Markdown.svg"
+		},
+		{
+			"name": "Material-UI.svg",
+			"path": "assets\\logos\\svg\\Material-UI.svg"
+		},
+		{
+			"name": "Materialize.svg",
+			"path": "assets\\logos\\svg\\Materialize.svg"
+		},
+		{
+			"name": "MATLAB.svg",
+			"path": "assets\\logos\\svg\\MATLAB.svg"
+		},
+		{
+			"name": "Matplotlib.svg",
+			"path": "assets\\logos\\svg\\Matplotlib.svg"
+		},
+		{
+			"name": "Meteor.js.svg",
+			"path": "assets\\logos\\svg\\Meteor.js.svg"
+		},
+		{
+			"name": "Microsoft-SQL-Server.svg",
+			"path": "assets\\logos\\svg\\Microsoft-SQL-Server.svg"
+		},
+		{
+			"name": "Minitab.svg",
+			"path": "assets\\logos\\svg\\Minitab.svg"
+		},
+		{
+			"name": "MobX.svg",
+			"path": "assets\\logos\\svg\\MobX.svg"
+		},
+		{
+			"name": "Mocha.svg",
+			"path": "assets\\logos\\svg\\Mocha.svg"
+		},
+		{
+			"name": "MODX.svg",
+			"path": "assets\\logos\\svg\\MODX.svg"
+		},
+		{
+			"name": "Moleculer.svg",
+			"path": "assets\\logos\\svg\\Moleculer.svg"
+		},
+		{
+			"name": "MongoDB.svg",
+			"path": "assets\\logos\\svg\\MongoDB.svg"
+		},
+		{
+			"name": "Mongoose.js.svg",
+			"path": "assets\\logos\\svg\\Mongoose.js.svg"
+		},
+		{
+			"name": "Moodle.svg",
+			"path": "assets\\logos\\svg\\Moodle.svg"
+		},
+		{
+			"name": "MS-DOS.svg",
+			"path": "assets\\logos\\svg\\MS-DOS.svg"
+		},
+		{
+			"name": "MySQL.svg",
+			"path": "assets\\logos\\svg\\MySQL.svg"
+		},
+		{
+			"name": "Nano.svg",
+			"path": "assets\\logos\\svg\\Nano.svg"
+		},
+		{
+			"name": "Nerog.svg",
+			"path": "assets\\logos\\svg\\Nerog.svg"
+		},
+		{
+			"name": "Nest.js.svg",
+			"path": "assets\\logos\\svg\\Nest.js.svg"
+		},
+		{
+			"name": "NetworkX.svg",
+			"path": "assets\\logos\\svg\\NetworkX.svg"
+		},
+		{
+			"name": "New4j.svg",
+			"path": "assets\\logos\\svg\\New4j.svg"
+		},
+		{
+			"name": "Next.js.svg",
+			"path": "assets\\logos\\svg\\Next.js.svg"
+		},
+		{
+			"name": "NGINX.svg",
+			"path": "assets\\logos\\svg\\NGINX.svg"
+		},
+		{
+			"name": "NHibernate.svg",
+			"path": "assets\\logos\\svg\\NHibernate.svg"
+		},
+		{
+			"name": "Nim.svg",
+			"path": "assets\\logos\\svg\\Nim.svg"
+		},
+		{
+			"name": "Nimble.svg",
+			"path": "assets\\logos\\svg\\Nimble.svg"
+		},
+		{
+			"name": "NixOS.svg",
+			"path": "assets\\logos\\svg\\NixOS.svg"
+		},
+		{
+			"name": "Node.js.svg",
+			"path": "assets\\logos\\svg\\Node.js.svg"
+		},
+		{
+			"name": "Nodemon.svg",
+			"path": "assets\\logos\\svg\\Nodemon.svg"
+		},
+		{
+			"name": "NPM.svg",
+			"path": "assets\\logos\\svg\\NPM.svg"
+		},
+		{
+			"name": "NuGet.svg",
+			"path": "assets\\logos\\svg\\NuGet.svg"
+		},
+		{
+			"name": "NumPy.svg",
+			"path": "assets\\logos\\svg\\NumPy.svg"
+		},
+		{
+			"name": "Nuxt-JS.svg",
+			"path": "assets\\logos\\svg\\Nuxt-JS.svg"
+		},
+		{
+			"name": "NW.js-(node-webkit).svg",
+			"path": "assets\\logos\\svg\\NW.js-(node-webkit).svg"
+		},
+		{
+			"name": "Objective-C.svg",
+			"path": "assets\\logos\\svg\\Objective-C.svg"
+		},
+		{
+			"name": "OCaml.svg",
+			"path": "assets\\logos\\svg\\OCaml.svg"
+		},
+		{
+			"name": "Oh-my-zsh.svg",
+			"path": "assets\\logos\\svg\\Oh-my-zsh.svg"
+		},
+		{
+			"name": "Okta.svg",
+			"path": "assets\\logos\\svg\\Okta.svg"
+		},
+		{
+			"name": "OpenAL.svg",
+			"path": "assets\\logos\\svg\\OpenAL.svg"
+		},
+		{
+			"name": "OpenAPI.svg",
+			"path": "assets\\logos\\svg\\OpenAPI.svg"
+		},
+		{
+			"name": "OpenCL.svg",
+			"path": "assets\\logos\\svg\\OpenCL.svg"
+		},
+		{
+			"name": "OpenCV.svg",
+			"path": "assets\\logos\\svg\\OpenCV.svg"
+		},
+		{
+			"name": "OpenGL.svg",
+			"path": "assets\\logos\\svg\\OpenGL.svg"
+		},
+		{
+			"name": "OpenStack.svg",
+			"path": "assets\\logos\\svg\\OpenStack.svg"
+		},
+		{
+			"name": "openSUSE.svg",
+			"path": "assets\\logos\\svg\\openSUSE.svg"
+		},
+		{
+			"name": "OpenTelemetry.svg",
+			"path": "assets\\logos\\svg\\OpenTelemetry.svg"
+		},
+		{
+			"name": "Opera.svg",
+			"path": "assets\\logos\\svg\\Opera.svg"
+		},
+		{
+			"name": "Oracle.svg",
+			"path": "assets\\logos\\svg\\Oracle.svg"
+		},
+		{
+			"name": "p5-JS.svg",
+			"path": "assets\\logos\\svg\\p5-JS.svg"
+		},
+		{
+			"name": "Packer.svg",
+			"path": "assets\\logos\\svg\\Packer.svg"
+		},
+		{
+			"name": "Pandas.svg",
+			"path": "assets\\logos\\svg\\Pandas.svg"
+		},
+		{
+			"name": "Perl.svg",
+			"path": "assets\\logos\\svg\\Perl.svg"
+		},
+		{
+			"name": "pfSense.svg",
+			"path": "assets\\logos\\svg\\pfSense.svg"
+		},
+		{
+			"name": "Phalcon.svg",
+			"path": "assets\\logos\\svg\\Phalcon.svg"
+		},
+		{
+			"name": "Phoenix-Framework.svg",
+			"path": "assets\\logos\\svg\\Phoenix-Framework.svg"
+		},
+		{
+			"name": "Photon-Engine-.svg",
+			"path": "assets\\logos\\svg\\Photon-Engine-.svg"
+		},
+		{
+			"name": "PHP.svg",
+			"path": "assets\\logos\\svg\\PHP.svg"
+		},
+		{
+			"name": "PhpStorm.svg",
+			"path": "assets\\logos\\svg\\PhpStorm.svg"
+		},
+		{
+			"name": "Playwrite.svg",
+			"path": "assets\\logos\\svg\\Playwrite.svg"
+		},
+		{
+			"name": "Ploty.svg",
+			"path": "assets\\logos\\svg\\Ploty.svg"
+		},
+		{
+			"name": "Podman.svg",
+			"path": "assets\\logos\\svg\\Podman.svg"
+		},
+		{
+			"name": "Polygon.svg",
+			"path": "assets\\logos\\svg\\Polygon.svg"
+		},
+		{
+			"name": "Portainer.svg",
+			"path": "assets\\logos\\svg\\Portainer.svg"
+		},
+		{
+			"name": "PostCSS.svg",
+			"path": "assets\\logos\\svg\\PostCSS.svg"
+		},
+		{
+			"name": "PostgresSQL.svg",
+			"path": "assets\\logos\\svg\\PostgresSQL.svg"
+		},
+		{
+			"name": "Postman.svg",
+			"path": "assets\\logos\\svg\\Postman.svg"
+		},
+		{
+			"name": "Powershell.svg",
+			"path": "assets\\logos\\svg\\Powershell.svg"
+		},
+		{
+			"name": "Processing.svg",
+			"path": "assets\\logos\\svg\\Processing.svg"
+		},
+		{
+			"name": "Prometheus.svg",
+			"path": "assets\\logos\\svg\\Prometheus.svg"
+		},
+		{
+			"name": "Protractor-Test.svg",
+			"path": "assets\\logos\\svg\\Protractor-Test.svg"
+		},
+		{
+			"name": "PureScript.svg",
+			"path": "assets\\logos\\svg\\PureScript.svg"
+		},
+		{
+			"name": "PuTTY.svg",
+			"path": "assets\\logos\\svg\\PuTTY.svg"
+		},
+		{
+			"name": "PyCharm.svg",
+			"path": "assets\\logos\\svg\\PyCharm.svg"
+		},
+		{
+			"name": "PyScript.svg",
+			"path": "assets\\logos\\svg\\PyScript.svg"
+		},
+		{
+			"name": "pytest.svg",
+			"path": "assets\\logos\\svg\\pytest.svg"
+		},
+		{
+			"name": "Python-Poetry.svg",
+			"path": "assets\\logos\\svg\\Python-Poetry.svg"
+		},
+		{
+			"name": "Python.svg",
+			"path": "assets\\logos\\svg\\Python.svg"
+		},
+		{
+			"name": "PyTorch.svg",
+			"path": "assets\\logos\\svg\\PyTorch.svg"
+		},
+		{
+			"name": "Qodana.svg",
+			"path": "assets\\logos\\svg\\Qodana.svg"
+		},
+		{
+			"name": "Qt-Framework.svg",
+			"path": "assets\\logos\\svg\\Qt-Framework.svg"
+		},
+		{
+			"name": "Quarkus.svg",
+			"path": "assets\\logos\\svg\\Quarkus.svg"
+		},
+		{
+			"name": "Quasar.svg",
+			"path": "assets\\logos\\svg\\Quasar.svg"
+		},
+		{
+			"name": "Qwik.svg",
+			"path": "assets\\logos\\svg\\Qwik.svg"
+		},
+		{
+			"name": "R-.svg",
+			"path": "assets\\logos\\svg\\R-.svg"
+		},
+		{
+			"name": "RabbitMQ.svg",
+			"path": "assets\\logos\\svg\\RabbitMQ.svg"
+		},
+		{
+			"name": "Rancher.svg",
+			"path": "assets\\logos\\svg\\Rancher.svg"
+		},
+		{
+			"name": "Raspberry-Pi.svg",
+			"path": "assets\\logos\\svg\\Raspberry-Pi.svg"
+		},
+		{
+			"name": "Reach.svg",
+			"path": "assets\\logos\\svg\\Reach.svg"
+		},
+		{
+			"name": "React-Bootstrap.svg",
+			"path": "assets\\logos\\svg\\React-Bootstrap.svg"
+		},
+		{
+			"name": "React.svg",
+			"path": "assets\\logos\\svg\\React.svg"
+		},
+		{
+			"name": "Realm.svg",
+			"path": "assets\\logos\\svg\\Realm.svg"
+		},
+		{
+			"name": "Red-Hat.svg",
+			"path": "assets\\logos\\svg\\Red-Hat.svg"
+		},
+		{
+			"name": "RedCube's-epic-Compiler-Thingy-programming-(ReCT).svg",
+			"path": "assets\\logos\\svg\\RedCube's-epic-Compiler-Thingy-programming-(ReCT).svg"
+		},
+		{
+			"name": "Redis.svg",
+			"path": "assets\\logos\\svg\\Redis.svg"
+		},
+		{
+			"name": "Redux.svg",
+			"path": "assets\\logos\\svg\\Redux.svg"
+		},
+		{
+			"name": "Ren'Py.svg",
+			"path": "assets\\logos\\svg\\Ren'Py.svg"
+		},
+		{
+			"name": "Rider.svg",
+			"path": "assets\\logos\\svg\\Rider.svg"
+		},
+		{
+			"name": "Robot-Operating-System-(ROS).svg",
+			"path": "assets\\logos\\svg\\Robot-Operating-System-(ROS).svg"
+		},
+		{
+			"name": "RocksDB.svg",
+			"path": "assets\\logos\\svg\\RocksDB.svg"
+		},
+		{
+			"name": "Rollup.js.svg",
+			"path": "assets\\logos\\svg\\Rollup.js.svg"
+		},
+		{
+			"name": "RSpec.svg",
+			"path": "assets\\logos\\svg\\RSpec.svg"
+		},
+		{
+			"name": "RStudio.svg",
+			"path": "assets\\logos\\svg\\RStudio.svg"
+		},
+		{
+			"name": "Ruby-on-Rails.svg",
+			"path": "assets\\logos\\svg\\Ruby-on-Rails.svg"
+		},
+		{
+			"name": "Ruby.svg",
+			"path": "assets\\logos\\svg\\Ruby.svg"
+		},
+		{
+			"name": "RubyMine.svg",
+			"path": "assets\\logos\\svg\\RubyMine.svg"
+		},
+		{
+			"name": "Rust.svg",
+			"path": "assets\\logos\\svg\\Rust.svg"
+		},
+		{
+			"name": "Salesforce.svg",
+			"path": "assets\\logos\\svg\\Salesforce.svg"
+		},
+		{
+			"name": "Sanity.svg",
+			"path": "assets\\logos\\svg\\Sanity.svg"
+		},
+		{
+			"name": "Sass.svg",
+			"path": "assets\\logos\\svg\\Sass.svg"
+		},
+		{
+			"name": "Scala.svg",
+			"path": "assets\\logos\\svg\\Scala.svg"
+		},
+		{
+			"name": "Scalingo.svg",
+			"path": "assets\\logos\\svg\\Scalingo.svg"
+		},
+		{
+			"name": "Selenium.svg",
+			"path": "assets\\logos\\svg\\Selenium.svg"
+		},
+		{
+			"name": "Sema-Software.svg",
+			"path": "assets\\logos\\svg\\Sema-Software.svg"
+		},
+		{
+			"name": "Sequelize.svg",
+			"path": "assets\\logos\\svg\\Sequelize.svg"
+		},
+		{
+			"name": "Shopware.svg",
+			"path": "assets\\logos\\svg\\Shopware.svg"
+		},
+		{
+			"name": "Simple-DirectMedia-Layer-(SDL).svg",
+			"path": "assets\\logos\\svg\\Simple-DirectMedia-Layer-(SDL).svg"
+		},
+		{
+			"name": "Sketch.svg",
+			"path": "assets\\logos\\svg\\Sketch.svg"
+		},
+		{
+			"name": "Slack.svg",
+			"path": "assets\\logos\\svg\\Slack.svg"
+		},
+		{
+			"name": "Socket.io.svg",
+			"path": "assets\\logos\\svg\\Socket.io.svg"
+		},
+		{
+			"name": "Solid.js.svg",
+			"path": "assets\\logos\\svg\\Solid.js.svg"
+		},
+		{
+			"name": "Solidity.svg",
+			"path": "assets\\logos\\svg\\Solidity.svg"
+		},
+		{
+			"name": "SonarQube.svg",
+			"path": "assets\\logos\\svg\\SonarQube.svg"
+		},
+		{
+			"name": "Sourcetree.svg",
+			"path": "assets\\logos\\svg\\Sourcetree.svg"
+		},
+		{
+			"name": "Splunk.svg",
+			"path": "assets\\logos\\svg\\Splunk.svg"
+		},
+		{
+			"name": "Spring.svg",
+			"path": "assets\\logos\\svg\\Spring.svg"
+		},
+		{
+			"name": "SQL-Developer.svg",
+			"path": "assets\\logos\\svg\\SQL-Developer.svg"
+		},
+		{
+			"name": "SQLAlchemy.svg",
+			"path": "assets\\logos\\svg\\SQLAlchemy.svg"
+		},
+		{
+			"name": "SQLite.svg",
+			"path": "assets\\logos\\svg\\SQLite.svg"
+		},
+		{
+			"name": "SSH.svg",
+			"path": "assets\\logos\\svg\\SSH.svg"
+		},
+		{
+			"name": "Stack-Overflow.svg",
+			"path": "assets\\logos\\svg\\Stack-Overflow.svg"
+		},
+		{
+			"name": "Stata.svg",
+			"path": "assets\\logos\\svg\\Stata.svg"
+		},
+		{
+			"name": "Storybook.svg",
+			"path": "assets\\logos\\svg\\Storybook.svg"
+		},
+		{
+			"name": "Streamlit.svg",
+			"path": "assets\\logos\\svg\\Streamlit.svg"
+		},
+		{
+			"name": "Stylus.svg",
+			"path": "assets\\logos\\svg\\Stylus.svg"
+		},
+		{
+			"name": "Svelte.svg",
+			"path": "assets\\logos\\svg\\Svelte.svg"
+		},
+		{
+			"name": "Swagger.svg",
+			"path": "assets\\logos\\svg\\Swagger.svg"
+		},
+		{
+			"name": "Swift.svg",
+			"path": "assets\\logos\\svg\\Swift.svg"
+		},
+		{
+			"name": "Symfony.svg",
+			"path": "assets\\logos\\svg\\Symfony.svg"
+		},
+		{
+			"name": "Tailwind-CSS.svg",
+			"path": "assets\\logos\\svg\\Tailwind-CSS.svg"
+		},
+		{
+			"name": "Tauri.svg",
+			"path": "assets\\logos\\svg\\Tauri.svg"
+		},
+		{
+			"name": "TensorFlow.svg",
+			"path": "assets\\logos\\svg\\TensorFlow.svg"
+		},
+		{
+			"name": "TeX.svg",
+			"path": "assets\\logos\\svg\\TeX.svg"
+		},
+		{
+			"name": "The-Algorithms.svg",
+			"path": "assets\\logos\\svg\\The-Algorithms.svg"
+		},
+		{
+			"name": "Three.js.svg",
+			"path": "assets\\logos\\svg\\Three.js.svg"
+		},
+		{
+			"name": "Titanium-SDK.svg",
+			"path": "assets\\logos\\svg\\Titanium-SDK.svg"
+		},
+		{
+			"name": "TortoiseGit.svg",
+			"path": "assets\\logos\\svg\\TortoiseGit.svg"
+		},
+		{
+			"name": "Tower.svg",
+			"path": "assets\\logos\\svg\\Tower.svg"
+		},
+		{
+			"name": "Traefik-Mesh.svg",
+			"path": "assets\\logos\\svg\\Traefik-Mesh.svg"
+		},
+		{
+			"name": "Traefik-Proxy.svg",
+			"path": "assets\\logos\\svg\\Traefik-Proxy.svg"
+		},
+		{
+			"name": "Travis-CI.svg",
+			"path": "assets\\logos\\svg\\Travis-CI.svg"
+		},
+		{
+			"name": "Trello.svg",
+			"path": "assets\\logos\\svg\\Trello.svg"
+		},
+		{
+			"name": "Twitter.svg",
+			"path": "assets\\logos\\svg\\Twitter.svg"
+		},
+		{
+			"name": "TypeScript.svg",
+			"path": "assets\\logos\\svg\\TypeScript.svg"
+		},
+		{
+			"name": "TYPO3.svg",
+			"path": "assets\\logos\\svg\\TYPO3.svg"
+		},
+		{
+			"name": "Ubuntu.svg",
+			"path": "assets\\logos\\svg\\Ubuntu.svg"
+		},
+		{
+			"name": "Unified-Modelling-Language-(UML).svg",
+			"path": "assets\\logos\\svg\\Unified-Modelling-Language-(UML).svg"
+		},
+		{
+			"name": "Unity.svg",
+			"path": "assets\\logos\\svg\\Unity.svg"
+		},
+		{
+			"name": "UNIX.svg",
+			"path": "assets\\logos\\svg\\UNIX.svg"
+		},
+		{
+			"name": "Unreal-Engine.svg",
+			"path": "assets\\logos\\svg\\Unreal-Engine.svg"
+		},
+		{
+			"name": "uWSGI.svg",
+			"path": "assets\\logos\\svg\\uWSGI.svg"
+		},
+		{
+			"name": "V8.svg",
+			"path": "assets\\logos\\svg\\V8.svg"
+		},
+		{
+			"name": "Vala.svg",
+			"path": "assets\\logos\\svg\\Vala.svg"
+		},
+		{
+			"name": "Vercel.svg",
+			"path": "assets\\logos\\svg\\Vercel.svg"
+		},
+		{
+			"name": "Veutify.svg",
+			"path": "assets\\logos\\svg\\Veutify.svg"
+		},
+		{
+			"name": "Vim.svg",
+			"path": "assets\\logos\\svg\\Vim.svg"
+		},
+		{
+			"name": "Visual-Studio-Code-(VS-Code).svg",
+			"path": "assets\\logos\\svg\\Visual-Studio-Code-(VS-Code).svg"
+		},
+		{
+			"name": "Visual-Studio.svg",
+			"path": "assets\\logos\\svg\\Visual-Studio.svg"
+		},
+		{
+			"name": "Vite.js.svg",
+			"path": "assets\\logos\\svg\\Vite.js.svg"
+		},
+		{
+			"name": "Vite.svg",
+			"path": "assets\\logos\\svg\\Vite.svg"
+		},
+		{
+			"name": "vSphere.svg",
+			"path": "assets\\logos\\svg\\vSphere.svg"
+		},
+		{
+			"name": "Vue-Storefront.svg",
+			"path": "assets\\logos\\svg\\Vue-Storefront.svg"
+		},
+		{
+			"name": "Vue.js.svg",
+			"path": "assets\\logos\\svg\\Vue.js.svg"
+		},
+		{
+			"name": "Vyper.svg",
+			"path": "assets\\logos\\svg\\Vyper.svg"
+		},
+		{
+			"name": "WebAssembly.svg",
+			"path": "assets\\logos\\svg\\WebAssembly.svg"
+		},
+		{
+			"name": "Webflow.svg",
+			"path": "assets\\logos\\svg\\Webflow.svg"
+		},
+		{
+			"name": "Weblate.svg",
+			"path": "assets\\logos\\svg\\Weblate.svg"
+		},
+		{
+			"name": "Webpack.svg",
+			"path": "assets\\logos\\svg\\Webpack.svg"
+		},
+		{
+			"name": "WebStorm.svg",
+			"path": "assets\\logos\\svg\\WebStorm.svg"
+		},
+		{
+			"name": "Windows-11.svg",
+			"path": "assets\\logos\\svg\\Windows-11.svg"
+		},
+		{
+			"name": "Windows-8.svg",
+			"path": "assets\\logos\\svg\\Windows-8.svg"
+		},
+		{
+			"name": "WooCommerce.svg",
+			"path": "assets\\logos\\svg\\WooCommerce.svg"
+		},
+		{
+			"name": "WordPress.svg",
+			"path": "assets\\logos\\svg\\WordPress.svg"
+		},
+		{
+			"name": "Xamarin.svg",
+			"path": "assets\\logos\\svg\\Xamarin.svg"
+		},
+		{
+			"name": "Xcode.svg",
+			"path": "assets\\logos\\svg\\Xcode.svg"
+		},
+		{
+			"name": "XML.svg",
+			"path": "assets\\logos\\svg\\XML.svg"
+		},
+		{
+			"name": "YAML.svg",
+			"path": "assets\\logos\\svg\\YAML.svg"
+		},
+		{
+			"name": "Yarn.svg",
+			"path": "assets\\logos\\svg\\Yarn.svg"
+		},
+		{
+			"name": "Yii-Framework.svg",
+			"path": "assets\\logos\\svg\\Yii-Framework.svg"
+		},
+		{
+			"name": "Yuno-Host.svg",
+			"path": "assets\\logos\\svg\\Yuno-Host.svg"
+		},
+		{
+			"name": "Zend-Framework.svg",
+			"path": "assets\\logos\\svg\\Zend-Framework.svg"
+		},
+		{
+			"name": "Zig.svg",
+			"path": "assets\\logos\\svg\\Zig.svg"
+		}
 	]
 }
