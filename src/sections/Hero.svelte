@@ -1,7 +1,9 @@
 <script lang="ts">
 	import { fly } from "svelte/transition";
 	import { onMount } from "svelte";
+
 	let visible = false;
+	let heroRef: HTMLElement;
 
 	// Observer to detect when the section is visible
 	onMount(() => {
@@ -12,11 +14,10 @@
 					observer.disconnect(); // Stop observing after it's visible
 				}
 			},
-			{ threshold: 0.3 } // Trigger when 30% of Hero section is visible
+			{ threshold: 0.3 }
 		);
 
-		const heroSection = document.getElementById("Hero");
-		if (heroSection) observer.observe(heroSection);
+		if (heroRef) observer.observe(heroRef);
 	});
 
 	function scrollToElement(id: string) {
@@ -29,11 +30,17 @@
 	}
 </script>
 
-<section id="Hero" class="section bg-secondary">
+<section
+	id="Hero"
+	bind:this={heroRef}
+	class="relative w-full min-h-screen flex flex-col justify-center items-center text-center"
+>
+	<!-- Background Overlay -->
+	<div class="absolute inset-0 bg-black/50 backdrop-blur-lg -z-10"></div>
+
 	{#if visible}
-		<!-- Content -->
 		<div
-			class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center max-w-6xl w-3/4 mx-auto"
+			class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center max-w-6xl mx-auto px-6 md:px-12"
 		>
 			<!-- Left Side: Image & Name -->
 			<div
@@ -44,9 +51,9 @@
 					src="/assets/avatars/hero.jpg"
 					alt="Avatar Hero"
 					loading="lazy"
-					class="w-48 h-48 md:w-60 md:h-60 rounded-full border-4 border-primary shadow-lg"
+					class="w-48 h-48 md:w-60 md:h-60 rounded-full border-4 border-[var(--primary-color)] shadow-xl"
 				/>
-				<code class="text-3xl md:text-4xl text-white font-semibold"
+				<code class="text-3xl md:text-4xl font-semibold text-white"
 					>John Doe</code
 				>
 			</div>
@@ -54,18 +61,18 @@
 			<!-- Right Side: Text -->
 			<blockquote
 				in:fly={{ x: 200, duration: 500, delay: 500 }}
-				class="text-4xl md:text-6xl font-bold text-theme text-left leading-tight"
+				class="text-4xl md:text-6xl font-bold text-white text-left leading-tight"
 			>
 				Lorem ipsum, dolor sit amet consectetur adipisicing elit.
 			</blockquote>
 		</div>
 
 		<!-- Scroll Button (Fixed at Bottom) -->
-		<div
-			class="flex justify-center items-end w-full h-full absolute bottom-16"
-			in:fly={{ y: 200, duration: 500, delay: 1000 }}
-		>
-			<button onclick={() => scrollToElement("WorkExperience")} class="btn">
+		<div class="absolute bottom-16 flex justify-center items-center">
+			<button
+				onclick={() => scrollToElement("WorkExperience")}
+				class="btn bg-[var(--accent-color)] text-white px-6 py-3 rounded-full shadow-lg hover:scale-105 hover:shadow-[0_0_12px_var(--accent-color)] transition-all duration-300"
+			>
 				View Projects
 			</button>
 		</div>
@@ -75,6 +82,5 @@
 <style>
 	#Hero {
 		background: url("/assets/backdrops/HeroBanner.svg") center/cover no-repeat;
-		margin-top: 0;
 	}
 </style>
