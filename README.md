@@ -1,4 +1,3 @@
-```md
 # 🚀 **Astro Futuristic Portfolio** 🌌  
 
 Welcome to your **futuristic** Astro-powered **developer portfolio!** This project is designed to be **fast, lightweight, and fully optimized** with **Astro, Svelte, TailwindCSS, GSAP animations, and Firebase** for seamless performance.  
@@ -91,4 +90,3 @@ All commands are run from the **root** of the project:
 💬 **Community:** [Join Astro Discord](https://astro.build/chat)  
 
 👨‍🚀 **Enjoy your interstellar journey!** 🚀✨  
-```
