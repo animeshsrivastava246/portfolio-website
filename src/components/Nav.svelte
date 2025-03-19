@@ -127,8 +127,7 @@
 					<li>
 						<button
 							onclick={() => scrollToSection(item.id)}
-							class="text-xl hover:text-black rounded-full cursor-pointer
-							transition-all duration-300"
+							class="text-xl text-primary hover:text-accent rounded-full transition-all duration-300"
 						>
 							{item.name}
 						</button>
@@ -156,7 +155,7 @@
 							scrollToSection(item.id);
 							isMobileMenuOpen = false; // close menu after click
 						}}
-						class="text-xl text-theme hover:text-black rounded-full cursor-pointer
+						class="text-xl text-theme hover:text-primary rounded-full cursor-pointer
 							transition-all duration-500"
 					>
 						{item.name}

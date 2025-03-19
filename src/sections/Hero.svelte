@@ -51,9 +51,9 @@
 					src="/assets/avatars/hero.jpg"
 					alt="Avatar Hero"
 					loading="lazy"
-					class="w-48 h-48 md:w-60 md:h-60 rounded-full border-4 border-[var(--primary-color)] shadow-xl"
+					class="w-48 h-48 md:w-60 md:h-60 rounded-full shadow-2xl"
 				/>
-				<code class="text-3xl md:text-4xl font-semibold text-white"
+				<code class="text-3xl md:text-4xl font-semibold text-secondary"
 					>John Doe</code
 				>
 			</div>
@@ -61,17 +61,17 @@
 			<!-- Right Side: Text -->
 			<blockquote
 				in:fly={{ x: 200, duration: 500, delay: 500 }}
-				class="text-4xl md:text-6xl font-bold text-white text-left leading-tight"
+				class="text-4xl md:text-6xl font-bold text-secondary text-left leading-tight"
 			>
 				Lorem ipsum, dolor sit amet consectetur adipisicing elit.
 			</blockquote>
 		</div>
 
 		<!-- Scroll Button (Fixed at Bottom) -->
-		<div class="absolute bottom-16 flex justify-center items-center">
+		<div class="absolute bottom-4 flex justify-center items-center">
 			<button
 				onclick={() => scrollToElement("WorkExperience")}
-				class="btn bg-[var(--accent-color)] text-white px-6 py-3 rounded-full shadow-lg hover:scale-105 hover:shadow-[0_0_12px_var(--accent-color)] transition-all duration-300"
+				class="btn bg-[var(--accent-color)] text-secondary px-6 py-3 rounded-full shadow-lg hover:scale-105 hover:shadow-[0_0_12px_var(--accent-color)] transition-all duration-300"
 			>
 				View Projects
 			</button>

@@ -1,4 +1,5 @@
 <script lang="ts">
+	import TechStack from "./TechStack.svelte";
 	import { onMount } from "svelte";
 	import { fadeIn } from "../animations/gsap";
 	import data from "../data/data.json";
@@ -55,7 +56,7 @@
 						<img src={skill.icon} alt={skill.title} class="w-10 h-10" />
 					</div>
 					<h3
-						class="text-lg font-semibold text-white text-center tracking-wide"
+						class="text-lg font-semibold text-secondary text-center tracking-wide"
 					>
 						{skill.title}
 					</h3>
@@ -64,4 +65,5 @@
 			{/each}
 		</div>
 	</div>
+	<TechStack />
 </section>

@@ -24,7 +24,7 @@
 	<div class="max-w-5xl mx-auto">
 		<!-- Section Title -->
 		<h2
-			class="text-5xl font-bold text-accent tracking-wide text-left leading-tight"
+			class="text-5xl font-bold text-primary tracking-wide text-left leading-tight"
 		>
 			&lt; Work Experience /&gt;
 		</h2>
@@ -45,7 +45,7 @@
 						class="bg-primary bg-opacity-10 backdrop-blur-md p-6 rounded-xl shadow-md border border-accent border-opacity-40 transition-all duration-300 group-hover:scale-[1.02]"
 					>
 						<h3 class="text-2xl font-semibold text-secondary">{exp.title}</h3>
-						<p class="text-md text-accent font-medium">{exp.company}</p>
+						<p class="text-md text-primary font-medium">{exp.company}</p>
 						<p class="text-sm text-gray-400 mt-1">{exp.duration}</p>
 						<p class="text-md text-theme mt-3 leading-relaxed">
 							{exp.description}

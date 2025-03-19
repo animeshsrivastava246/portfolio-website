@@ -29,7 +29,7 @@
 
 	<!-- Footer Content -->
 	<div
-		class="max-w-7xl mx-auto px-6 flex flex-col md:flex-row justify-between items-center text-white/80"
+		class="max-w-7xl mx-auto px-6 flex flex-col md:flex-row justify-between items-center text-secondary/80"
 	>
 		<!-- Left Side: Logo & Copyright -->
 		<div class="flex flex-col items-center md:items-start">
@@ -40,7 +40,7 @@
 					class="w-12 h-12 object-contain rounded-full transition-transform duration-300 group-hover:scale-110"
 				/>
 				<span
-					class="text-xl font-bold text-[var(--accent-color)] group-hover:text-white transition"
+					class="text-xl font-bold text-[var(--accent-color)] group-hover:text-secondary transition"
 					>{data.info.name}</span
 				>
 			</a>
@@ -56,7 +56,7 @@
 			{#each sections.filter((section) => section.name !== "Home") as section}
 				<button
 					on:click={() => scrollToSection(section.id)}
-					class="text-white/80 hover:text-[var(--accent-color)] text-sm font-medium transition duration-300 hover:scale-105"
+					class="text-secondary/80 hover:text-[var(--accent-color)] text-sm font-medium transition duration-300 hover:scale-105"
 				>
 					{section.name}
 				</button>

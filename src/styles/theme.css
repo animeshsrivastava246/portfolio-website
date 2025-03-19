@@ -5,6 +5,9 @@
 	--background-color: #f7f7f7;
 	--text-color: #3d3d3d;
 	--accent-color: #ffc107;
+
+	/* --font-primary: "Raleway", sans-serif; */
+	--font-primary: "Raleway", sans-serif;
 }
 
 .dark-theme {
@@ -31,4 +34,17 @@
 }
 .text-theme {
 	color: var(--text-color);
+}
+.text-primary {
+	color: var(--primary-color);
+}
+.text-secondary {
+	color: var(--secondary-color);
+}
+.text-accent {
+	color: var(--accent-color);
+}
+
+body {
+	font-family: var(--font-primary);
 }
