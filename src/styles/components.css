@@ -50,6 +50,7 @@
 .section {
 	@apply relative min-h-screen flex flex-col items-center justify-center text-center p-6 my-8 pt-[8rem] bg-center bg-cover bg-no-repeat;
 	scroll-snap-align: start;
+	background-attachment: fixed;
 }
 
 /* Text */

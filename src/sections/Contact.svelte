@@ -47,14 +47,14 @@
 	id="Contact"
 	bind:this={contactRef}
 	class="section relative py-24 px-6 md:px-12"
-	style="background-image: url('/assets/backdrops/AboutBanner.avif');"
+	style="background-image: url('/assets/backdrops/AboutBanner.webp');"
 >
 	<!-- Contact Header -->
 	<div class="max-w-5xl mx-auto text-left">
 		<h2>Let's Connect</h2>
 		<p class="text-lg text-secondary/90 mt-4 max-w-2xl leading-relaxed">
 			Have a project in mind or just want to say hi? Fill out the form below,
-			and let’s create something amazing!
+			and let us create something amazing!
 		</p>
 	</div>
 

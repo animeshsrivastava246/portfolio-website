@@ -52,7 +52,7 @@
 <section
 	id="Projects"
 	class="section py-20 px-6 md:px-12"
-	style="background-image: url('/assets/backdrops/AboutBanner.avif');"
+	style="background-image: url('/assets/backdrops/ProjectsBanner.webp');"
 >
 	<div class="max-w-6xl mx-auto text-center">
 		<h2>Projects</h2>
