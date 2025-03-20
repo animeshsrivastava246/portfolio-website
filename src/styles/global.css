@@ -24,4 +24,5 @@ html, body {
 	height: 100%;
 	scroll-snap-type: y mandatory;
 	scroll-behavior: smooth;
+	scrollbar-width: thin;
 }

@@ -1,22 +1,12 @@
 :root {
-	/* Light Theme (Aurora) */
-	--primary-color: #87ceeb;
-	--secondary-color: #34c759;
-	--background-color: #f7f7f7;
-	--text-color: #3d3d3d;
-	--accent-color: #ffc107;
+	/* 🚀 Optimized Futuristic Theme */
+	--primary-color: #0ea5e9; /* Brighter Sky Blue */
+	--secondary-color: #16a34a; /* Deep Emerald Green */
+	--background-color: #111827; /* Dark Slate for better readability */
+	--text-color: #f8fafc; /* Near White for maximum contrast */
+	--accent-color: #facc15; /* Vivid Yellow-Gold for emphasis */
 
-	/* --font-primary: "Raleway", sans-serif; */
 	--font-primary: "Raleway", sans-serif;
-}
-
-.dark-theme {
-	/* Dark Theme (Nebula) */
-	--primary-color: #2f4f7f;
-	--secondary-color: #66d9ef;
-	--background-color: #212121;
-	--text-color: #ffffff;
-	--accent-color: #ff69b4;
 }
 
 /* Utility Classes */
@@ -47,4 +37,6 @@
 
 body {
 	font-family: var(--font-primary);
+	background-color: var(--background-color);
+	color: var(--text-color);
 }

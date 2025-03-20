@@ -55,7 +55,7 @@
 						<img src={skill.icon} alt={skill.title} class="w-10 h-10" />
 					</div>
 					<h3
-						class="text-lg font-semibold text-secondary text-center tracking-wide"
+						class="text-lg font-semibold text-theme text-center tracking-wide"
 					>
 						{skill.title}
 					</h3>

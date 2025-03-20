@@ -17,7 +17,7 @@
 	};
 
 	let visible = false;
-	let isMobileMenuOpen = false; // to toggle mobile menu
+	let isMobileMenuOpen = false;
 
 	onMount(() => {
 		visible = true;
@@ -28,8 +28,8 @@
 	<nav
 		in:fly={{ y: -100, duration: 500 }}
 		class="fixed top-4 left-1/2 w-full max-w-3xl transform -translate-x-[50%]
-		bg-white/10 backdrop-blur-2xl shadow-lg border-2 border-white/30
-		rounded-[2em] z-100"
+		bg-white/10 backdrop-blur-2xl shadow-lg border border-white/20
+		rounded-[2em] z-50"
 	>
 		<div class="mx-auto px-3 flex justify-between items-center h-16">
 			<!-- Logo -->
@@ -42,11 +42,18 @@
 			</button>
 
 			<!-- Resume Button -->
-			<a href="/resume.pdf" target="_blank" class="btn"> Resume </a>
+			<a
+				href="/resume.pdf"
+				target="_blank"
+				class="btn bg-[var(--primary-color)] text-white px-5 py-2 rounded-full shadow-lg
+				hover:scale-105 hover:shadow-[0_0_12px_var(--accent-color)] transition-all duration-300"
+			>
+				Resume
+			</a>
 
 			<!-- Mobile Hamburger Button -->
 			<button
-				class="md:hidden"
+				class="md:hidden text-white"
 				onclick={() => (isMobileMenuOpen = !isMobileMenuOpen)}
 			>
 				{#if isMobileMenuOpen}
@@ -73,7 +80,7 @@
 							x1="8"
 							y1="32"
 							x2="32"
-							y2="16"
+							y2="8"
 							stroke="white"
 							stroke-width="3"
 							stroke-linecap="round"
@@ -122,12 +129,12 @@
 			</button>
 
 			<!-- Desktop Navigation -->
-			<ul class="hidden md:flex space-x-6 mx-4 text-theme">
+			<ul class="hidden md:flex space-x-6 mx-4">
 				{#each menuItems as item}
 					<li>
 						<button
 							onclick={() => scrollToSection(item.id)}
-							class="text-xl text-primary hover:text-accent rounded-full transition-all duration-300"
+							class="text-theme text-lg font-medium p-2 rounded-full transition-all duration-350 hover:shadow-[0_0_8px_var(--accent-color)] hover:scale-105"
 						>
 							{item.name}
 						</button>
@@ -141,22 +148,22 @@
 <!-- Mobile Menu -->
 {#if isMobileMenuOpen}
 	<nav
-		class="md:hidden fixed top-22 left-1/2 w-full transform -translate-x-[50%]
-			bg-white/10 backdrop-blur-2xl shadow-lg border-2 border-white/30
-			rounded-[2em] z-100"
+		class="md:hidden fixed top-25 left-1/2 w-full transform -translate-x-[50%]
+			bg-white/10 backdrop-blur-2xl shadow-lg border border-white/20
+			rounded-[2em] z-50"
 		in:fly={{ y: -200, duration: 500 }}
 		out:fly={{ y: -200, duration: 500 }}
 	>
-		<ul class="flex flex-col space-y-4 p-6 justify-center items-center">
+		<ul class="flex flex-col space-y-4 p-4 justify-center items-center">
 			{#each menuItems as item}
 				<li>
 					<button
 						onclick={() => {
 							scrollToSection(item.id);
-							isMobileMenuOpen = false; // close menu after click
+							isMobileMenuOpen = false;
 						}}
-						class="text-xl text-theme hover:text-primary rounded-full cursor-pointer
-							transition-all duration-500"
+						class="text-white p-4 rounded-full shadow-lg font-bold
+						hover:scale-105 hover:shadow-[0_0_12px_var(--accent-color)] transition-all duration-300"
 					>
 						{item.name}
 					</button>
