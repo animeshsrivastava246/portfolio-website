@@ -16,10 +16,10 @@
 		resetIdleTimer();
 
 		// Main cursor moves instantly
-		gsap.to(cursor, { x: e.clientX, y: e.clientY, duration: 0 });
+		gsap.to(cursor, { left: e.clientX, top: e.clientY, duration: 0 });
 
 		// Cursor trail follows with a delay
-		gsap.to(cursorTrail, { x: e.clientX, y: e.clientY, duration: 0.35 });
+		gsap.to(cursorTrail, { left: e.clientX, top: e.clientY, duration: 0.35 });
 	};
 
 	// Function to hide cursor when idle
@@ -31,7 +31,7 @@
 	// Reset idle timer
 	const resetIdleTimer = () => {
 		clearTimeout(idleTimeout);
-		idleTimeout = setTimeout(hideCursor, 1500); // Hide after 3s of inactivity
+		idleTimeout = setTimeout(hideCursor, 1500); // Hide after ns of inactivity
 	};
 
 	const handleMouseEnter = () => {
@@ -91,7 +91,7 @@
 		transform: translate(-50%, -50%);
 		z-index: 9999;
 		opacity: 1;
-		transition: opacity 0.3s ease-in-out;
+		transition: opacity 0.35s ease-in-out;
 	}
 
 	/* Main cursor style */
@@ -109,7 +109,7 @@
 	:global(.cursor-trail) {
 		width: 16px;
 		height: 16px;
-		border: 2px solid var(--text-color);
+		border: 2px solid var(--secondary-color);
 		opacity: 0.5;
 	}
 
@@ -117,7 +117,7 @@
 	:global(.cursor.hover) {
 		width: 24px;
 		height: 24px;
-		background-color: var(--accent-color);
+		background-color: var(--primary-color);
 		opacity: 0.7;
 	}
 

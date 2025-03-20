@@ -28,7 +28,7 @@
 
 		<!-- Timeline -->
 		<div
-			class="relative mt-12 border-l-4 border-accent border-opacity-50 pl-8 space-y-10"
+			class="relative mt-12 border-l-4 border-accent border-opacity-50 pl-3 space-y-10"
 		>
 			{#each data.experience as exp, i}
 				<div bind:this={itemsRef[i]} class="relative group">

@@ -7,7 +7,6 @@ import About from "../sections/About.svelte";
 import WorkExperience from "../sections/WorkExperience.svelte";
 import Projects from "../sections/Projects.svelte";
 import Contact from "../sections/Contact.svelte";
-import ThemeToggle from "../components/ThemeToggle.svelte";
 import Cursor from "../components/Cursor.svelte";
 import data from "../data/data.json";
 ---
@@ -18,7 +17,7 @@ import data from "../data/data.json";
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 	</head>
 	<body>
-		<Cursor client:load/>
+		<Cursor client:load />
 		<Nav client:load />
 		<Hero client:load />
 		<About client:visible />
@@ -26,6 +25,5 @@ import data from "../data/data.json";
 		<Projects client:visible />
 		<Contact client:idle />
 		<Footer client:load />
-		<ThemeToggle client:idle />
 	</body>
 </html>
