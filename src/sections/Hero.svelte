@@ -33,7 +33,8 @@
 <section
 	id="Hero"
 	bind:this={heroRef}
-	class="relative w-full min-h-screen flex flex-col justify-center items-center text-center"
+	class="section relative w-full flex flex-col justify-center items-center text-center mt-0"
+	style="background-image: url('/assets/backdrops/HeroBanner.svg');"
 >
 	<!-- Background Overlay -->
 	<div class="absolute inset-0 bg-black/50 backdrop-blur-lg -z-10"></div>
@@ -78,9 +79,3 @@
 		</div>
 	{/if}
 </section>
-
-<style>
-	#Hero {
-		background: url("/assets/backdrops/HeroBanner.svg") center/cover no-repeat;
-	}
-</style>

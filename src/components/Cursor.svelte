@@ -4,14 +4,34 @@
 
 	let cursor: HTMLElement;
 	let cursorTrail: HTMLElement;
+	let idleTimeout: NodeJS.Timeout;
 
 	// Function to handle mousemove event
 	const handleMouseMove = (e: MouseEvent) => {
+		// Show cursor when moving
+		cursor.style.opacity = "1";
+		cursorTrail.style.opacity = "1";
+
+		// Reset idle timer
+		resetIdleTimer();
+
 		// Main cursor moves instantly
 		gsap.to(cursor, { x: e.clientX, y: e.clientY, duration: 0 });
 
 		// Cursor trail follows with a delay
 		gsap.to(cursorTrail, { x: e.clientX, y: e.clientY, duration: 0.35 });
+	};
+
+	// Function to hide cursor when idle
+	const hideCursor = () => {
+		cursor.style.opacity = "0";
+		cursorTrail.style.opacity = "0";
+	};
+
+	// Reset idle timer
+	const resetIdleTimer = () => {
+		clearTimeout(idleTimeout);
+		idleTimeout = setTimeout(hideCursor, 1500); // Hide after 3s of inactivity
 	};
 
 	const handleMouseEnter = () => {
@@ -35,6 +55,9 @@
 			el.addEventListener("mouseleave", handleMouseLeave);
 		});
 
+		// Start idle timer
+		resetIdleTimer();
+
 		// Cleanup on component destruction
 		return () => {
 			document.removeEventListener("mousemove", handleMouseMove);
@@ -42,6 +65,7 @@
 				el.removeEventListener("mouseenter", handleMouseEnter);
 				el.removeEventListener("mouseleave", handleMouseLeave);
 			});
+			clearTimeout(idleTimeout);
 		};
 	});
 </script>
@@ -66,6 +90,8 @@
 		pointer-events: none;
 		transform: translate(-50%, -50%);
 		z-index: 9999;
+		opacity: 1;
+		transition: opacity 0.3s ease-in-out;
 	}
 
 	/* Main cursor style */

@@ -47,24 +47,12 @@
 	id="Contact"
 	bind:this={contactRef}
 	class="section relative py-24 px-6 md:px-12"
+	style="background-image: url('/assets/backdrops/AboutBanner.avif');"
 >
-	<!-- Background Glow -->
-	<div
-		class="absolute inset-0 bg-gradient-to-br from-[var(--primary-color)] to-[var(--secondary-color)] opacity-15 blur-2xl -z-10"
-	></div>
-
 	<!-- Contact Header -->
 	<div class="max-w-5xl mx-auto text-left">
-		<h2
-			in:fly={{ x: -100, duration: 500 }}
-			class="text-5xl font-extrabold tracking-wide bg-gradient-to-r from-[var(--primary-color)] via-[var(--accent-color)] to-[var(--secondary-color)] bg-clip-text text-transparent"
-		>
-			&lt; Let's Connect /&gt;
-		</h2>
-		<p
-			in:fly={{ x: -100, duration: 600 }}
-			class="text-lg text-secondary/90 mt-4 max-w-2xl leading-relaxed"
-		>
+		<h2>Let's Connect</h2>
+		<p class="text-lg text-secondary/90 mt-4 max-w-2xl leading-relaxed">
 			Have a project in mind or just want to say hi? Fill out the form below,
 			and let’s create something amazing!
 		</p>
@@ -73,7 +61,6 @@
 	<!-- Contact Form -->
 	<div
 		bind:this={formRef}
-		in:fly={{ y: 100, duration: 600, delay: 300 }}
 		class="mt-12 max-w-lg mx-auto bg-white/10 backdrop-blur-md p-8 rounded-2xl shadow-lg border border-white/20 animate-glow"
 	>
 		<!-- Name Input -->

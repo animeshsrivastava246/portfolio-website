@@ -19,15 +19,12 @@
 <section
 	id="WorkExperience"
 	bind:this={timelineRef}
-	class="section bg-theme py-20 px-6 md:px-12"
+	class="section py-20 px-6 md:px-12"
+	style="background-image: url('/assets/backdrops/AboutBanner.avif');"
 >
-	<div class="max-w-5xl mx-auto">
+	<div class="max-w-6xl mx-auto">
 		<!-- Section Title -->
-		<h2
-			class="text-5xl font-bold text-primary tracking-wide text-left leading-tight"
-		>
-			&lt; Work Experience /&gt;
-		</h2>
+		<h2>Work Experience</h2>
 
 		<!-- Timeline -->
 		<div

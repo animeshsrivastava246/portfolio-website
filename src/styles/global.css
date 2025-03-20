@@ -18,7 +18,10 @@
 }
 
 /* Apply the font to the entire site */
-body {
+html, body {
 	font-family: "Raleway", sans-serif;
 	font-weight: 400; /* Default weight */
+	height: 100%;
+	scroll-snap-type: y mandatory;
+	scroll-behavior: smooth;
 }

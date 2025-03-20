@@ -12,7 +12,11 @@
 
 /* Button Styles */
 .btn {
-	background: linear-gradient(to right, var(--primary-color), var(--secondary-color));
+	background: linear-gradient(
+		to right,
+		var(--primary-color),
+		var(--secondary-color)
+	);
 	box-shadow: 0px 0px 12px rgba(255, 255, 255, 0.2);
 	position: relative;
 	overflow: hidden;
@@ -28,24 +32,49 @@
 
 /* Glowing Border Animation */
 @keyframes neon-glow {
-	0% { box-shadow: 0 0 10px var(--accent-color); }
-	50% { box-shadow: 0 0 20px var(--accent-color); }
-	100% { box-shadow: 0 0 10px var(--accent-color); }
+	0% {
+		box-shadow: 0 0 10px var(--accent-color);
+	}
+	50% {
+		box-shadow: 0 0 20px var(--accent-color);
+	}
+	100% {
+		box-shadow: 0 0 10px var(--accent-color);
+	}
 }
 
 .animate-glow {
 	animation: neon-glow 2s infinite alternate;
 }
 
-
 .section {
-	@apply relative min-h-screen flex flex-col items-center justify-center text-center p-6 my-8;
-	scroll-snap-type: y mandatory;
+	@apply relative min-h-screen flex flex-col items-center justify-center text-center p-6 my-8 pt-[8rem] bg-center bg-cover bg-no-repeat;
+	scroll-snap-align: start;
 }
 
 /* Text */
 .section h2 {
-	text-decoration: underline;
-	text-underline-offset: 0.5rem;
-	font-size: 2.5rem;
+	@apply text-5xl font-extrabold tracking-wide bg-gradient-to-r from-[var(--primary-color)] via-[var(--accent-color)] to-[var(--secondary-color)] bg-clip-text text-transparent underline-offset-8 underline;
+	background-size: 200% 200%; /* Set the gradient to span larger than the text */
+	animation: gradientFlow 3s linear infinite; /* Apply animation */
+}
+
+.section h2::before {
+	content: "< ";
+}
+.section h2::after {
+	content: " />";
+}
+
+/* Keyframes for animated gradient */
+@keyframes gradientFlow {
+	0% {
+		background-position: 100% 0; /* Start the gradient from the right */
+	}
+	50% {
+		background-position: 50% 50%; /* Middle of the animation */
+	}
+	100% {
+		background-position: 100% 0; /* End at the same position as start */
+	}
 }

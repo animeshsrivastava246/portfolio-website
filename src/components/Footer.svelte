@@ -98,4 +98,7 @@
 	.animate-glow {
 		animation: glow 5s infinite alternate ease-in-out;
 	}
+	footer {
+		scroll-snap-align: end;
+	}
 </style>
