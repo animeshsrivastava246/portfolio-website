@@ -1,4 +1,5 @@
 <script lang="ts">
+	import data from "../data/data.json";
 	import { fly } from "svelte/transition";
 	import { onMount } from "svelte";
 
@@ -50,12 +51,12 @@
 			>
 				<img
 					src="/assets/avatars/hero.jpg"
-					alt="Avatar Hero"
-					loading="lazy"
+					alt={data.info.name}
+					loading="eager"
 					class="w-48 h-48 md:w-60 md:h-60 rounded-full shadow-2xl"
 				/>
 				<code class="text-3xl md:text-4xl font-semibold text-secondary"
-					>John Doe</code
+					>{data.info.name}</code
 				>
 			</div>
 
@@ -72,7 +73,7 @@
 		<div class="absolute bottom-4 flex justify-center items-center">
 			<button
 				onclick={() => scrollToElement("WorkExperience")}
-				class="btn bg-[var(--accent-color)] text-secondary px-6 py-3 rounded-full shadow-lg hover:scale-105 hover:shadow-[0_0_12px_var(--accent-color)] transition-all duration-300"
+				class="btn bg-[var(--accent-color)] text-secondary px-6 py-3 rounded-full shadow-lg hover:scale-105 hover:shadow-[0_0_12px_var(--accent-color)] transition-all duration-350"
 			>
 				View Projects
 			</button>
