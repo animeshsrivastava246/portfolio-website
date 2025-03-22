@@ -47,7 +47,7 @@
 	id="Contact"
 	bind:this={contactRef}
 	class="section relative py-24 px-6 md:px-12"
-	style="background-image: url('/assets/backdrops/AboutBanner.webp');"
+	style="background-image: url('/assets/backdrops/ContactBanner.webp');"
 >
 	<!-- Contact Header -->
 	<div class="max-w-5xl mx-auto text-left">
@@ -69,7 +69,7 @@
 			bind:value={name}
 			placeholder="Your Name"
 			class="w-full px-4 py-3 border-2 border-white/50 bg-black/30 text-secondary/90 rounded-lg focus:outline-none
-			focus:border-[var(--accent-color)] transition duration-300 mb-4 placeholder-white/60"
+			focus:border-[var(--accent-color)] transition duration-350 mb-4 placeholder-white/60"
 		/>
 
 		<!-- Email Input -->
@@ -78,7 +78,7 @@
 			bind:value={email}
 			placeholder="Your Email"
 			class="w-full px-4 py-3 border-2 border-white/50 bg-black/30 text-secondary/90 rounded-lg focus:outline-none
-			focus:border-[var(--accent-color)] transition duration-300 mb-4 placeholder-white/60"
+			focus:border-[var(--accent-color)] transition duration-350 mb-4 placeholder-white/60"
 		/>
 
 		<!-- Message Input -->
@@ -86,12 +86,12 @@
 			bind:value={message}
 			placeholder="Your Message"
 			class="w-full px-4 py-3 border-2 border-white/50 bg-black/30 text-secondary/90 rounded-lg focus:outline-none
-			focus:border-[var(--accent-color)] transition duration-300 mb-4 h-32 placeholder-white/60"
+			focus:border-[var(--accent-color)] transition duration-350 mb-4 h-32 placeholder-white/60"
 		></textarea>
 
 		<!-- Feedback Messages -->
 		{#if successMessage}
-			<p class="text-green-300">{successMessage}</p>
+			<p class="text-green-350">{successMessage}</p>
 		{/if}
 		{#if errorMessage}
 			<p class="text-red-400">{errorMessage}</p>

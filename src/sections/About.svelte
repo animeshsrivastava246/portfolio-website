@@ -47,7 +47,7 @@
 				<div
 					bind:this={cardsRef[i]}
 					class="relative bg-primary p-4 rounded-2xl shadow-lg flex flex-col items-center gap-3
-					transition-all duration-300 hover:scale-105 hover:shadow-2xl transform hover:-translate-y-2"
+					transition-all duration-350 hover:scale-105 hover:shadow-2xl transform hover:-translate-y-2"
 				>
 					<div
 						class="relative w-16 h-16 flex items-center justify-center rounded-xl bg-white bg-opacity-10 shadow-md"

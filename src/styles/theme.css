@@ -1,10 +1,10 @@
 :root {
 	/* 🚀 Optimized Futuristic Theme */
-	--primary-color: #0ea5e9; /* Brighter Sky Blue */
-	--secondary-color: #16a34a; /* Deep Emerald Green */
-	--background-color: #111827; /* Dark Slate for better readability */
-	--text-color: #f8fafc; /* Near White for maximum contrast */
-	--accent-color: #facc15; /* Vivid Yellow-Gold for emphasis */
+	--primary-color: #005d9ba0; 
+	--secondary-color: #baff12; 
+	--background-color: #111827; 
+	--text-color: #41ead4; 
+	--accent-color: #facc15; 
 
 	--font-primary: "Raleway", sans-serif;
 }

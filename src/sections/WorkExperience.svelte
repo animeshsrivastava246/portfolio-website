@@ -34,16 +34,16 @@
 				<div bind:this={itemsRef[i]} class="relative group">
 					<!-- Glowing Dot -->
 					<div
-						class="absolute -left-6 w-5 h-5 bg-accent border-4 border-background rounded-full transition-transform duration-300 group-hover:scale-125"
+						class="absolute -left-6 w-5 h-5 bg-accent border-4 border-background rounded-full transition-transform duration-350 group-hover:scale-125"
 					></div>
 
 					<!-- Experience Card -->
 					<div
-						class="bg-primary bg-opacity-10 backdrop-blur-md p-6 rounded-xl shadow-md border border-accent border-opacity-40 transition-all duration-300 group-hover:scale-[1.02]"
+						class="bg-primary bg-opacity-10 backdrop-blur-md p-6 rounded-xl shadow-md border border-accent border-opacity-40 transition-all duration-350 group-hover:scale-[1.02]"
 					>
 						<h3 class="text-2xl font-semibold text-secondary">{exp.title}</h3>
-						<p class="text-md text-primary font-medium">{exp.company}</p>
-						<p class="text-sm text-gray-400 mt-1">{exp.duration}</p>
+						<p class="text-xl text-theme font-medium">{exp.company}</p>
+						<p class="text-sm text-white mt-1">{exp.duration}</p>
 						<p class="text-md text-theme mt-3 leading-relaxed">
 							{exp.description}
 						</p>

@@ -12,7 +12,7 @@
 		<div class="flex whitespace-nowrap animate-scroll py-4">
 			{#each [...loadedSvgs, ...loadedSvgs] as { name, path }}
 				<div
-					class="flex flex-col items-center p-4 opacity-60 transition-transform duration-300"
+					class="flex flex-col items-center p-4 opacity-60 transition-transform duration-350"
 				>
 					<img src={path} alt={name} class="h-16 md:h-20 lg:h-24" />
 					<span class="text-md font-semibold text-theme mt-6"
@@ -41,7 +41,9 @@
 		animation: scroll 350s linear infinite;
 		will-change: transform;
 	}
-	.animate-scroll:hover, .animate-scroll:focus, .animate-scroll:active {
+	.animate-scroll:hover,
+	.animate-scroll:focus,
+	.animate-scroll:active {
 		scale: 1.05;
 		opacity: 1;
 		animation-play-state: paused;

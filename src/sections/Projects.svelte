@@ -70,7 +70,7 @@
 					<div
 						bind:this={projectRefs[i]}
 						class="relative backdrop-blur-md p-6 rounded-2xl shadow-lg border border-[var(--accent-color)]/40
-						hover:shadow-2xl hover:scale-[1.05] hover:brightness-125 transition-transform duration-300"
+						hover:shadow-2xl hover:scale-[1.05] hover:brightness-125 transition-transform duration-350"
 						style="background: linear-gradient(to bottom right, var(--primary-color), var(--secondary-color))"
 					>
 						<div

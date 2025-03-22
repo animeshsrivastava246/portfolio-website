@@ -55,10 +55,10 @@
 
 /* Text */
 .section h2 {
-	@apply text-5xl font-extrabold tracking-wide bg-gradient-to-r from-[var(--primary-color)] via-[var(--accent-color)] to-[var(--text-color)] bg-clip-text text-transparent underline-offset-8 underline;
+	@apply text-5xl font-extrabold tracking-wide bg-gradient-to-r from-[var(--primary-color)] via-[var(--accent-color)] to-[var(--text-color)] bg-clip-text text-transparent;
 	background-size: 200% 200%; /* Set the gradient to span larger than the text */
 	animation: gradientFlow 3s linear infinite; /* Apply animation */
-	filter: drop-shadow(2px 4px 6px rgba(0, 0, 0, 0.5));
+	filter: drop-shadow(4px 6px rgba(0, 0, 0, 0.5));
 }
 
 .section h2::before {

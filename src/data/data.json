@@ -81,7 +81,6 @@
 	"sections": [
 		{ "name": "Home", "id": "Hero" },
 		{ "name": "About", "id": "About" },
-		{ "name": "Skills", "id": "TechStack" },
 		{ "name": "Experience", "id": "WorkExperience" },
 		{ "name": "Projects", "id": "Projects" },
 		{ "name": "Contact", "id": "Contact" }

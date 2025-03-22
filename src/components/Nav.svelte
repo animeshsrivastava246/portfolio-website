@@ -33,11 +33,11 @@
 	>
 		<div class="mx-auto px-3 flex justify-between items-center h-16">
 			<!-- Logo -->
-			<button onclick={() => scrollToSection("Hero")} class="cursor-pointer">
+			<button on:click={() => scrollToSection("Hero")}>
 				<img
 					src="assets/logos/logo.svg"
 					alt="Logo"
-					class="w-10 h-10 rounded-full"
+					class="w-10 h-10 rounded-full hover:scale-105 duration-350"
 				/>
 			</button>
 
@@ -46,7 +46,7 @@
 				href="/resume.pdf"
 				target="_blank"
 				class="btn bg-[var(--primary-color)] text-white px-5 py-2 rounded-full shadow-lg
-				hover:scale-105 hover:shadow-[0_0_12px_var(--accent-color)] transition-all duration-300"
+				hover:scale-105 hover:shadow-[0_0_12px_var(--accent-color)] transition-all duration-350"
 			>
 				Resume
 			</a>
@@ -54,7 +54,7 @@
 			<!-- Mobile Hamburger Button -->
 			<button
 				class="md:hidden text-white"
-				onclick={() => (isMobileMenuOpen = !isMobileMenuOpen)}
+				on:click={() => (isMobileMenuOpen = !isMobileMenuOpen)}
 			>
 				{#if isMobileMenuOpen}
 					<!-- X icon -->
@@ -133,7 +133,7 @@
 				{#each menuItems as item}
 					<li>
 						<button
-							onclick={() => scrollToSection(item.id)}
+							on:click={() => scrollToSection(item.id)}
 							class="text-theme text-lg font-medium p-2 rounded-full transition-all duration-350 hover:shadow-[0_0_8px_var(--accent-color)] hover:scale-105"
 						>
 							{item.name}
@@ -158,12 +158,12 @@
 			{#each menuItems as item}
 				<li>
 					<button
-						onclick={() => {
+						on:click={() => {
 							scrollToSection(item.id);
 							isMobileMenuOpen = false;
 						}}
 						class="text-white p-4 rounded-full shadow-lg font-bold
-						hover:scale-105 hover:shadow-[0_0_12px_var(--accent-color)] transition-all duration-300"
+						hover:scale-105 hover:shadow-[0_0_12px_var(--accent-color)] transition-all duration-350"
 					>
 						{item.name}
 					</button>
