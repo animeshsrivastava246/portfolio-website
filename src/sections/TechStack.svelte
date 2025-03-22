@@ -12,10 +12,10 @@
 		<div class="flex whitespace-nowrap animate-scroll py-4">
 			{#each [...loadedSvgs, ...loadedSvgs] as { name, path }}
 				<div
-					class="flex flex-col items-center p-4 opacity-60 transition-transform duration-350"
+					class="flex flex-col items-center p-4 opacity-60 hover:scale-105 hover:opacity-100 transition-all duration-350"
 				>
 					<img src={path} alt={name} class="h-16 md:h-20 lg:h-24" />
-					<span class="text-md font-semibold text-theme mt-6"
+					<span class="text-md font-semibold text-secondary mt-6"
 						>{name.replace(".svg", "").replace("-", " ")}</span
 					>
 				</div>
@@ -39,13 +39,10 @@
 		display: flex;
 		gap: 2rem;
 		animation: scroll 350s linear infinite;
-		will-change: transform;
+		transition: all 0.35s ease-in-out;
+		/* will-change: transform; */
 	}
-	.animate-scroll:hover,
-	.animate-scroll:focus,
-	.animate-scroll:active {
-		scale: 1.05;
-		opacity: 1;
+	.animate-scroll:hover {
 		animation-play-state: paused;
 	}
 	.animate-scroll img {
