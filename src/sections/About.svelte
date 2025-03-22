@@ -46,16 +46,16 @@
 			{#each skills as skill, i}
 				<div
 					bind:this={cardsRef[i]}
-					class="relative bg-primary p-4 rounded-2xl shadow-lg flex flex-col items-center gap-3
+					class="relative bg-theme p-4 rounded-2xl shadow-lg flex flex-col items-center gap-3
 					transition-all duration-350 hover:scale-105 hover:shadow-2xl transform hover:-translate-y-2"
 				>
 					<div
-						class="relative w-16 h-16 flex items-center justify-center rounded-xl bg-white bg-opacity-10 shadow-md"
+						class="relative w-16 h-16 flex items-center justify-center rounded-xl bg-white/80 shadow-md"
 					>
 						<img src={skill.icon} alt={skill.title} class="w-10 h-10" />
 					</div>
 					<h3
-						class="text-lg font-semibold text-theme text-center tracking-wide"
+						class="text-lg font-semibold text-white text-center tracking-wide"
 					>
 						{skill.title}
 					</h3>
