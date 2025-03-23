@@ -58,7 +58,7 @@
 		<!-- Scroll Button (Fixed at Bottom) -->
 		<div class="absolute bottom-4 flex justify-center items-center">
 			<button
-				on:click={() => scrollToElement("WorkExperience")}
+				on:click={() => scrollToElement("Projects")}
 				class="btn bg-[var(--accent-color)] px-6 py-3 rounded-full shadow-lg
 				hover:scale-105 hover:shadow-[0_0_12px_var(--accent-color)] transition-all duration-350"
 			>
