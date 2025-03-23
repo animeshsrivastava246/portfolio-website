@@ -12,7 +12,7 @@
 		<div class="flex whitespace-nowrap animate-scroll py-4">
 			{#each [...loadedSvgs, ...loadedSvgs] as { name, path }}
 				<div
-					class="flex flex-col items-center p-4 opacity-60 hover:scale-105 hover:opacity-100 transition-all duration-350"
+					class="flex flex-col items-center p-4 opacity-80 hover:scale-105 hover:opacity-100 transition-all duration-350"
 				>
 					<img src={path} alt={name} class="h-16 md:h-20 lg:h-24" />
 					<span class="text-md font-semibold text-secondary mt-6"

@@ -1,10 +1,9 @@
 :root {
 	--primary-color: #66aaff; /* Lighter blue */
-	--secondary-color: #00ff89; /* Neon green */
+	--secondary-color: #fe6909; /* Neon green */
 	--background-color: #0a0c0f; /* Darker background for contrast */
 	--text-color: #39ffe1; /* Neon cyan */
 	--accent-color: #ff00e0; /* Neon pink */
-	
 
 	--font-primary: "Raleway", sans-serif;
 }

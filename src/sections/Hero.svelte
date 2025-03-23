@@ -35,18 +35,15 @@
 	id="Hero"
 	bind:this={heroRef}
 	class="section relative w-full flex flex-col justify-center items-center text-center mt-0"
-	style="background-image: url('/assets/backdrops/HeroBanner.webp');"
+	style="background-image: url('/assets/backdrops/HeroBanner.webp'); eager: load;"
 >
-	<!-- Background Overlay -->
-	<div class="absolute inset-0 bg-black/50 backdrop-blur-lg -z-10"></div>
-
 	{#if visible}
 		<div
 			class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center max-w-6xl mx-auto px-6 md:px-12"
 		>
 			<!-- Left Side: Image & Name -->
 			<div
-				in:fly={{ x: -200, duration: 500 }}
+				in:fly={{ x: -200, duration: 350 }}
 				class="flex flex-col items-center space-y-4"
 			>
 				<img
@@ -62,8 +59,8 @@
 
 			<!-- Right Side: Text -->
 			<blockquote
-				in:fly={{ x: 200, duration: 500, delay: 500 }}
-				class="text-4xl md:text-6xl font-bold text-theme text-left leading-tight drop-shadow-[2px_2px_rgba(0,0,0)]"
+				in:fly={{ x: 200, duration: 350, delay: 350 }}
+				class="text-3xl md:text-5xl font-bold text-theme text-left leading-tight drop-shadow-[2px_2px_rgba(0,0,0)]"
 			>
 				Lorem ipsum, dolor sit amet consectetur adipisicing elit.
 			</blockquote>
@@ -72,7 +69,7 @@
 		<!-- Scroll Button (Fixed at Bottom) -->
 		<div class="absolute bottom-4 flex justify-center items-center">
 			<button
-				onclick={() => scrollToElement("WorkExperience")}
+				on:click={() => scrollToElement("WorkExperience")}
 				class="btn bg-[var(--accent-color)] px-6 py-3 rounded-full shadow-lg hover:scale-105 hover:shadow-[0_0_12px_var(--accent-color)] transition-all duration-350"
 			>
 				View Projects

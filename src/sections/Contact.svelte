@@ -2,7 +2,6 @@
 	import { onMount } from "svelte";
 	import { fadeIn } from "../animations/gsap";
 	import { submitContactForm } from "../services/firebase";
-	import { fly } from "svelte/transition";
 
 	let contactRef: HTMLElement;
 	let formRef: HTMLElement;
@@ -52,7 +51,9 @@
 	<!-- Contact Header -->
 	<div class="max-w-5xl mx-auto text-left">
 		<h2>Let's Connect</h2>
-		<p class="text-lg text-secondary/90 mt-4 max-w-2xl leading-relaxed">
+		<p
+			class="mt-6 text-lg bg-gradient-to-r from-white via-[var(--text-color)] to-[var(--accent-color)] bg-clip-text text-transparent font-extrabold tracking-wide"
+		>
 			Have a project in mind or just want to say hi? Fill out the form below,
 			and let us create something amazing!
 		</p>

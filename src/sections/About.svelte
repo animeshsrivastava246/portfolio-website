@@ -46,8 +46,8 @@
 			{#each skills as skill, i}
 				<div
 					bind:this={cardsRef[i]}
-					class="relative bg-theme p-4 rounded-2xl shadow-lg flex flex-col items-center gap-3
-					transition-all duration-350 hover:scale-105 hover:shadow-2xl transform hover:-translate-y-2"
+					class="relative bg-black/30 p-4 rounded-2xl shadow-lg flex flex-col items-center gap-3
+					transition-all duration-350 hover:scale-105 hover:shadow-2xl transform hover:-translate-y-2 hover:bg-black/50"
 				>
 					<div
 						class="relative w-16 h-16 flex items-center justify-center rounded-xl bg-white/80 shadow-md"

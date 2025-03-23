@@ -5,9 +5,18 @@
 	let cursor: HTMLElement;
 	let cursorTrail: HTMLElement;
 	let idleTimeout: NodeJS.Timeout;
+	let isTouchDevice: boolean = false; // Variable to track if it's a touch device
+
+	// Function to detect if the device is a touch device
+	const checkTouchDevice = () => {
+		// Simple check for touch device
+		isTouchDevice = "ontouchstart" in window || navigator.maxTouchPoints > 0;
+	};
 
 	// Function to handle mousemove event
 	const handleMouseMove = (e: MouseEvent) => {
+		if (isTouchDevice) return; // Do nothing if it's a touch device
+
 		// Show cursor when moving
 		cursor.style.opacity = "1";
 		cursorTrail.style.opacity = "1";
@@ -24,29 +33,42 @@
 
 	// Function to hide cursor when idle
 	const hideCursor = () => {
+		if (isTouchDevice) return; // Do nothing if it's a touch device
 		cursor.style.opacity = "0";
 		cursorTrail.style.opacity = "0";
 	};
 
 	// Reset idle timer
 	const resetIdleTimer = () => {
+		if (isTouchDevice) return; // Do nothing if it's a touch device
 		clearTimeout(idleTimeout);
-		idleTimeout = setTimeout(hideCursor, 1500); // Hide after ns of inactivity
+		idleTimeout = setTimeout(hideCursor, 1500); // Hide after 1.5 seconds of inactivity
 	};
 
 	const handleMouseEnter = () => {
+		if (isTouchDevice) return; // Do nothing if it's a touch device
 		cursor.classList.add("hover");
 		cursorTrail.classList.add("hover");
 	};
 
 	const handleMouseLeave = () => {
+		if (isTouchDevice) return; // Do nothing if it's a touch device
 		cursor.classList.remove("hover");
 		cursorTrail.classList.remove("hover");
 	};
 
 	onMount(() => {
+		// Check if the device is touch
+		checkTouchDevice();
+
+		// Initially hide the cursor
+		cursor.style.opacity = "0";
+		cursorTrail.style.opacity = "0";
+
 		// Attach mousemove event
-		document.addEventListener("mousemove", handleMouseMove);
+		if (!isTouchDevice) {
+			document.addEventListener("mousemove", handleMouseMove);
+		}
 
 		// Hover effects for interactive elements
 		const interactiveElements = document.querySelectorAll("a, button");
@@ -60,7 +82,9 @@
 
 		// Cleanup on component destruction
 		return () => {
-			document.removeEventListener("mousemove", handleMouseMove);
+			if (!isTouchDevice) {
+				document.removeEventListener("mousemove", handleMouseMove);
+			}
 			interactiveElements.forEach((el) => {
 				el.removeEventListener("mouseenter", handleMouseEnter);
 				el.removeEventListener("mouseleave", handleMouseLeave);
@@ -90,7 +114,7 @@
 		pointer-events: none;
 		transform: translate(-50%, -50%);
 		z-index: 9999;
-		opacity: 1;
+		opacity: 0; /* Initially hidden */
 		transition: opacity 0.35s ease-in-out;
 	}
 
