@@ -3,22 +3,11 @@
 	import { fly } from "svelte/transition";
 	import { onMount } from "svelte";
 
-	let visible = false;
+	let visible = false; // Initially hidden
 	let heroRef: HTMLElement;
 
-	// Observer to detect when the section is visible
 	onMount(() => {
-		const observer = new IntersectionObserver(
-			(entries) => {
-				if (entries[0].isIntersecting) {
-					visible = true;
-					observer.disconnect(); // Stop observing after it's visible
-				}
-			},
-			{ threshold: 0.3 }
-		);
-
-		if (heroRef) observer.observe(heroRef);
+		visible = true; // Set to true immediately after mount
 	});
 
 	function scrollToElement(id: string) {
@@ -47,7 +36,7 @@
 				class="flex flex-col items-center space-y-4"
 			>
 				<img
-					src="/assets/avatars/hero.jpg"
+					src="/assets/avatars/hero.webp"
 					alt={data.info.name}
 					loading="eager"
 					class="w-48 h-48 md:w-60 md:h-60 rounded-full shadow-2xl"
@@ -70,7 +59,8 @@
 		<div class="absolute bottom-4 flex justify-center items-center">
 			<button
 				on:click={() => scrollToElement("WorkExperience")}
-				class="btn bg-[var(--accent-color)] px-6 py-3 rounded-full shadow-lg hover:scale-105 hover:shadow-[0_0_12px_var(--accent-color)] transition-all duration-350"
+				class="btn bg-[var(--accent-color)] px-6 py-3 rounded-full shadow-lg
+				hover:scale-105 hover:shadow-[0_0_12px_var(--accent-color)] transition-all duration-350"
 			>
 				View Projects
 			</button>
