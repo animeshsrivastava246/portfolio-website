@@ -74,7 +74,7 @@
 					class="flex flex-col items-center p-4 opacity-80 hover:scale-105 hover:opacity-100 transition-all duration-350"
 				>
 					<img src={path} alt={name} class="h-16 md:h-20 lg:h-24" />
-					<span class="text-md font-semibold text-secondary mt-6"
+					<span class="text-md font-semibold text-white mt-6"
 						>{name.replace(".svg", "").replace("-", " ")}</span
 					>
 				</div>

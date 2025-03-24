@@ -34,7 +34,9 @@
 >
 	<div class="max-w-6xl mx-auto text-center">
 		<h2>Projects</h2>
-		<p class="text-lg text-[var(--text-color)] max-w-2xl mx-auto">
+		<p
+			class="text-lg text-[var(--secondary-color)] max-w-2xl mx-auto font-bold drop-shadow-[1px_1px_rgba(0,0,0)]"
+		>
 			A curated collection of projects showcasing my expertise in design,
 			development, and interactivity.
 		</p>
@@ -56,7 +58,7 @@
 						></div>
 
 						<div class="relative z-10 text-left">
-							<h3 class="text-2xl font-semibold text-[var(--accent-color)]">
+							<h3 class="text-2xl font-semibold text-[#f7c5fe]">
 								{project.title}
 							</h3>
 							<p class="mt-3 text-md text-[var(--text-color)] leading-relaxed">

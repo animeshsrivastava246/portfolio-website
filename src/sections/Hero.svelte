@@ -41,7 +41,8 @@
 					loading="eager"
 					class="w-48 h-48 md:w-60 md:h-60 rounded-full shadow-2xl"
 				/>
-				<code class="text-3xl md:text-4xl font-semibold text-secondary"
+				<code
+					class="text-3xl md:text-4xl font-semibold text-secondary drop-shadow-[2px_2px_rgba(0,0,0)]"
 					>{data.info.name}</code
 				>
 			</div>
@@ -51,7 +52,7 @@
 				in:fly={{ x: 200, duration: 350, delay: 350 }}
 				class="text-3xl md:text-5xl font-bold text-theme text-left leading-tight drop-shadow-[2px_2px_rgba(0,0,0)]"
 			>
-				Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+				Building Code, <br />Writing Tech, <br />Creating Impact
 			</blockquote>
 		</div>
 
