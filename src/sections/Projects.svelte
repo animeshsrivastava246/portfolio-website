@@ -15,38 +15,16 @@
 	let projectRefs: HTMLElement[] = [];
 	let projects: Project[] = [];
 
-	const fetchProjects = async () => {
-		await new Promise((res) => setTimeout(res, 100));
-		projects = rawData.projects as Project[];
-	};
-
-	const initObserver = () => {
-		const section = document.getElementById("Projects");
-		if (!section) return;
-
-		const observer = new IntersectionObserver(
-			(entries) => {
-				if (entries[0].isIntersecting && !isVisible) {
-					observer.disconnect();
-					showProjects();
-				}
-			},
-			{ threshold: 0.3 }
-		);
-
-		observer.observe(section);
-	};
-
-	const showProjects = async () => {
+	// Fetch projects immediately when component mounts
+	onMount(async () => {
 		isVisible = true;
-		await fetchProjects();
+		await new Promise((res) => setTimeout(res, 100)); // Simulating async fetch
+		projects = rawData.projects as Project[];
 
 		setTimeout(() => {
 			projectRefs.forEach((el) => el && applyTilt(el));
 		}, 600);
-	};
-
-	onMount(initObserver);
+	});
 </script>
 
 <section
