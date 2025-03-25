@@ -27,13 +27,9 @@
 	});
 </script>
 
-<section
-	id="Projects"
-	class="section py-20 px-6 md:px-12"
-	style="background-image: url('/assets/backdrops/ProjectsBanner.webp');"
->
+<section id="Projects" class="section py-20 px-6 md:px-12">
 	<div class="max-w-6xl mx-auto text-center">
-		<h2>Projects</h2>
+		<h1>Projects</h1>
 		<p
 			class="text-lg text-[var(--secondary-color)] max-w-2xl mx-auto font-bold drop-shadow-[1px_1px_rgba(0,0,0)]"
 		>
@@ -49,9 +45,9 @@
 				{#each projects as project, i}
 					<div
 						bind:this={projectRefs[i]}
-						class="relative backdrop-blur-md p-6 rounded-2xl shadow-lg border border-[var(--accent-color)]/40
-						hover:shadow-2xl hover:scale-[1.05] hover:brightness-125 transition-transform duration-350"
-						style="background: linear-gradient(to bottom right, var(--primary-color), var(--secondary-color))"
+						class="relative p-6 rounded-2xl shadow-lg border border-[rgba(var(--accent-color), 0.4)] backdrop-blur-md
+					   hover:shadow-2xl hover:scale-105 hover:brightness-125 transition-transform duration-350
+					   bg-gradient-to-br from-[var(--primary-color)] to-[var(--secondary-color)]"
 					>
 						<div
 							class="absolute inset-0 bg-black/10 rounded-2xl pointer-events-none"
@@ -86,3 +82,9 @@
 		{/if}
 	</div>
 </section>
+
+<style>
+	#Projects {
+		background-image: url("/assets/backdrops/ProjectsBanner.webp");
+	}
+</style>

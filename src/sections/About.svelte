@@ -22,12 +22,11 @@
 	id="About"
 	bind:this={aboutRef}
 	class="section text-theme py-20 px-6 md:px-12"
-	style="background-image: url('/assets/backdrops/AboutBanner.webp');"
 >
 	<div class="max-w-6xl mx-auto flex flex-col md:flex-row items-start gap-12">
 		<!-- Left Side: About Text -->
 		<div class="md:w-1/2">
-			<h2>About Me</h2>
+			<h1>About Me</h1>
 			<p class="mt-6 text-lg text-secondary leading-relaxed">
 				I'm a software engineer passionate about crafting high-quality,
 				scalable, and efficient applications. I thrive on solving complex
@@ -54,11 +53,11 @@
 					>
 						<img src={skill.icon} alt={skill.title} class="w-10 h-10" />
 					</div>
-					<h3
+					<h2
 						class="text-lg font-semibold text-white text-center tracking-wide"
 					>
 						{skill.title}
-					</h3>
+					</h2>
 					<div class="absolute inset-0 bg-white opacity-5 rounded-2xl"></div>
 				</div>
 			{/each}
@@ -84,6 +83,10 @@
 </section>
 
 <style>
+	#About {
+		background-image: url("/assets/backdrops/AboutBanner.webp");
+	}
+
 	/* Infinite Scroll Animation */
 	@keyframes scroll {
 		from {

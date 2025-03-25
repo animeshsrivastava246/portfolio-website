@@ -54,17 +54,17 @@
 }
 
 /* Text */
-.section h2 {
+.section h1 {
 	@apply text-3xl md:text-5xl font-extrabold tracking-wide bg-gradient-to-r from-[var(--primary-color)] via-[var(--accent-color)] to-[var(--text-color)] bg-clip-text text-transparent;
 	background-size: 200% 200%; /* Set the gradient to span larger than the text */
 	animation: gradientFlow 3.5s linear infinite; /* Apply animation */
 	filter: drop-shadow(4px 6px rgba(0, 0, 0, 0.5));
 }
 
-.section h2::before {
+.section h1::before {
 	content: "< ";
 }
-.section h2::after {
+.section h1::after {
 	content: " />";
 }
 

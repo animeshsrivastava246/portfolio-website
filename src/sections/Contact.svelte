@@ -46,11 +46,10 @@
 	id="Contact"
 	bind:this={contactRef}
 	class="section relative py-24 px-6 md:px-12"
-	style="background-image: url('/assets/backdrops/ContactBanner.webp');"
 >
 	<!-- Contact Header -->
 	<div class="max-w-5xl mx-auto text-left">
-		<h2>Let's Connect</h2>
+		<h1>Let's Connect</h1>
 		<p
 			class="mt-6 text-lg bg-gradient-to-r from-white via-[var(--text-color)] to-[var(--accent-color)] bg-clip-text text-transparent font-extrabold tracking-wide"
 		>
@@ -108,3 +107,9 @@
 		</button>
 	</div>
 </section>
+
+<style>
+	#Contact {
+		background-image: url("/assets/backdrops/ContactBanner.webp");
+	}
+</style>

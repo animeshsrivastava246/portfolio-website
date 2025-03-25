@@ -20,11 +20,10 @@
 	id="WorkExperience"
 	bind:this={timelineRef}
 	class="section py-20 px-6 md:px-12"
-	style="background-image: url('/assets/backdrops/WorkExperienceBanner.webp');"
 >
 	<div class="max-w-6xl mx-auto">
 		<!-- Section Title -->
-		<h2>Work Experience</h2>
+		<h1>Work Experience</h1>
 
 		<!-- Timeline -->
 		<div
@@ -53,3 +52,9 @@
 		</div>
 	</div>
 </section>
+
+<style>
+	#WorkExperience {
+		background-image: url("/assets/backdrops/WorkExperienceBanner.webp");
+	}
+</style>

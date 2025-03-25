@@ -24,7 +24,6 @@
 	id="Hero"
 	bind:this={heroRef}
 	class="section relative w-full flex flex-col justify-center items-center text-center mt-0"
-	style="background-image: url('/assets/backdrops/HeroBanner.webp'); eager: load;"
 >
 	{#if visible}
 		<div
@@ -68,3 +67,9 @@
 		</div>
 	{/if}
 </section>
+
+<style>
+	#Hero {
+		background-image: url("/assets/backdrops/HeroBanner.webp");
+	}
+</style>
