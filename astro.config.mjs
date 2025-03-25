@@ -9,6 +9,6 @@ export default defineConfig({
 	vite: {
 		plugins: [tailwindcss()],
 	},
-	site: "https://portfolio-animesh-srivastava-dev.vercel.app",
+	site: "https://portfolio-animesh-dev.vercel.app",
 	integrations: [svelte({ extensions: [".svelte"] }), sitemap()],
 });
