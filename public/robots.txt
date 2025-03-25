@@ -1,4 +1,3 @@
 User-agent: *
 Allow: /
-
 Sitemap: https://portfolio-animesh-dev.vercel.app/sitemap.xml

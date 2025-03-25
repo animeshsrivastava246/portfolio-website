@@ -13,7 +13,62 @@ import data from "../data/data.json";
 
 <html lang="en">
 	<head>
-		<!-- Favicon & PWA -->
+		<!-- ✅ Meta Information -->
+		<title>{data.info.name} | Developer Portfolio</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta
+			name="description"
+			content="Explore {data.info.name}'s Developer Portfolio – Showcasing expertise in full-stack development, UI/UX, and interactive web experiences."
+		/>
+		<meta name="author" content="{data.info.name}" />
+		<meta
+			name="keywords"
+			content="Animesh Srivastava, Web Developer, Portfolio, UI/UX, Software Developer,Full Stack Developer, JavaScript, Svelte, Astro, Frontend, Backend, Tailwind CSS, React, Node.js, MongoDB, MySQL, Firebase, AWS, Git"
+		/>
+
+		<!-- ✅ OpenGraph Meta Tags (For Social Media) -->
+		<meta
+			property="og:title"
+			content="{data.info.name} | Developer Portfolio"
+		/>
+		<meta
+			property="og:description"
+			content="Discover {data.info.name}'s cutting-edge projects, UI/UX designs, and web development skills."
+		/>
+		<meta
+			property="og:image"
+			content="https://portfolio-animesh-dev.vercel.app/assets/og-image.jpg"
+		/>
+		<meta
+			property="og:url"
+			content="https://portfolio-animesh-dev.vercel.app"
+		/>
+		<meta property="og:type" content="website" />
+		<meta property="og:locale" content="en_US" />
+
+		<!-- ✅ Twitter Card -->
+		<meta name="twitter:card" content="summary_large_image" />
+		<meta
+			name="twitter:title"
+			content="{data.info.name} | Developer Portfolio"
+		/>
+		<meta
+			name="twitter:description"
+			content="Explore {data.info.name}'s portfolio featuring top-notch web development and UI/UX expertise."
+		/>
+		<meta
+			name="twitter:image"
+			content="https://portfolio-animesh-dev.vercel.app/assets/og-image.jpg"
+		/>
+		<meta name="twitter:site" content="@Animesh246" />
+
+		<!-- ✅ Canonical URL -->
+		<link rel="canonical" href="https://portfolio-animesh-dev.vercel.app" />
+		
+		<!-- ✅ Sitemap.xml -->
+		<link rel="sitemap" type="application/xml" title="Sitemap" href="/sitemap.xml" />
+
+		<!-- ✅ Favicon & PWA -->
 		<link rel="icon" type="image/png" href="/favicon-96x96.png" />
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 		<link rel="apple-touch-icon" href="/apple-touch-icon.png" />
@@ -25,8 +80,25 @@ import data from "../data/data.json";
 		/>
 		<meta name="msapplication-TileColor" content="#0a0c0f" />
 
-		<title>{data.info.name} | Portfolio</title>
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<!-- ✅ Robots Meta -->
+		<meta name="robots" content="index, follow" />
+
+		<script type="application/ld+json">
+			{
+				"@context": "https://schema.org",
+				"@type": "Person",
+				"name": "Animesh Srivastava",
+				"url": "https://portfolio-animesh-dev.vercel.app",
+				"image": "https://portfolio-animesh-dev.vercel.app/assets/og-image.jpg",
+				"jobTitle": "Software Developer",
+				"description": "A passionate software developer specializing in frontend UI/UX, backend development, and interactive web experiences.",
+				"sameAs": [
+					"https://github.com/Animesh246",
+					"https://twitter.com/Animesh246",
+					"https://linkedin.com/in/animesh-srivastava"
+				]
+			}
+		</script>
 	</head>
 	<body>
 		<Cursor client:load />

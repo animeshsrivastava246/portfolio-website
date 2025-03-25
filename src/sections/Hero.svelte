@@ -35,7 +35,9 @@
 				<img
 					src="/assets/avatars/hero.webp"
 					alt={data.info.name}
-					loading="eager"
+					width="300"
+					height="300"
+					loading="lazy"
 					class="w-48 h-48 md:w-60 md:h-60 rounded-full shadow-2xl"
 				/>
 				<code
@@ -52,7 +54,9 @@
 				Building Code, <br />Writing Tech, <br />Creating Impact
 			</blockquote>
 		</div>
-
+		<h1 class="mt-12" in:fly={{ y: 200, duration: 350, delay: 1050 }}>
+			Code Crusader
+		</h1>
 		<!-- Scroll Button (Fixed at Bottom) -->
 		<div class="absolute bottom-4 flex justify-center items-center">
 			<button
