@@ -1,21 +1,19 @@
 <script lang="ts">
 	import { onMount } from "svelte";
-	import gsap from "gsap";
 
 	let cursor: HTMLElement;
 	let cursorTrail: HTMLElement;
 	let idleTimeout: NodeJS.Timeout;
-	let isTouchDevice: boolean = false; // Variable to track if it's a touch device
+	let isTouchDevice = false;
 
-	// Function to detect if the device is a touch device
+	// Detect if it's a touch device
 	const checkTouchDevice = () => {
-		// Simple check for touch device
 		isTouchDevice = "ontouchstart" in window || navigator.maxTouchPoints > 0;
 	};
 
 	// Function to handle mousemove event
 	const handleMouseMove = (e: MouseEvent) => {
-		if (isTouchDevice) return; // Do nothing if it's a touch device
+		if (isTouchDevice) return;
 
 		// Show cursor when moving
 		cursor.style.opacity = "1";
@@ -24,48 +22,47 @@
 		// Reset idle timer
 		resetIdleTimer();
 
-		// Main cursor moves instantly
-		gsap.to(cursor, { left: e.clientX, top: e.clientY, duration: 0 });
+		// Move cursor instantly
+		cursor.style.transform = `translate(${e.clientX}px, ${e.clientY}px)`;
 
-		// Cursor trail follows with a delay
-		gsap.to(cursorTrail, { left: e.clientX, top: e.clientY, duration: 0.35 });
+		// Cursor trail follows with delay
+		cursorTrail.style.transition = "transform 0.35s ease-out";
+		cursorTrail.style.transform = `translate(${e.clientX}px, ${e.clientY}px)`;
 	};
 
 	// Function to hide cursor when idle
 	const hideCursor = () => {
-		if (isTouchDevice) return; // Do nothing if it's a touch device
+		if (isTouchDevice) return;
 		cursor.style.opacity = "0";
 		cursorTrail.style.opacity = "0";
 	};
 
 	// Reset idle timer
 	const resetIdleTimer = () => {
-		if (isTouchDevice) return; // Do nothing if it's a touch device
+		if (isTouchDevice) return;
 		clearTimeout(idleTimeout);
-		idleTimeout = setTimeout(hideCursor, 1500); // Hide after 1.5 seconds of inactivity
+		idleTimeout = setTimeout(hideCursor, 1500); // Hide after 1.5s of inactivity
 	};
 
 	const handleMouseEnter = () => {
-		if (isTouchDevice) return; // Do nothing if it's a touch device
+		if (isTouchDevice) return;
 		cursor.classList.add("hover");
 		cursorTrail.classList.add("hover");
 	};
 
 	const handleMouseLeave = () => {
-		if (isTouchDevice) return; // Do nothing if it's a touch device
+		if (isTouchDevice) return;
 		cursor.classList.remove("hover");
 		cursorTrail.classList.remove("hover");
 	};
 
 	onMount(() => {
-		// Check if the device is touch
 		checkTouchDevice();
 
 		// Initially hide the cursor
 		cursor.style.opacity = "0";
 		cursorTrail.style.opacity = "0";
 
-		// Attach mousemove event
 		if (!isTouchDevice) {
 			document.addEventListener("mousemove", handleMouseMove);
 		}
@@ -112,10 +109,10 @@
 		position: fixed;
 		border-radius: 50%;
 		pointer-events: none;
-		transform: translate(-50%, -50%);
 		z-index: 9999;
 		opacity: 0; /* Initially hidden */
 		transition: opacity 0.35s ease-in-out;
+		will-change: transform;
 	}
 
 	/* Main cursor style */
