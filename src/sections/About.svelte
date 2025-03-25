@@ -35,7 +35,7 @@
 <section
 	id="About"
 	bind:this={aboutRef}
-	class="section text-theme py-20 px-6 md:px-12"
+	class="section text-theme py-20 px-6 md:px-12 overflow-y-hidden"
 >
 	{#if visible}
 		<div class="max-w-6xl mx-auto flex flex-col md:flex-row items-start gap-12">
@@ -95,7 +95,17 @@
 					>
 						<img src={path} alt={name} class="h-16 md:h-20 lg:h-24" />
 						<span class="text-md font-semibold text-white mt-6">
-							{name.replace(".svg", "").replace("-", " ")}
+							{name.replace(".svg", "").replaceAll("-", " ")}
+						</span>
+					</div>
+				{/each}
+				{#each [...loadedSvgs, ...loadedSvgs] as { name, path }}
+					<div
+						class="flex flex-col items-center p-4 opacity-80 hover:scale-105 hover:opacity-100 transition-all duration-350"
+					>
+						<img src={path} alt={name} class="h-16 md:h-20 lg:h-24" />
+						<span class="text-md font-semibold text-white mt-6">
+							{name.replace(".svg", "").replaceAll("-", " ")}
 						</span>
 					</div>
 				{/each}
@@ -112,7 +122,7 @@
 	/* Infinite Scroll Animation */
 	@keyframes scroll {
 		from {
-			transform: translateX(0);
+			transform: translateX(50);
 		}
 		to {
 			transform: translateX(-50%);
@@ -129,6 +139,6 @@
 		animation-play-state: paused;
 	}
 	.animate-scroll img {
-		filter: drop-shadow(1px 1px 10px var(--secondary-color));
+		filter: drop-shadow(2px 2px 10px var(--secondary-color));
 	}
 </style>

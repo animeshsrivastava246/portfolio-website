@@ -13,9 +13,7 @@
 	function scrollToElement(id: string) {
 		const element = document.getElementById(id);
 		if (element) {
-			element.scrollIntoView({ behavior: "smooth", block: "start" });
-		} else {
-			console.error("Element NOT found:", id);
+			element.scrollIntoView({ behavior: "smooth" });
 		}
 	}
 </script>

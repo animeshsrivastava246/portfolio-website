@@ -11,11 +11,11 @@
 		isTouchDevice = "ontouchstart" in window || navigator.maxTouchPoints > 0;
 	};
 
-	// Function to handle mousemove event
+	// Function to handle mouse movement
 	const handleMouseMove = (e: MouseEvent) => {
 		if (isTouchDevice) return;
 
-		// Show cursor when moving
+		// Show cursor on movement
 		cursor.style.opacity = "1";
 		cursorTrail.style.opacity = "1";
 
@@ -23,11 +23,13 @@
 		resetIdleTimer();
 
 		// Move cursor instantly
-		cursor.style.transform = `translate(${e.clientX}px, ${e.clientY}px)`;
+		cursor.style.left = `${e.clientX}px`;
+		cursor.style.top = `${e.clientY}px`;
 
-		// Cursor trail follows with delay
-		cursorTrail.style.transition = "transform 0.35s ease-out";
-		cursorTrail.style.transform = `translate(${e.clientX}px, ${e.clientY}px)`;
+		// Cursor trail follows smoothly
+		cursorTrail.style.transition = "transform 0.2s ease-out";
+		cursorTrail.style.left = `${e.clientX}px`;
+		cursorTrail.style.top = `${e.clientY}px`;
 	};
 
 	// Function to hide cursor when idle
@@ -65,10 +67,11 @@
 
 		if (!isTouchDevice) {
 			document.addEventListener("mousemove", handleMouseMove);
+			document.addEventListener("mouseleave", hideCursor);
 		}
 
 		// Hover effects for interactive elements
-		const interactiveElements = document.querySelectorAll("a, button");
+		const interactiveElements = document.querySelectorAll("a, button, .hover-target");
 		interactiveElements.forEach((el) => {
 			el.addEventListener("mouseenter", handleMouseEnter);
 			el.addEventListener("mouseleave", handleMouseLeave);
@@ -81,6 +84,7 @@
 		return () => {
 			if (!isTouchDevice) {
 				document.removeEventListener("mousemove", handleMouseMove);
+				document.removeEventListener("mouseleave", hideCursor);
 			}
 			interactiveElements.forEach((el) => {
 				el.removeEventListener("mouseenter", handleMouseEnter);
@@ -111,8 +115,8 @@
 		pointer-events: none;
 		z-index: 9999;
 		opacity: 0; /* Initially hidden */
-		transition: opacity 0.35s ease-in-out;
-		will-change: transform;
+		transition: opacity 0.3s ease-in-out, transform 0.1s linear;
+		transform: translate(-50%, -50%);
 	}
 
 	/* Main cursor style */
@@ -128,23 +132,25 @@
 
 	/* Cursor trail style */
 	:global(.cursor-trail) {
-		width: 16px;
-		height: 16px;
+		width: 18px;
+		height: 18px;
 		border: 2px solid var(--secondary-color);
 		opacity: 0.5;
 	}
 
 	/* Hover effects for cursor and trail */
 	:global(.cursor.hover) {
-		width: 24px;
-		height: 24px;
+		width: 28px;
+		height: 28px;
 		background-color: var(--primary-color);
-		opacity: 0.7;
+		opacity: 0.8;
+		transform: translate(-50%, -50%) scale(1.2);
 	}
 
 	:global(.cursor-trail.hover) {
-		width: 32px;
-		height: 32px;
-		opacity: 0.3;
+		width: 36px;
+		height: 36px;
+		opacity: 0.4;
+		transform: translate(-50%, -50%) scale(1.1);
 	}
 </style>

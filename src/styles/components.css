@@ -47,28 +47,36 @@
 	animation: neon-glow 2s infinite alternate;
 }
 
+/* Section Styles */
 .section {
 	@apply relative min-h-screen flex flex-col items-center justify-center text-center p-6 my-8 pt-[8rem] bg-center bg-cover bg-no-repeat;
 	scroll-snap-align: start;
 	background-attachment: fixed;
+	overflow-x: hidden; /* Prevents overflow from animations */
+	max-width: 100vw;
 }
 
-/* Text */
+/* Section Heading */
 .section h1 {
 	@apply text-3xl md:text-5xl font-extrabold tracking-wide bg-gradient-to-r from-[var(--primary-color)] via-[var(--accent-color)] to-[var(--text-color)] bg-clip-text text-transparent;
 	background-size: 200% 200%; /* Set the gradient to span larger than the text */
 	animation: gradientFlow 3.5s linear infinite; /* Apply animation */
 	filter: drop-shadow(4px 6px rgba(0, 0, 0, 0.5));
+	max-width: 100%; /* Ensure the title does not overflow */
+	white-space: nowrap; /* Prevent text wrapping */
+	overflow: hidden; /* Clip any overflow */
 }
 
+/* Fixing H1 Before & After Tags */
 .section h1::before {
 	content: "< ";
 }
+
 .section h1::after {
 	content: " />";
 }
 
-/* Keyframes for animated gradient */
+/* Keyframes for Animated Gradient */
 @keyframes gradientFlow {
 	0% {
 		background-position: 100% 0; /* Start the gradient from the right */

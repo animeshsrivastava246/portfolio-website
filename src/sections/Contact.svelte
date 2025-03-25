@@ -57,7 +57,7 @@
 <section
 	id="Contact"
 	bind:this={contactRef}
-	class="section relative py-24 px-6 md:px-12"
+	class="section relative py-24 px-6 md:px-12 overflow-y-hidden"
 >
 	{#if isVisible}
 		<!-- Contact Header -->

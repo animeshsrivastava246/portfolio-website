@@ -1,4 +1,5 @@
 <script lang="ts">
+	import { onMount } from "svelte";
 	import { fly, fade } from "svelte/transition";
 
 	const menuItems = [
@@ -16,6 +17,11 @@
 	};
 
 	let isMobileMenuOpen = false;
+	let isMounted = false;
+
+	onMount(() => {
+		isMounted = true;
+	});
 </script>
 
 <nav
@@ -144,6 +150,7 @@
 			rounded-[2em] z-50"
 		in:fly={{ y: -200, duration: 500 }}
 		out:fly={{ y: -200, duration: 500 }}
+		class:is-hidden={!isMounted}
 	>
 		<ul class="flex flex-col space-y-4 p-4 justify-center items-center">
 			{#each menuItems as item}
@@ -163,3 +170,9 @@
 		</ul>
 	</nav>
 {/if}
+
+<style>
+	.is-hidden {
+		display: none;
+	}
+</style>
