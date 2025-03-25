@@ -55,7 +55,7 @@
 						<!-- Experience Card -->
 						<div
 							class="bg-primary bg-opacity-10 backdrop-blur-md p-6 rounded-xl shadow-md border
-							border-accent border-opacity-40 transition-all duration-350 group-hover:scale-[1.02]"
+							border-accent max-w-[48rem] transition-all duration-350 group-hover:scale-[1.02]"
 						>
 							<h3 class="text-2xl font-semibold text-secondary">{exp.title}</h3>
 							<p class="text-xl text-theme font-medium">{exp.company}</p>

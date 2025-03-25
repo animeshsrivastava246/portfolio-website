@@ -6,8 +6,8 @@
 		"email": "mailto:animeshsrivastava246246@gmail.com"
 	},
 	"skills": {
-		"Frontend Development": "/assets/logos/svg/TypeScript.svg",
-		"Backend Development": "/assets/logos/svg/Java.svg",
+		"Frontend Development": "/assets/logos/svg/JavaScript.svg",
+		"Backend Development": "/assets/logos/svg/Node.js.svg",
 		"System Design": "/assets/logos/svg/MongoDB.svg",
 		"Database Management": "/assets/logos/svg/MySQL.svg",
 		"Version Control": "/assets/logos/svg/Git.svg",
@@ -17,64 +17,106 @@
 	},
 	"experience": [
 		{
-			"title": "Software Engineer",
-			"company": "Company A",
-			"duration": "Jan 2023 - Present",
-			"description": "Developed scalable web applications using modern frameworks."
+			"title": "Consultant - Web Developer",
+			"company": "Scry AI Pvt. Ltd.",
+			"duration": "Oct 2024 - Jan 2025",
+			"description": "Designed and implemented web applications using JavaScript and React.js. Participated in debugging, ensuring robust application performance. Worked with cross-functional teams to improve system reliability and scalability. "
 		},
 		{
-			"title": "Frontend Developer",
-			"company": "Company B",
-			"duration": "Aug 2021 - Dec 2022",
-			"description": "Built responsive UI components and improved performance."
-		},
-		{
-			"title": "Software Engineer",
-			"company": "Company C",
-			"duration": "Jan 2023 - Present",
-			"description": "Developed scalable web applications using modern frameworks."
-		},
-		{
-			"title": "Frontend Developer",
-			"company": "Company D",
-			"duration": "Aug 2021 - Dec 2022",
-			"description": "Built responsive UI components and improved performance."
+			"title": "React Developer - Intern",
+			"company": "UnOrg Verndors Pvt. Ltd.",
+			"duration": "Feb 2023 - April 2023",
+			"description": "Developed an online shopping platform using TypeScript and React.js, improving performance by 30%. Integrated Node.js for back-end enhancements, increasing system efficiency by 25%. Leveraged SQL and API integration to streamline data communication between components."
 		}
 	],
 	"projects": [
 		{
-			"title": "Portfolio Website",
-			"description": "Built with Astro, Svelte, Tailwind, and GSAP animations.",
-			"github": "https://github.com/yourrepo",
-			"live": "https://yourportfolio.com"
+			"title": "Name The Game",
+			"description": "This project helps you find out the name of a game you cannot think of with the help of a community.",
+			"github": "https://github.com/animeshsrivastava246/name-the-game",
+			"live": "https://name-the-game.vercel.app/"
 		},
 		{
-			"title": "E-commerce App",
-			"description": "Full-stack application with Firebase backend.",
-			"github": "https://github.com/yourecommerce",
-			"live": "https://ecommerce.com"
+			"title": "Chatty 007",
+			"description": "A simple chat room app, login and start fishin...",
+			"github": "https://github.com/animeshsrivastava246/chatty",
+			"live": "https://chatty-007.web.app/"
 		},
 		{
-			"title": "AI Chatbot",
-			"description": "Built with OpenAI API for intelligent conversations.",
-			"github": "https://github.com/yourchatbot",
-			"live": "https://chatbot.com"
+			"title": "Netflix YT",
+			"description": "A simple clone of netflix, nothing fancy, just login and save your favs",
+			"github": "https://github.com/animeshsrivastava246/netflix-yt",
+			"live": "https://netflix-yt-1.web.app/"
+		},
+		{
+			"title": "Disney Clone",
+			"description": "Old UI clone of Disney to give retro feel, login and save view cool descriptions.",
+			"github": "https://github.com/animeshsrivastava246/disney-clone",
+			"live": "https://disney-clone-animesh246.vercel.app/"
+		},
+		{
+			"title": "Amazon Clone",
+			"description": "A simple clone of Amazon Shopping, nothing fancy, view and add to cart functionality",
+			"github": "https://github.com/animeshsrivastava246/amazon",
+			"live": "https://amazon-animesh.vercel.app/"
+		},
+		{
+			"title": "Job Listing",
+			"description": "A simple job listing app, built on top of Springboot and React, Java test projects",
+			"github": "https://github.com/animeshsrivastava246/job-listing",
+			"live": "https://github.com/animeshsrivastava246/job-listing"
+		},
+		{
+			"title": "Real Time",
+			"description": "A simple real time app, very basic HTML, CSS, JS",
+			"github": "https://github.com/animeshsrivastava246/RealTime",
+			"live": "https://real-time-1.vercel.app/"
+		},
+		{
+			"title": "Law Firm",
+			"description": "Amir Law Firm is a responsive, modern React-based website showcasing the services, practice areas, and client testimonials of a professional law firm.",
+			"github": "https://github.com/animeshsrivastava246/amir-law-firm",
+			"live": "https://amir-law-firm.vercel.app/"
+		},
+		{
+			"title": "Blog Journal",
+			"description": "Built with React and Appwrite, production grade blogging platform for bloggers.",
+			"github": "https://github.com/animeshsrivastava246/blog",
+			"live": "https://blogjournal.vercel.app/"
+		},
+		{
+			"title": "News App",
+			"description": "News app for readers to get latest news with filter functionality.",
+			"github": "https://github.com/animeshsrivastava246/newsapp",
+			"live": "https://github.com/animeshsrivastava246/newsapp"
+		},
+		{
+			"title": "Notes App",
+			"description": "Basic notes app to save notes and edit in localhost, simple usability for beginners.",
+			"github": "https://github.com/animeshsrivastava246/cloudnote",
+			"live": "https://github.com/animeshsrivastava246/cloudnote"
+		},
+		{
+			"title": "ANIMESH SRIVASTAVA | Portfolio",
+			"description": "Built with Astro, Svelte, Tailwind, and cool animations.",
+			"github": "https://github.com/animeshsrivastava246/portfolio-website",
+			"live": "https://portfolio-animesh-dev.vercel.app"
 		}
 	],
 	"socialLinks": [
 		{
 			"name": "GitHub",
-			"url": "https://github.com/yourgithub",
+			"url": "https://github.com/animeshsrivastava246",
 			"icon": "/assets/logos/svg/GitHub.svg"
 		},
 		{
 			"name": "LinkedIn",
-			"url": "https://linkedin.com/in/yourprofile",
+			"url": "https://linkedin.com/in/animesh246",
 			"icon": "/assets/logos/svg/LinkedIn.svg"
 		},
 		{
 			"name": "Gmail",
-			"url": "mailto:your.email@example.com",
+			"url": "mailto:animeshsrivastava246246@gmail.com",
 			"icon": "/assets/logos/svg/Gmail.svg"
 		}
 	],

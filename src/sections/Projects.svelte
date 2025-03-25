@@ -13,7 +13,6 @@
 
 	let isVisible = false;
 	let projectRefs: HTMLElement[] = [];
-	let projects: Project[] = [];
 	let projectsRef: HTMLElement;
 
 	// Observe when the section is in the viewport
@@ -23,9 +22,14 @@
 				if (entries[0].isIntersecting && !isVisible) {
 					isVisible = true;
 					observer.disconnect(); // Stop observing after it becomes visible
+
+					// Delay tilt effect to ensure animations complete first
+					setTimeout(() => {
+						projectRefs.forEach((el) => applyTilt(el));
+					}, 1000);
 				}
 			},
-			{ threshold: 0.3 } // Trigger when 30% of the section is visible
+			{ threshold: 0.3 }
 		);
 
 		if (projectsRef) observer.observe(projectsRef);
@@ -40,18 +44,21 @@
 	{#if isVisible}
 		<div class="max-w-6xl mx-auto text-center">
 			<h1 in:fly={{ x: -200, duration: 350 }}>Projects</h1>
-			<p in:fly={{ x: 200, duration: 350, delay: 350 }}
+			<p
+				in:fly={{ x: 200, duration: 350, delay: 350 }}
 				class="text-lg text-[var(--secondary-color)] max-w-2xl mx-auto font-bold drop-shadow-[1px_1px_rgba(0,0,0)]"
 			>
 				A curated collection of projects showcasing my expertise in design,
 				development, and interactivity.
 			</p>
 
-			<div class="mt-12 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8" in:fly={{ x: -200, duration: 350, delay: 1050 }}>
+			<div
+				class="mt-12 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8"
+				in:fly={{ x: -200, duration: 350, delay: 1050 }}
+			>
 				{#each rawData.projects as project, i}
 					<div
 						bind:this={projectRefs[i]}
-						
 						class="relative p-6 rounded-2xl shadow-lg border border-[rgba(var(--accent-color), 0.4)] backdrop-blur-md
 					   	hover:shadow-2xl hover:scale-105 hover:brightness-125 transition-transform duration-350
 					   	bg-gradient-to-br from-[var(--primary-color)] to-[var(--secondary-color)]"
