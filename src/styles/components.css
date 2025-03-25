@@ -61,7 +61,7 @@
 	@apply text-3xl md:text-5xl font-extrabold tracking-wide bg-gradient-to-r from-[var(--primary-color)] via-[var(--accent-color)] to-[var(--text-color)] bg-clip-text text-transparent;
 	background-size: 200% 200%; /* Set the gradient to span larger than the text */
 	animation: gradientFlow 3.5s linear infinite; /* Apply animation */
-	filter: drop-shadow(4px 6px rgba(0, 0, 0, 0.5));
+	filter: drop-shadow(2px 4px rgba(0, 0, 0, 0.5));
 	max-width: 100%; /* Ensure the title does not overflow */
 	white-space: nowrap; /* Prevent text wrapping */
 	overflow: hidden; /* Clip any overflow */

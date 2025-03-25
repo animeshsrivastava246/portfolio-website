@@ -35,7 +35,7 @@
 <section
 	id="About"
 	bind:this={aboutRef}
-	class="section text-theme py-20 px-6 md:px-12 overflow-y-hidden"
+	class="section text-theme py-20 px-6 md:px-12"
 >
 	{#if visible}
 		<div class="max-w-6xl mx-auto flex flex-col md:flex-row items-start gap-12">

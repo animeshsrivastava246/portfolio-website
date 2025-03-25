@@ -1,6 +1,6 @@
 <script lang="ts">
 	import { onMount } from "svelte";
-	import { fly, fade } from "svelte/transition";
+	import { fly } from "svelte/transition";
 
 	const menuItems = [
 		{ name: "About", id: "About" },
@@ -57,8 +57,7 @@
 			{#if isMobileMenuOpen}
 				<!-- X icon -->
 				<svg
-					in:fly={{ y: -50, duration: 350 }}
-					out:fade={{ duration: 350 }}
+					in:fly={{ y: -200, duration: 350 }}
 					xmlns="http://www.w3.org/2000/svg"
 					width="40"
 					height="40"
@@ -87,8 +86,7 @@
 			{:else}
 				<!-- Hamburger icon -->
 				<svg
-					in:fly={{ y: -50, duration: 350 }}
-					out:fade={{ duration: 350 }}
+					in:fly={{ y: -200, duration: 350 }}
 					xmlns="http://www.w3.org/2000/svg"
 					width="40"
 					height="40"
@@ -149,7 +147,7 @@
 			bg-white/10 backdrop-blur-2xl shadow-lg border border-white/20
 			rounded-[2em] z-50"
 		in:fly={{ y: -200, duration: 500 }}
-		out:fly={{ y: -200, duration: 500 }}
+		out:fly={{ y: 200, duration: 500 }}
 		class:is-hidden={!isMounted}
 	>
 		<ul class="flex flex-col space-y-4 p-4 justify-center items-center">
