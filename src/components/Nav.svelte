@@ -1,6 +1,7 @@
 <script lang="ts">
 	import { onMount } from "svelte";
 	import { fly } from "svelte/transition";
+	import ResumeViewer from "../utils/ResumeViewer.svelte";
 
 	const menuItems = [
 		{ name: "About", id: "About" },
@@ -18,6 +19,7 @@
 
 	let isMobileMenuOpen = false;
 	let isMounted = false;
+	let showResumeViewer = false;
 
 	onMount(() => {
 		isMounted = true;
@@ -39,15 +41,10 @@
 			/>
 		</button>
 
-		<!-- Resume Button -->
-		<a
-			href="/resume.pdf"
-			target="_blank"
-			class="btn bg-[var(--primary-color)] text-white px-5 py-2 rounded-full shadow-lg
-				hover:scale-105 hover:shadow-[0_0_12px_var(--accent-color)] transition-all duration-350"
-		>
+		<!-- Resume Button (Opens Viewer) -->
+		<button on:click={() => (showResumeViewer = true)} class="btn">
 			Resume
-		</a>
+		</button>
 
 		<!-- Mobile Hamburger Button -->
 		<button
@@ -86,7 +83,7 @@
 			{:else}
 				<!-- Hamburger icon -->
 				<svg
-					in:fly={{ y: -200, duration: 350 }}
+					in:fly={{ y: 200, duration: 350 }}
 					xmlns="http://www.w3.org/2000/svg"
 					width="40"
 					height="40"
@@ -141,14 +138,13 @@
 </nav>
 
 <!-- Mobile Menu -->
-{#if isMobileMenuOpen}
+{#if isMounted && isMobileMenuOpen}
 	<nav
-		class="md:hidden fixed top-25 left-1/2 w-full transform -translate-x-[50%]
+		class="md:hidden fixed top-[6rem] left-1/2 w-full transform -translate-x-[50%]
 			bg-white/10 backdrop-blur-2xl shadow-lg border border-white/20
 			rounded-[2em] z-50"
-		in:fly={{ y: -200, duration: 500 }}
-		out:fly={{ y: 200, duration: 500 }}
-		class:is-hidden={!isMounted}
+		in:fly={{ y: -200, duration: 350 }}
+		out:fly={{ y: -200, duration: 350 }}
 	>
 		<ul class="flex flex-col space-y-4 p-4 justify-center items-center">
 			{#each menuItems as item}
@@ -169,8 +165,7 @@
 	</nav>
 {/if}
 
-<style>
-	.is-hidden {
-		display: none;
-	}
-</style>
+<!-- Resume Viewer Modal -->
+{#if showResumeViewer}
+	<ResumeViewer onClose={() => (showResumeViewer = false)} />
+{/if}
