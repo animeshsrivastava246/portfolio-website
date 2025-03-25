@@ -36,8 +36,7 @@
 				>
 			</button>
 			<p class="text-sm md:text-base font-medium mt-2 opacity-80">
-				&copy; {new Date().getFullYear()}
-				{data.info.name}. All rights reserved.
+				&copy; {new Date().getFullYear()} All rights reserved.
 			</p>
 		</div>
 
