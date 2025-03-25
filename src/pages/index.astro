@@ -13,7 +13,19 @@ import data from "../data/data.json";
 
 <html lang="en">
 	<head>
-		<title>{data.info.name}</title>
+		<!-- Favicon & PWA -->
+		<link rel="icon" type="image/png" href="/favicon-96x96.png" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+		<link rel="manifest" href="/manifest.webmanifest" />
+		<meta name="theme-color" content="#fe6909" />
+		<meta
+			name="msapplication-TileImage"
+			content="/web-app-manifest-192x192.png"
+		/>
+		<meta name="msapplication-TileColor" content="#0a0c0f" />
+
+		<title>{data.info.name} | Portfolio</title>
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 	</head>
 	<body>
