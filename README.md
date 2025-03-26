@@ -144,7 +144,7 @@ Have feedback or suggestions? Reach out!
 📧 Email: [animeshsrivastava246246@gmail.com](mailto:animeshsrivastava246246@gmail.com)  
 🔗 Portfolio: [portfolio-animesh-dev.vercel.app](portfolio-animesh-dev.vercel.app)
 🐦 X: [@Animesh236](https://x.com/Animesh246)
-🐦 LinkedIn: [@Animesh236](https://linkedin.com/in/animesh246)
+🧑‍💼 LinkedIn: [@Animesh246](https://linkedin.com/in/animesh246)
 
 ---
 
