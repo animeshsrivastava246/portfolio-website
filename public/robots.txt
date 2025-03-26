@@ -4,6 +4,7 @@ Allow: /
 # Prevent search engines from indexing unnecessary files
 Disallow: /assets/
 Disallow: /src/
+Disallow: /_astro/
 
 # Sitemap for proper indexing
 Sitemap: https://portfolio-animesh-dev.vercel.app/sitemap.xml
