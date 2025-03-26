@@ -56,7 +56,7 @@ A modern, interactive, and visually engaging **developer portfolio** built with 
 ### 1️⃣ Clone the Repository
 
 ```sh
- git clone https://github.com/your-username/portfolio-website.git
+ git clone https://github.com/animeshsrivastava246/portfolio-website.git
  cd portfolio-website
 ```
 
