@@ -6,10 +6,10 @@
 		"email": "mailto:animeshsrivastava246246@gmail.com"
 	},
 	"skills": {
-		"Frontend Development": "/assets/logos/svg/JavaScript.svg",
+		"Frontend Development": "/assets/logos/svg/React.svg",
 		"Backend Development": "/assets/logos/svg/Node.js.svg",
 		"System Design": "/assets/logos/svg/MongoDB.svg",
-		"Database Management": "/assets/logos/svg/MySQL.svg",
+		"Database Management": "/assets/logos/svg/PostgresSQL.svg",
 		"Version Control": "/assets/logos/svg/Git.svg",
 		"Cloud Computing": "/assets/logos/svg/AWS.svg",
 		"Machine Learning": "/assets/logos/svg/Python.svg",

@@ -67,9 +67,9 @@
 						transition-all duration-350 hover:scale-105 hover:shadow-2xl transform hover:-translate-y-2 hover:bg-black/50"
 					>
 						<div
-							class="relative w-16 h-16 flex items-center justify-center rounded-xl bg-white/80 shadow-md"
+							class="relative w-16 h-16 flex items-center justify-center rounded-xl bg-white/20 shadow-md"
 						>
-							<img src={skill.icon} alt={skill.title} class="w-10 h-10" />
+							<img src={skill.icon} alt={skill.title} class="w-10 h-10 drop-shadow-[2px_2px_10px_var(--accent-color)]" />
 						</div>
 						<h2
 							class="text-lg font-semibold text-white text-center tracking-wide"
