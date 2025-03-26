@@ -1,21 +1,27 @@
 {
-	"name": "ANIMESH SRIVASTAVA | Portfolio",
-	"short_name": "Portfolio",
-	"description": "A modern developer portfolio showcasing projects and experience.",
+	"name": "ANIMESH SRIVASTAVA | Developer Portfolio",
+	"short_name": "ANIMESH Portfolio",
+	"description": "Explore ANIMESH SRIVASTAVA's Developer Portfolio – Showcasing expertise in full-stack development, UI/UX, and interactive web experiences.",
 	"start_url": "/",
+	"scope": "/",
 	"display": "standalone",
+	"orientation": "portrait",
 	"background_color": "#0a0c0f",
 	"theme_color": "#fe6909",
 	"icons": [
 		{
 			"src": "/web-app-manifest-192x192.png",
 			"sizes": "192x192",
-			"type": "image/png"
+			"type": "image/png",
+			"purpose": "any maskable"
 		},
 		{
 			"src": "/web-app-manifest-512x512.png",
 			"sizes": "512x512",
-			"type": "image/png"
+			"type": "image/png",
+			"purpose": "any maskable"
 		}
-	]
+	],
+	"related_applications": [],
+	"prefer_related_applications": false
 }
