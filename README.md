@@ -133,9 +133,7 @@ You can also deploy to Netlify, GitHub Pages, or any other static hosting provid
 
 ## 📌 Future Enhancements
 
-✅ Improved Mobile Responsiveness 📱  
 ✅ Scroll-based Animations 🚀  
-✅ Contact Form – Integrate with Formspree or Firebase for direct messaging. 📧
 
 ## 📬 Contact
 
