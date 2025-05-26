@@ -67,10 +67,10 @@
 			"live": "https://github.com/animeshsrivastava246/job-listing"
 		},
 		{
-			"title": "Real Time",
+			"title": "Real Time Clock",
 			"description": "A simple real time app, very basic HTML, CSS, JS",
 			"github": "https://github.com/animeshsrivastava246/RealTime",
-			"live": "https://real-time-1.vercel.app/"
+			"live": "https://realclocklive.vercel.app/"
 		},
 		{
 			"title": "Law Firm",
