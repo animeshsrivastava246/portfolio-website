@@ -89,8 +89,8 @@
 	}
 }
 
-/* iOS fallback: Safari doesn't support background-attachment: fixed */
-@supports (-webkit-touch-callout: none) {
+/* iOS fallback for background-attachment: fixed */
+@media screen and (max-device-width: 1024px) and (-webkit-touch-callout: none) {
 	.section {
 		background-attachment: scroll !important;
 	}
