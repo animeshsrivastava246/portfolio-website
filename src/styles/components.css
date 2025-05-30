@@ -88,3 +88,10 @@
 		background-position: 100% 0; /* End at the same position as start */
 	}
 }
+
+/* iOS fallback: Safari doesn't support background-attachment: fixed */
+@supports (-webkit-touch-callout: none) {
+	.section {
+		background-attachment: scroll !important;
+	}
+}
