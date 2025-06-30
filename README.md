@@ -12,7 +12,6 @@ A modern, interactive, and visually engaging **developer portfolio** built with 
 - **Responsive Design** – Works seamlessly on desktops, tablets, and mobile devices.
 - **Customizable Theme** – Easily tweak colors, fonts, and styles.
 - **Modern Tech Stack** – Uses Svelte, TypeScript, and TailwindCSS for efficiency and scalability.
-- **Dark Mode Support** – Looks stunning in both light and dark themes. 🌙
 
 ## 📂 Folder Structure
 
