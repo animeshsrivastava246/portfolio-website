@@ -132,7 +132,7 @@ You can also deploy to Netlify, GitHub Pages, or any other static hosting provid
 
 ## 📌 Future Enhancements
 
-✅ Scroll-based Animations 🚀  
+✅ Scroll-based Animations 🚀
 
 ## 📬 Contact
 
@@ -146,3 +146,7 @@ Have feedback or suggestions? Reach out!
 ---
 
 ⚡ **Built with passion using Svelte!** 🔥
+
+#####
+
+Future Update, email from [RESEND](https://resend.com/)
