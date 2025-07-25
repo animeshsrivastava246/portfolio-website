@@ -150,3 +150,12 @@ Have feedback or suggestions? Reach out!
 #####
 
 Future Update, email from [RESEND](https://resend.com/)
+
+###
+
+TODO:
+
+- Remove Firebase
+- Add - npm i resend
+- Update env
+- Add Google Captcha
