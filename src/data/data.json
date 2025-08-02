@@ -17,6 +17,12 @@
 	},
 	"experience": [
 		{
+			"title": "Freelance - Developer",
+			"company": "Absolute Vietnam DMC",
+			"duration": "April 2025 - Aug 2025",
+			"description": "Designed and implemented web applications using JavaScript, React.js, and Next.js for dynamic, responsive user interfaces. Utilized Tailwind CSS for rapid and efficient styling, ensuring a clean and modern design system across all pages. Developed backend services using NestJS with TypeORM for seamless database interactions and smooth REST API integrations. Integrated Passport.js for user authentication, including OAuth and JWT-based authentication. Managed MySQL databases for efficient data storage, optimized queries, and scalability. Implemented Multer for handling file uploads and integrated email services with Nodemailer for automated notifications and communication. Deployed applications using CI/CD pipelines to ensure smooth and automated updates and releases. Focused on creating high-performance, user-friendly web applications with a strong emphasis on security, scalability, and maintainability. Collaborated with cross-functional teams to improve system reliability and optimize the user experience."
+		},
+		{
 			"title": "Consultant - Web Developer",
 			"company": "Scry AI Pvt. Ltd.",
 			"duration": "Oct 2024 - Jan 2025",
