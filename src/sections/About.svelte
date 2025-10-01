@@ -43,7 +43,7 @@
 			<div in:fly={{ x: -200, duration: 350 }} class="md:w-1/2">
 				<h1>About Me</h1>
 				<p class="mt-6 text-lg text-secondary leading-relaxed">
-					I'm a software engineer passionate about crafting high-quality,
+					I'm a software developer engineer passionate about crafting high-quality,
 					scalable, and efficient applications. I thrive on solving complex
 					problems and designing user-centric interfaces that blend
 					functionality with aesthetics.
