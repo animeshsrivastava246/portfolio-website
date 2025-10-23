@@ -42,13 +42,13 @@
 			<!-- Left Side: About Text -->
 			<div in:fly={{ x: -200, duration: 350 }} class="md:w-1/2">
 				<h1>About Me</h1>
-				<p class="mt-6 text-lg text-secondary leading-relaxed">
+				<p class="mt-6 text-lg text-white leading-relaxed">
 					I'm a software developer engineer passionate about crafting high-quality,
 					scalable, and efficient applications. I thrive on solving complex
 					problems and designing user-centric interfaces that blend
 					functionality with aesthetics.
 				</p>
-				<p class="mt-4 text-lg text-secondary leading-relaxed">
+				<p class="mt-4 text-lg text-white leading-relaxed">
 					With expertise in full-stack development, I enjoy creating seamless
 					digital experiences using modern web technologies and interactive
 					animations.
