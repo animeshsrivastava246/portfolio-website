@@ -80,7 +80,7 @@
 		},
 		{
 			"title": "Law Firm",
-			"description": "Amir Law Firm is a responsive, modern React-based website showcasing the services, practice areas, and client testimonials of a professional law firm.",
+			"description": "Law Firm is a responsive, modern React-based website showcasing the services, practice areas, and client testimonials of a professional law firm.",
 			"github": "https://github.com/animeshsrivastava246/amir-law-firm",
 			"live": "https://amir-law-firm.vercel.app/"
 		},
@@ -119,6 +119,11 @@
 			"name": "LinkedIn",
 			"url": "https://linkedin.com/in/animesh246",
 			"icon": "/assets/logos/svg/LinkedIn.svg"
+		},
+		{
+			"name": "Zoho Mail",
+			"url": "mailto:animeshsrivastava246@zohomail.in",
+			"icon": "/assets/logos/svg/Zoho-Mail.svg"
 		},
 		{
 			"name": "Gmail",
