@@ -19,7 +19,7 @@
 	background: linear-gradient(to right,
 			var(--primary-color),
 			var(--secondary-color));
-	box-shadow: 0px 0px 12px rgba(255, 255, 255, 0.2);
+	box-shadow: 4px 4px 12px rgba(255, 255, 255, 0.2);
 	position: relative;
 	overflow: hidden;
 }
@@ -29,7 +29,7 @@
 	background: var(--text-color);
 	color: var(--accent-color);
 	transform: scale(1.05);
-	box-shadow: 0px 0px 20px var(--accent-color);
+	box-shadow: 6px 6px 16px var(--accent-color);
 }
 
 /* Glowing Border Animation */

@@ -1,5 +1,5 @@
 <script lang="ts">
-	import { onMount, onDestroy } from "svelte";
+	import { onMount } from "svelte";
 
 	let cursor: HTMLElement;
 	let cursorTrail: HTMLElement;
@@ -66,7 +66,9 @@
 			document.addEventListener("mouseleave", resetIdleTimer);
 
 			// Add hover listeners
-			const interactive = document.querySelectorAll("a, button, .hover-target");
+			const interactive = document.querySelectorAll(
+				"a, button, .hover-target, .btn",
+			);
 			interactive.forEach((el) => {
 				el.addEventListener("mouseenter", handleMouseEnter);
 				el.addEventListener("mouseleave", handleMouseLeave);
@@ -124,14 +126,12 @@
 	}
 
 	:global(.cursor.hover) {
-		width: 28px;
-		height: 28px;
-		transform: scale(1.1);
+		width: 20px;
+		height: 20px;
 	}
 
 	:global(.cursor-trail.hover) {
-		width: 36px;
-		height: 36px;
-		transform: scale(1.1);
+		width: 30px;
+		height: 30px;
 	}
 </style>
