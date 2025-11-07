@@ -29,7 +29,7 @@ A modern, interactive, and visually engaging **developer portfolio** built with 
 - **Frontend:** Svelte, TypeScript, TailwindCSS
 - **Animations:** Svelte Transitions, Custom Tilt Effects
 - **Data Handling:** JSON for easy content updates
-- **Deployment:** Vercel / Netlify / Your preferred hosting
+- **Deployment:** Vercel
 
 ## 🎨 UI Highlights
 
@@ -37,7 +37,6 @@ A modern, interactive, and visually engaging **developer portfolio** built with 
 
   - Elegant **timeline view** showcasing work experience.
   - **Glowing indicators** for each experience entry.
-  - Smooth **fade-in effects** on scroll.
 
 - **Projects Showcase** 💻
 
@@ -48,7 +47,6 @@ A modern, interactive, and visually engaging **developer portfolio** built with 
 - **Navigation & Interactivity** 🧭
   - **Smooth scrolling** to sections for seamless UX.
   - **Dynamic background banners** for each section.
-  - Optimized for both **light and dark themes**.
 
 ## 🚀 Getting Started
 
