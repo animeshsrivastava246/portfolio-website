@@ -136,9 +136,9 @@ You can also deploy to Netlify, GitHub Pages, or any other static hosting provid
 
 Have feedback or suggestions? Reach out!
 
-📧 Email: [animeshsrivastava246246@gmail.com](mailto:animeshsrivastava246246@gmail.com)  
+📧 Gmail: [animeshsrivastava246246@gmail.com](mailto:animeshsrivastava246246@gmail.com)  
+📧 ZohoMail: [animeshsrivastava246@zohomail.in](mailto:animeshsrivastava246@zohomail.in)  
 🔗 Portfolio: [portfolio-animesh-dev.vercel.app](portfolio-animesh-dev.vercel.app)
-🐦 X: [@Animesh236](https://x.com/Animesh246)
 🧑‍💼 LinkedIn: [@Animesh246](https://linkedin.com/in/animesh246)
 
 ---
