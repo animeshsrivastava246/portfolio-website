@@ -23,10 +23,10 @@
 			"description": "Crafted dynamic, responsive web applications using TypeScript, Next.js, and Tailwind CSS. Built secure backend services with NestJS, TypeORM, Passport.js (OAuth & JWT), and MySQL. Integrated file uploads (Multer) and email notifications. Deployed via CI/CD pipelines with a focus on performance, scalability, and maintainability. Collaborated cross-functionally to enhance system reliability and user experience."
 		},
 		{
-			"title": "Consultant - Web Developer",
-			"company": "Scry AI Pvt. Ltd.",
-			"duration": "Oct 2024 - Jan 2025",
-			"description": "Designed and implemented web applications using JavaScript and React.js. Participated in debugging, ensuring robust application performance. Worked with cross-functional teams to improve system reliability and scalability. "
+			"title": "React Native Developer",
+			"company": "Vicdigit Technologies Pvt. Ltd.",
+			"duration": "Jan 2024 - Dec 2025",
+			"description": "Designed and developed mobile applications using React Native and JavaScript. Collaborated with cross-functional teams to enhance application performance, scalability, and reliability. Actively participated in debugging and troubleshooting to ensure seamless user experiences and efficient system performance."
 		},
 		{
 			"title": "React Developer - Intern",
@@ -132,11 +132,26 @@
 		}
 	],
 	"sections": [
-		{ "name": "Home", "id": "Hero" },
-		{ "name": "About", "id": "About" },
-		{ "name": "Experience", "id": "WorkExperience" },
-		{ "name": "Projects", "id": "Projects" },
-		{ "name": "Contact", "id": "Contact" }
+		{
+			"name": "Home",
+			"id": "Hero"
+		},
+		{
+			"name": "About",
+			"id": "About"
+		},
+		{
+			"name": "Experience",
+			"id": "WorkExperience"
+		},
+		{
+			"name": "Projects",
+			"id": "Projects"
+		},
+		{
+			"name": "Contact",
+			"id": "Contact"
+		}
 	],
 	"skillsList": [
 		{
