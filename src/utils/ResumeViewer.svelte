@@ -5,7 +5,8 @@
 	import { cubicOut } from "svelte/easing";
 
 	export let onClose;
-	const resumeUrl = "/Animesh-Resume.pdf";
+	// const resumeUrl = "/Animesh-Resume.pdf"; // Previous resume file
+	const resumeUrl = "/Animesh-ReactNative.pdf"; // Updated resume file for React-Native Mobile Developer role
 	let isVisible = false; // Initially false to delay entry
 	let modalRef: HTMLElement;
 

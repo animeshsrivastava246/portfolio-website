@@ -8,6 +8,7 @@
 	"skills": {
 		"Frontend Development": "/assets/logos/svg/React.svg",
 		"Backend Development": "/assets/logos/svg/Node.js.svg",
+		"Mobile Development": "/assets/logos/svg/React-Native.svg",
 		"System Design": "/assets/logos/svg/MongoDB.svg",
 		"Database Management": "/assets/logos/svg/PostgresSQL.svg",
 		"Version Control": "/assets/logos/svg/Git.svg",
@@ -1449,6 +1450,10 @@
 		{
 			"name": "React.svg",
 			"path": "assets\\logos\\svg\\React.svg"
+		},
+		{
+			"name": "React-Native.svg",
+			"path": "assets\\logos\\svg\\React-Native.svg"
 		},
 		{
 			"name": "Realm.svg",
