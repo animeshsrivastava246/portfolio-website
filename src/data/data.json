@@ -130,6 +130,11 @@
 			"name": "Gmail",
 			"url": "mailto:animeshsrivastava246246@gmail.com",
 			"icon": "/assets/logos/svg/Gmail.svg"
+		},
+		{
+			"name": "YouTube",
+			"url": "https://youtube.com/@animesh246",
+			"icon": "/assets/logos/svg/YouTube.svg"
 		}
 	],
 	"sections": [
@@ -1842,6 +1847,10 @@
 		{
 			"name": "Yii-Framework.svg",
 			"path": "assets\\logos\\svg\\Yii-Framework.svg"
+		},
+		{
+			"name": "YouTube",
+			"path": "assets\\logos\\svg\\YouTube.svg"
 		},
 		{
 			"name": "Yuno-Host.svg",

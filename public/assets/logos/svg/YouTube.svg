@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg"
+  width="128px" height="128px"
+  viewBox="0 0 128 128"
+  version="1.1">
+
+  <!-- Elliptical YouTube background -->
+  <path
+    d="
+      M 64 20
+      C 95 20, 118 22, 122 32
+      C 126 42, 126 86, 122 96
+      C 118 106, 95 108, 64 108
+      C 33 108, 10 106, 6 96
+      C 2 86, 2 42, 6 32
+      C 10 22, 33 20, 64 20
+      Z
+    "
+    fill="#FF0000" />
+
+  <!-- Play button -->
+  <path
+    d="
+      M 54 46
+      L 54 82
+      L 86 64
+      Z
+    "
+    fill="#FFFFFF" />
+
+</svg>
