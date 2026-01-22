@@ -122,6 +122,16 @@ import Cursor from "../components/Cursor.svelte";
 				]
 			}
 		</script>
+		<!-- iOS Detection for background-attachment fix -->
+		<script is:inline>
+			(function() {
+				var isIOS = /iPad|iPhone|iPod/.test(navigator.userAgent) || 
+					(navigator.platform === 'MacIntel' && navigator.maxTouchPoints > 1);
+				if (isIOS) {
+					document.documentElement.classList.add('is-ios');
+				}
+			})();
+		</script>
 	</head>
 	<body>
 		<Cursor client:load />

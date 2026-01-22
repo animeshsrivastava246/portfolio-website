@@ -105,78 +105,21 @@
 }
 
 /* ==============================================
-   COMPREHENSIVE iOS/Safari Background Fix
+   iOS Background Fix (JS-detected)
    ============================================== */
 
-/* Primary iOS Safari fix - Most comprehensive */
-@supports (-webkit-overflow-scrolling: touch) {
-	.section {
-		background-attachment: scroll !important;
-		/* Hardware acceleration for better performance */
-		-webkit-transform: translateZ(0);
-		transform: translateZ(0);
-		-webkit-backface-visibility: hidden;
-		backface-visibility: hidden;
-		will-change: transform;
-	}
+/* iOS fix - triggered by JS detection (most reliable) */
+html.is-ios .section {
+	background-attachment: scroll !important;
+	-webkit-transform: translateZ(0);
+	transform: translateZ(0);
+	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;
 }
 
-/* iPad/iPhone detection via device width */
-@media screen and (max-device-width: 1024px) and (-webkit-touch-callout: none) {
-	.section {
-		background-attachment: scroll !important;
-		background-size: cover;
-		background-position: center center;
-	}
-}
-
-/* Additional mobile device detection */
-@media screen and (max-width: 768px) {
-	.section {
-		background-attachment: scroll !important;
-		/* Optimize for mobile scrolling */
-		-webkit-overflow-scrolling: touch;
-		transform: translate3d(0, 0, 0);
-	}
-}
-
-/* WebKit browsers (includes Safari, Chrome on iOS) */
-@media screen and (-webkit-min-device-pixel-ratio: 2) {
-	.section {
-		background-attachment: scroll !important;
-		/* Prevent background jumping on scroll */
-		background-size: cover;
-		background-position: center;
-	}
-}
-
-/* Specific iOS orientations */
-@media screen and (max-device-width: 1024px) and (orientation: portrait),
-screen and (max-device-width: 1024px) and (orientation: landscape) {
-	.section {
-		background-attachment: scroll !important;
-		background-size: cover;
-		background-position: center;
-		/* Additional mobile optimizations */
-		-webkit-transform: translate3d(0, 0, 0);
-		transform: translate3d(0, 0, 0);
-	}
-}
-
-/* Fallback for any remaining iOS/mobile devices */
+/* Fallback for touch devices without JS detection */
 @media (hover: none) and (pointer: coarse) {
 	.section {
 		background-attachment: scroll !important;
-		will-change: scroll-position;
-	}
-}
-
-/* Performance optimization for all touch devices */
-@media (pointer: coarse) {
-	.section {
-		background-attachment: scroll !important;
-		/* Improve scroll performance */
-		-webkit-transform: translateZ(0);
-		transform: translateZ(0);
 	}
 }
