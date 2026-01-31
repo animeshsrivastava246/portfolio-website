@@ -16,7 +16,7 @@
 					observer.disconnect(); // Stop observing after it becomes visible
 				}
 			},
-			{ threshold: 0.3 } // Trigger when 30% of the section is visible
+			{ threshold: 0.3 }, // Trigger when 30% of the section is visible
 		);
 
 		if (aboutRef) observer.observe(aboutRef);
@@ -43,10 +43,10 @@
 			<div in:fly={{ x: -200, duration: 350 }} class="md:w-1/2">
 				<h1>About Me</h1>
 				<p class="mt-6 text-lg text-white leading-relaxed">
-					I'm a software developer engineer passionate about crafting high-quality,
-					scalable, and efficient applications. I thrive on solving complex
-					problems and designing user-centric interfaces that blend
-					functionality with aesthetics.
+					I'm a software developer engineer passionate about crafting
+					high-quality, scalable, and efficient applications. I thrive on
+					solving complex problems and designing user-centric interfaces that
+					blend functionality with aesthetics.
 				</p>
 				<p class="mt-4 text-lg text-white leading-relaxed">
 					With expertise in full-stack development, I enjoy creating seamless
@@ -69,7 +69,11 @@
 						<div
 							class="relative w-16 h-16 flex items-center justify-center rounded-xl bg-white/20 shadow-md"
 						>
-							<img src={skill.icon} alt={skill.title} class="w-10 h-10 drop-shadow-[2px_2px_10px_var(--accent-color)]" />
+							<img
+								src={skill.icon}
+								alt={skill.title}
+								class="w-10 h-10 drop-shadow-[2px_2px_10px_var(--accent-color)]"
+							/>
 						</div>
 						<h2
 							class="text-lg font-semibold text-white text-center tracking-wide"
@@ -116,7 +120,7 @@
 
 <style>
 	#About {
-		background-image: url("/assets/backdrops/AboutBanner.webp");
+		background-image: url("/assets/backdrops/AboutBanner1.webp");
 	}
 
 	/* Infinite Scroll Animation */
