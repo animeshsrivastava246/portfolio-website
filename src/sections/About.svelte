@@ -42,16 +42,13 @@
 			<!-- Left Side: About Text -->
 			<div in:fly={{ x: -200, duration: 350 }} class="md:w-1/2">
 				<h1>About Me</h1>
-				<p class="mt-6 text-lg text-white leading-relaxed">
+				<p class="mt-6 text-lg text-gray-700 leading-relaxed">
 					I'm a software developer engineer passionate about crafting
 					high-quality, scalable, and efficient applications. I thrive on
 					solving complex problems and designing user-centric interfaces that
-					blend functionality with aesthetics.
-				</p>
-				<p class="mt-4 text-lg text-white leading-relaxed">
-					With expertise in full-stack development, I enjoy creating seamless
-					digital experiences using modern web technologies and interactive
-					animations.
+					blend functionality with aesthetics. <br />
+					With expertise in full-stack web and app development, I enjoy creating seamless digital
+					experiences using modern app/web technologies and interactive animations.
 				</p>
 			</div>
 
@@ -76,7 +73,7 @@
 							/>
 						</div>
 						<h2
-							class="text-lg font-semibold text-white text-center tracking-wide"
+							class="text-lg font-semibold text-gray-900 text-center tracking-wide"
 						>
 							{skill.title}
 						</h2>
@@ -98,7 +95,7 @@
 						class="flex flex-col items-center p-4 opacity-80 hover:scale-105 hover:opacity-100 transition-all duration-350"
 					>
 						<img src={path} alt={name} class="h-16 md:h-20 lg:h-24" />
-						<span class="text-md font-semibold text-white mt-6">
+						<span class="text-md font-semibold text-gray-700 mt-6">
 							{name.replace(".svg", "").replaceAll("-", " ")}
 						</span>
 					</div>
@@ -108,7 +105,7 @@
 						class="flex flex-col items-center p-4 opacity-80 hover:scale-105 hover:opacity-100 transition-all duration-350"
 					>
 						<img src={path} alt={name} class="h-16 md:h-20 lg:h-24" />
-						<span class="text-md font-semibold text-white mt-6">
+						<span class="text-md font-semibold text-gray-700 mt-6">
 							{name.replace(".svg", "").replaceAll("-", " ")}
 						</span>
 					</div>
@@ -120,7 +117,7 @@
 
 <style>
 	#About {
-		background-image: url("/assets/backdrops/AboutBanner1.webp");
+		background-image: url("/assets/backdrops/AboutBanner.webp");
 	}
 
 	/* Infinite Scroll Animation */

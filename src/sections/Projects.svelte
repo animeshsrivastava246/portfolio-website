@@ -46,7 +46,7 @@
 			<h1 in:fly={{ x: -200, duration: 350 }}>Projects</h1>
 			<p
 				in:fly={{ x: 200, duration: 350, delay: 350 }}
-				class="text-lg text-[var(--secondary-color)] max-w-2xl mx-auto font-bold drop-shadow-[1px_1px_rgba(0,0,0)]"
+				class="text-lg text-(--secondary-color) max-w-2xl mx-auto font-bold drop-shadow-[1px_1px_rgba(0,0,0)]"
 			>
 				A curated collection of projects showcasing my expertise in design,
 				development, and interactivity.
@@ -61,7 +61,7 @@
 						bind:this={projectRefs[i]}
 						class="relative p-6 rounded-2xl shadow-lg border border-[rgba(var(--accent-color), 0.4)] backdrop-blur-md
 					   	hover:shadow-2xl hover:scale-105 hover:brightness-125 transition-transform duration-350
-					   	bg-gradient-to-br from-[var(--primary-color)] to-[var(--secondary-color)]"
+					   	bg-linear-to-br from-(--primary-color) to-(--secondary-color)"
 					>
 						<div
 							class="absolute inset-0 bg-black/10 rounded-2xl pointer-events-none"
@@ -71,7 +71,7 @@
 							<h3 class="text-2xl font-semibold text-[#f7c5fe]">
 								{project.title}
 							</h3>
-							<p class="mt-3 text-md text-[var(--text-color)] leading-relaxed">
+							<p class="mt-3 text-md text-(--text-color) leading-relaxed">
 								{project.description}
 							</p>
 
