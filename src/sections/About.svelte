@@ -42,13 +42,14 @@
 			<!-- Left Side: About Text -->
 			<div in:fly={{ x: -200, duration: 350 }} class="md:w-1/2">
 				<h1>About Me</h1>
-				<p class="mt-6 text-lg text-gray-700 leading-relaxed">
+				<p class="mt-6 text-lg text-gray-800 font-bold leading-relaxed">
 					I'm a software developer engineer passionate about crafting
 					high-quality, scalable, and efficient applications. I thrive on
 					solving complex problems and designing user-centric interfaces that
 					blend functionality with aesthetics. <br />
-					With expertise in full-stack web and app development, I enjoy creating seamless digital
-					experiences using modern app/web technologies and interactive animations.
+					With expertise in full-stack web and app development, I enjoy creating
+					seamless digital experiences using modern app/web technologies and interactive
+					animations.
 				</p>
 			</div>
 
@@ -72,9 +73,7 @@
 								class="w-10 h-10 drop-shadow-[2px_2px_10px_var(--accent-color)]"
 							/>
 						</div>
-						<h2
-							class="text-lg font-semibold text-gray-900 text-center tracking-wide"
-						>
+						<h2 class="text-lg font-bold text-white text-center tracking-wide">
 							{skill.title}
 						</h2>
 						<div class="absolute inset-0 bg-white opacity-5 rounded-2xl"></div>
@@ -105,7 +104,7 @@
 						class="flex flex-col items-center p-4 opacity-80 hover:scale-105 hover:opacity-100 transition-all duration-350"
 					>
 						<img src={path} alt={name} class="h-16 md:h-20 lg:h-24" />
-						<span class="text-md font-semibold text-gray-700 mt-6">
+						<span class="text-md font-bold text-gray-700 mt-6">
 							{name.replace(".svg", "").replaceAll("-", " ")}
 						</span>
 					</div>
