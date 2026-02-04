@@ -4,31 +4,27 @@
 	import data from "../data/data.json";
 
 	let aboutRef: HTMLElement;
-	let cardsRef: HTMLElement[] = [];
 	let visible = false;
 
-	// Set visible to true on mount for transitions
 	onMount(() => {
 		const observer = new IntersectionObserver(
-			(entries) => {
-				if (entries[0].isIntersecting && !visible) {
+			([entry]) => {
+				if (entry.isIntersecting) {
 					visible = true;
-					observer.disconnect(); // Stop observing after it becomes visible
+					observer.disconnect();
 				}
 			},
-			{ threshold: 0.3 }, // Trigger when 30% of the section is visible
+			{ threshold: 0.3 },
 		);
 
 		if (aboutRef) observer.observe(aboutRef);
 	});
 
-	// Extract skills
-	let skills = Object.entries(data.skills).map(([title, icon]) => ({
+	const skills = Object.entries(data.skills).map(([title, icon]) => ({
 		title,
 		icon,
 	}));
 
-	// Extract SVGs for scrolling animation
 	const loadedSvgs = data.skillsList;
 </script>
 
@@ -39,76 +35,57 @@
 >
 	{#if visible}
 		<div class="max-w-6xl mx-auto flex flex-col md:flex-row items-start gap-12">
-			<!-- Left Side: About Text -->
+			<!-- About text -->
 			<div in:fly={{ x: -200, duration: 350 }} class="md:w-1/2">
 				<h1>About Me</h1>
 				<p class="mt-6 text-lg text-gray-800 font-bold leading-relaxed">
-					I'm a software developer engineer passionate about crafting
-					high-quality, scalable, and efficient applications. I thrive on
-					solving complex problems and designing user-centric interfaces that
-					blend functionality with aesthetics. <br />
-					With expertise in full-stack web and app development, I enjoy creating
-					seamless digital experiences using modern app/web technologies and interactive
-					animations.
+					I'm a software developer engineer focused on building scalable,
+					efficient, and maintainable systems. I care about correctness,
+					performance, and clean abstractions more than flashy tricks.
+					<br /><br />
+					My work spans full-stack web and app development, with a strong emphasis
+					on modern tooling, animation discipline, and UX that serves function instead
+					of ego.
 				</p>
 			</div>
 
-			<!-- Right Side: Skills Grid -->
+			<!-- Skills grid -->
 			<div
 				in:fly={{ x: 200, duration: 350, delay: 350 }}
 				class="grid grid-cols-2 sm:grid-cols-3 gap-6 md:w-1/2"
 			>
-				{#each skills as skill, i}
-					<div
-						bind:this={cardsRef[i]}
-						class="relative bg-black/30 p-4 rounded-2xl shadow-lg flex flex-col items-center gap-3
-						transition-all duration-350 hover:scale-105 hover:shadow-2xl transform hover:-translate-y-2 hover:bg-black/50"
-					>
-						<div
-							class="relative w-16 h-16 flex items-center justify-center rounded-xl bg-white/20 shadow-md"
-						>
-							<img
-								src={skill.icon}
-								alt={skill.title}
-								class="w-10 h-10 drop-shadow-[2px_2px_10px_var(--accent-color)]"
-							/>
+				{#each skills as skill}
+					<div class="skill-card">
+						<div class="icon-wrap">
+							<img src={skill.icon} alt={skill.title} loading="lazy" />
 						</div>
-						<h2 class="text-lg font-bold text-white text-center tracking-wide">
-							{skill.title}
-						</h2>
-						<div class="absolute inset-0 bg-white opacity-5 rounded-2xl"></div>
+						<h2>{skill.title}</h2>
 					</div>
 				{/each}
 			</div>
 		</div>
 
-		<!-- Infinite Scrolling Logos -->
+		<!-- Infinite scrolling stack -->
 		<aside
-			in:fly={{ y: -200, duration: 350, delay: 1050 }}
-			class="relative py-16 overflow-hidden w-[99vw] flex"
+			in:fly={{ y: -400, duration: 700, delay: 1050 }}
+			class="stack-strip"
+			aria-label="Technology stack"
 		>
-			<!-- Duplicate content for seamless looping -->
-			<div class="flex whitespace-nowrap animate-scroll py-4">
-				{#each [...loadedSvgs, ...loadedSvgs] as { name, path }}
-					<div
-						class="flex flex-col items-center p-4 opacity-80 hover:scale-105 hover:opacity-100 transition-all duration-350"
-					>
-						<img src={path} alt={name} class="h-16 md:h-20 lg:h-24" />
-						<span class="text-md font-semibold text-gray-700 mt-6">
-							{name.replace(".svg", "").replaceAll("-", " ")}
-						</span>
-					</div>
-				{/each}
-				{#each [...loadedSvgs, ...loadedSvgs] as { name, path }}
-					<div
-						class="flex flex-col items-center p-4 opacity-80 hover:scale-105 hover:opacity-100 transition-all duration-350"
-					>
-						<img src={path} alt={name} class="h-16 md:h-20 lg:h-24" />
-						<span class="text-md font-bold text-gray-700 mt-6">
-							{name.replace(".svg", "").replaceAll("-", " ")}
-						</span>
-					</div>
-				{/each}
+			<div class="stack-mask">
+				<div class="stack-track">
+					{#each [...loadedSvgs, ...loadedSvgs] as { name, path }}
+						<div class="stack-item">
+							<img
+								src={path}
+								alt={name.replace(".svg", "").replaceAll("-", " ")}
+								loading="lazy"
+							/>
+							<span>
+								{name.replace(".svg", "").replaceAll("-", " ")}
+							</span>
+						</div>
+					{/each}
+				</div>
 			</div>
 		</aside>
 	{/if}
@@ -117,28 +94,121 @@
 <style>
 	#About {
 		background-image: url("/assets/backdrops/AboutBanner.webp");
+		background-size: cover;
+		background-position: center;
 	}
 
-	/* Infinite Scroll Animation */
-	@keyframes scroll {
+	/* ===== Skill cards ===== */
+
+	.skill-card {
+		position: relative;
+		background: rgba(0, 0, 0, 0.3);
+		padding: 1rem;
+		border-radius: 1rem;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		gap: 0.75rem;
+		transition:
+			transform 0.25s ease,
+			box-shadow 0.25s ease,
+			background 0.25s ease;
+	}
+
+	.skill-card:hover {
+		transform: translateY(-6px) scale(1.05);
+		background: rgba(0, 0, 0, 0.5);
+		box-shadow: 0 20px 40px rgba(0, 0, 0, 0.35);
+	}
+
+	.icon-wrap {
+		width: 4rem;
+		height: 4rem;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		border-radius: 0.75rem;
+		background: rgba(255, 255, 255, 0.2);
+	}
+
+	.icon-wrap img {
+		width: 2.5rem;
+		height: 2.5rem;
+		filter: drop-shadow(2px 2px 10px var(--accent-color));
+	}
+
+	.skill-card h2 {
+		font-size: 1.1rem;
+		font-weight: 700;
+		color: white;
+		text-align: center;
+	}
+
+	/* ===== Infinite scroll ===== */
+
+	.stack-strip {
+		margin-top: 1rem;
+		width: 100%;
+	}
+
+	.stack-mask {
+		overflow: hidden;
+		width: 100%;
+	}
+
+	.stack-track {
+		display: flex;
+		gap: 2rem;
+		width: max-content;
+		animation: scroll-x 180s linear infinite;
+		will-change: transform;
+	}
+
+	.stack-track:hover {
+		animation-play-state: paused;
+	}
+
+	.stack-item {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		padding: 1rem;
+		opacity: 0.85;
+		transition:
+			transform 0.25s ease,
+			opacity 0.25s ease;
+	}
+
+	.stack-item:hover {
+		transform: translateY(-4px) scale(1.05);
+		opacity: 1;
+	}
+
+	.stack-item img {
+		height: 4rem;
+		filter: drop-shadow(2px 2px 10px var(--secondary-color));
+	}
+
+	.stack-item span {
+		margin-top: 1rem;
+		font-weight: 600;
+		color: rgb(55, 65, 81);
+		text-transform: capitalize;
+	}
+
+	@keyframes scroll-x {
 		from {
-			transform: translateX(50);
+			transform: translateX(0);
 		}
 		to {
 			transform: translateX(-50%);
 		}
 	}
 
-	.animate-scroll {
-		display: flex;
-		gap: 2rem;
-		animation: scroll 350s linear infinite;
-		transition: all 0.35s ease-in-out;
-	}
-	.animate-scroll:hover {
-		animation-play-state: paused;
-	}
-	.animate-scroll img {
-		filter: drop-shadow(2px 2px 10px var(--secondary-color));
+	@media (prefers-reduced-motion: reduce) {
+		.stack-track {
+			animation: none;
+			transform: translateX(0);
+		}
 	}
 </style>
